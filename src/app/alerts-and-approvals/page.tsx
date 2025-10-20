@@ -56,7 +56,8 @@ export default function AlertsAndApprovals() {
   const communicationFeatures = [
     {
       title: "Comunicación de turnos",
-      description: "Los empleados pueden consultar sus turnos en cualquier momento.",
+      description:
+        "Los empleados pueden consultar sus turnos en cualquier momento.",
       icon: Calendar,
     },
     {
@@ -191,8 +192,9 @@ export default function AlertsAndApprovals() {
               Convierte Tikneo en INTELIGENTE
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Usa alertas inteligentes para mejorar la forma en que los empleados computan sus tiempos.
-              Evita errores y corrige fácilmente los errores de fichaje.
+              Usa alertas inteligentes para mejorar la forma en que los
+              empleados computan sus tiempos. Evita errores y corrige fácilmente
+              los errores de fichaje.
             </p>
           </div>
 
@@ -296,7 +298,9 @@ export default function AlertsAndApprovals() {
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
                     <span className="font-semibold">Rechazado</span>
                   </div>
-                  <span className="text-sm text-red-600">Cambio de Horario</span>
+                  <span className="text-sm text-red-600">
+                    Cambio de Horario
+                  </span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
@@ -304,7 +308,9 @@ export default function AlertsAndApprovals() {
                     <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
                     <span className="font-semibold">Nuevo</span>
                   </div>
-                  <span className="text-sm text-blue-600">Solicitud de Ausencia</span>
+                  <span className="text-sm text-blue-600">
+                    Solicitud de Ausencia
+                  </span>
                 </div>
               </div>
             </div>

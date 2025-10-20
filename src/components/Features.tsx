@@ -91,7 +91,7 @@ export default function Features() {
                     : feature.title === "Integraciones"
                     ? "/integrations"
                     : feature.title === "Horas extra"
-                    ? "#"
+                    ? "/ime-tracking-software"
                     : feature.title === "Informes"
                     ? "/reports-and-statistics"
                     : "#"

@@ -57,7 +57,8 @@ export default function TimeBank() {
     },
     {
       title: "Solicitudes de compensación",
-      description: "Los empleados pueden solicitar compensaciones en tiempo real",
+      description:
+        "Los empleados pueden solicitar compensaciones en tiempo real",
       icon: Users,
     },
     {
@@ -124,7 +125,9 @@ export default function TimeBank() {
                       <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
                         <Clock className="w-4 h-4 text-white" />
                       </div>
-                      <span className="font-bold text-gray-900">Bolsa de Horas</span>
+                      <span className="font-bold text-gray-900">
+                        Bolsa de Horas
+                      </span>
                     </div>
                     <div className="text-sm text-purple-600 font-semibold">
                       Activo
@@ -132,9 +135,7 @@ export default function TimeBank() {
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">
-                        Horas Extra
-                      </span>
+                      <span className="text-sm text-gray-600">Horas Extra</span>
                       <span className="text-sm font-semibold text-red-600">
                         +24h
                       </span>
@@ -168,8 +169,8 @@ export default function TimeBank() {
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
               ¿Quieres computar las horas trabajadas y no trabajadas de cada
-              empleado y crear saldos positivos y negativos que se
-              compensan con el tiempo?
+              empleado y crear saldos positivos y negativos que se compensan con
+              el tiempo?
               <br />
               <br />
               Con la funcionalidad de bolsa de horas puedes obtener un conteo de
@@ -242,12 +243,13 @@ export default function TimeBank() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Ajusta la organización del trabajo y la producción laboral gracias a la
-                bolsa de horas de Tikneo
+                Ajusta la organización del trabajo y la producción laboral
+                gracias a la bolsa de horas de Tikneo
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Con nuestro software de RRHH ya no tendrás que preocuparte por
-                el control de horas extra y la gestión adecuada del saldo de horas.
+                el control de horas extra y la gestión adecuada del saldo de
+                horas.
               </p>
 
               <div className="space-y-4">
@@ -298,13 +300,15 @@ export default function TimeBank() {
               Gestiona las horas extra de tu equipo en pocos clics
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Como jefe de proyecto o líder de proyecto, organiza adecuadamente la
-              bolsa de horas de tu departamento, mide fácilmente el saldo de horas, bonificaciones y
-              compensación de esas horas en cualquier momento.
+              Como jefe de proyecto o líder de proyecto, organiza adecuadamente
+              la bolsa de horas de tu departamento, mide fácilmente el saldo de
+              horas, bonificaciones y compensación de esas horas en cualquier
+              momento.
               <br />
               <br />
-              Los empleados pueden solicitar esas compensaciones en tiempo real y el
-              administrador puede liquidarlas fácilmente antes del fin de año.
+              Los empleados pueden solicitar esas compensaciones en tiempo real
+              y el administrador puede liquidarlas fácilmente antes del fin de
+              año.
             </p>
           </div>
 

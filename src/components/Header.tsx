@@ -235,6 +235,12 @@ export default function Header() {
                 Precios
               </a>
               <a
+                href="/demo"
+                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+              >
+                Demo
+              </a>
+              <a
                 href="#"
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
@@ -318,6 +324,12 @@ export default function Header() {
                   className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600"
                 >
                   Precios
+                </a>
+                <a
+                  href="/demo"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600"
+                >
+                  Demo
                 </a>
                 <a
                   href="#"

@@ -94,9 +94,10 @@ export default function ReportsAndStatistics() {
                 <span className="text-blue-600">estadísticas</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Consulta informes interactivos de rendimiento laboral o descárgalos en
-                tu formato preferido. Tener toda la información centralizada
-                te da una gran ventaja en la gestión de tus equipos.
+                Consulta informes interactivos de rendimiento laboral o
+                descárgalos en tu formato preferido. Tener toda la información
+                centralizada te da una gran ventaja en la gestión de tus
+                equipos.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
@@ -153,8 +154,8 @@ export default function ReportsAndStatistics() {
               <span className="text-blue-600">fácil de entender</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Informes de horas, puntualidad, horas extra, rentabilidad... Crea tus
-              propios informes y descárgalos en tu formato preferido.
+              Informes de horas, puntualidad, horas extra, rentabilidad... Crea
+              tus propios informes y descárgalos en tu formato preferido.
             </p>
           </div>
 
@@ -188,12 +189,12 @@ export default function ReportsAndStatistics() {
                 Extrae inteligencia de tus datos.
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                ¿Quién estará de vacaciones la próxima semana? ¿Quién ha hecho horas extra este
-                mes?
+                ¿Quién estará de vacaciones la próxima semana? ¿Quién ha hecho
+                horas extra este mes?
                 <br />
                 <br />
-                Centraliza toda la actividad de tus equipos en un software y conviértete
-                en un experto en tu empresa.
+                Centraliza toda la actividad de tus equipos en un software y
+                conviértete en un experto en tu empresa.
               </p>
 
               <div className="grid grid-cols-2 gap-4 mb-8">
@@ -249,10 +250,10 @@ export default function ReportsAndStatistics() {
               Tu equipo de RRHH ahora tiene las cosas más fáciles.
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Guarda la información diaria de tu empresa y consúltala diariamente,
-              mensualmente o anualmente. Olvídate de informes tediosos que se
-              vuelven obsoletos rápidamente y ahorra tiempo teniendo toda la información
-              centralizada.
+              Guarda la información diaria de tu empresa y consúltala
+              diariamente, mensualmente o anualmente. Olvídate de informes
+              tediosos que se vuelven obsoletos rápidamente y ahorra tiempo
+              teniendo toda la información centralizada.
             </p>
           </div>
 
@@ -263,9 +264,9 @@ export default function ReportsAndStatistics() {
               </h3>
               <p className="text-lg text-gray-600 mb-6">Para todos.</p>
               <p className="text-gray-600 mb-8">
-                Más y mejor información crea equipos más eficientes. Con
-                Tikneo, los empleados podrán consultar toda la información
-                relacionada con sus fichajes, sus vacaciones y sus proyectos.
+                Más y mejor información crea equipos más eficientes. Con Tikneo,
+                los empleados podrán consultar toda la información relacionada
+                con sus fichajes, sus vacaciones y sus proyectos.
                 <br />
                 <br />
                 Empodera a tus equipos y haz crecer tus proyectos.
@@ -295,7 +296,9 @@ export default function ReportsAndStatistics() {
               <div className="bg-orange-50 rounded-lg p-6 text-center">
                 <Target className="h-8 w-8 text-orange-600 mx-auto mb-3" />
                 <h4 className="font-semibold text-gray-900 mb-2">Objetivos</h4>
-                <p className="text-sm text-gray-600">Seguimiento de rendimiento</p>
+                <p className="text-sm text-gray-600">
+                  Seguimiento de rendimiento
+                </p>
               </div>
             </div>
           </div>
@@ -329,4 +332,3 @@ export default function ReportsAndStatistics() {
     </main>
   );
 }
-
