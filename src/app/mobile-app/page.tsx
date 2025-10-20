@@ -1,13 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import {
-  Smartphone,
-  Download,
-  Bell,
-  Users,
-  Clock,
-  CheckCircle,
-} from "lucide-react";
+import { Download, Bell, Users, Clock, CheckCircle } from "lucide-react";
 
 export default function AppMovil() {
   const features = [

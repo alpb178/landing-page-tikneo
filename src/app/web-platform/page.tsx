@@ -202,7 +202,7 @@ export default function WebPlatform() {
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Access our web platform and discover all the features that can
-            improve your company's management.
+            improve your company&apos;s management.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">

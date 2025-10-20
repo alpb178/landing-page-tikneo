@@ -8,14 +8,13 @@ import {
   Zap,
   MessageCircle,
   Download,
-  Star,
   AlertCircle,
-  RefreshCw,
   Camera,
   Users,
+  StarIcon,
 } from "lucide-react";
 
-export default function TabletFicharPage() {
+export default function TabletClockInPage() {
   const features = [
     {
       icon: Tablet,
@@ -386,7 +385,7 @@ export default function TabletFicharPage() {
               <div key={index} className="bg-white rounded-xl shadow-lg p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
+                    <StarIcon
                       key={i}
                       className="h-5 w-5 text-yellow-400 fill-current"
                     />

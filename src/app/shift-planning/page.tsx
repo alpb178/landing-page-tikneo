@@ -14,7 +14,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-export default function PlanificacionTurnosPage() {
+export default function ShiftPlanningPage() {
   const features = [
     {
       icon: Calendar,

@@ -1,4 +1,4 @@
-import { MessageCircle, Play } from "lucide-react";
+import { Play } from "lucide-react";
 
 export default function Support() {
   return (

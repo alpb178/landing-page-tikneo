@@ -14,7 +14,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-export default function GestorVacacionesPage() {
+export default function VacationManagerPage() {
   const features = [
     {
       icon: Calendar,

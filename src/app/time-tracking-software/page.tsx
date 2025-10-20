@@ -8,16 +8,13 @@ import {
   Globe,
   Shield,
   BarChart3,
-  Users,
-  Calendar,
-  FileText,
   Zap,
   MessageCircle,
   Download,
-  Star,
+  StarIcon,
 } from "lucide-react";
 
-export default function ControlHorarioPage() {
+export default function TimeTrackingSoftwarePage() {
   const features = [
     {
       icon: Clock,
@@ -299,14 +296,14 @@ export default function ControlHorarioPage() {
               <div key={index} className="bg-gray-50 rounded-xl p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
+                    <StarIcon
                       key={i}
                       className="h-5 w-5 text-yellow-400 fill-current"
                     />
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
                 <div>
                   <div className="font-semibold text-gray-900">
