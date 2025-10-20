@@ -655,8 +655,8 @@ export default function PricingPage() {
               </h3>
               <p className="text-gray-600">
                 Puedes cambiar de plan en el momento en que lo desees. Tan solo
-                tendrás que solicitarlo a través del espacio de 'Planes y
-                precios' que encontrarás en el menú desplegable en la parte
+                tendrás que solicitarlo a través del espacio de &apos;Planes y
+                precios&apos; que encontrarás en el menú desplegable en la parte
                 superior derecha de tu panel. Podrás modificar las condiciones
                 de tu plan en primera persona pero lo mejor es que cuentes con
                 el asesoramiento de soporte para conocer detalladamente todas

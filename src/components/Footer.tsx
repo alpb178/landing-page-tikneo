@@ -1,13 +1,4 @@
-import {
-  MapPin,
-  Globe,
-  Mail,
-  Phone,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-} from "lucide-react";
+import { MapPin, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -88,7 +79,7 @@ export default function Footer() {
 
           {/* Support Section */}
           <div>
-            <h3 className="text-lg font-bold mb-4">We're with you</h3>
+            <h3 className="text-lg font-bold mb-4">We&apos;re with you</h3>
             <ul className="space-y-2">
               <li>
                 <a

@@ -1,11 +1,4 @@
-import {
-  Smartphone,
-  Tablet,
-  Globe,
-  Users,
-  Shield,
-  BarChart3,
-} from "lucide-react";
+import { Users, Shield, BarChart3 } from "lucide-react";
 
 export default function VisualElements() {
   return (

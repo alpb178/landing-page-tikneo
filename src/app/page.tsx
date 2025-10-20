@@ -5,7 +5,6 @@ import Support from "@/components/Support";
 import ClockInMethods from "@/components/ClockInMethods";
 import Integrations from "@/components/Integrations";
 import Compliance from "@/components/Compliance";
-import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 
 export default function Home() {

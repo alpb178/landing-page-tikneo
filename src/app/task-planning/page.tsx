@@ -9,12 +9,12 @@ import {
   Zap,
   MessageCircle,
   Download,
-  Star,
   AlertCircle,
   RefreshCw,
+  StarIcon,
 } from "lucide-react";
 
-export default function PlanificacionTareasPage() {
+export default function TaskPlanningPage() {
   const features = [
     {
       icon: Target,
@@ -388,14 +388,14 @@ export default function PlanificacionTareasPage() {
               <div key={index} className="bg-white rounded-xl shadow-lg p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star
+                    <StarIcon
                       key={i}
                       className="h-5 w-5 text-yellow-400 fill-current"
                     />
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic">
-                  "{testimonial.content}"
+                  &quot;{testimonial.content}&quot;
                 </p>
                 <div>
                   <div className="font-semibold text-gray-900">

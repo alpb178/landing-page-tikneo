@@ -10,7 +10,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 
-export default function Informes() {
+export default function ReportsPage() {
   const reportTypes = [
     {
       icon: Clock,
