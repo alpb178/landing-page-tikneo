@@ -83,17 +83,17 @@ export default function Features() {
               <a
                 href={
                   feature.title === "Time tracking"
-                    ? "/software-control-horario"
+                    ? "/time-tracking-software"
                     : feature.title === "APP mobile"
-                    ? "/app-movil"
+                    ? "/mobile-app"
                     : feature.title === "Planificación"
-                    ? "/planificacion-de-turnos"
+                    ? "/shift-planning"
                     : feature.title === "Integraciones"
-                    ? "#"
+                    ? "/integrations"
                     : feature.title === "Horas extra"
                     ? "#"
                     : feature.title === "Informes"
-                    ? "/informes"
+                    ? "/reports-and-statistics"
                     : "#"
                 }
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors flex items-center justify-center"

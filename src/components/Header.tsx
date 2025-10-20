@@ -29,8 +29,8 @@ export default function Header() {
             <Bell className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
             <span className="text-center">
               <span className="hidden sm:inline">
-                Nueva funcionalidad: control de gastos, ¡olvídate de los tickets y
-                la gestión manual! |
+                Nueva funcionalidad: control de gastos, ¡olvídate de los tickets
+                y la gestión manual! |
                 <a href="#" className="underline ml-1">
                   Más información aquí
                 </a>

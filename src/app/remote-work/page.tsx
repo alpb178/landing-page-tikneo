@@ -21,67 +21,67 @@ import {
   Settings,
 } from "lucide-react";
 
-export default function RemoteWork() {
+export default function RemotoWork() {
   const features = [
     {
       icon: Clock,
-      title: "Time tracking",
+      title: "Control horario",
       description:
-        "Measure the time your team dedicates to each task and control project profitability. Visualize in real-time the tasks and who is performing each task.",
+        "Mide el tiempo que tu equipo dedica a cada tarea y controla la rentabilidad del proyecto. Visualiza en tiempo real las tareas y quién está realizando cada tarea.",
     },
     {
       icon: Users,
-      title: "Who's in",
+      title: "Quién está",
       description:
-        "Both the company and employees can know, in real-time, who is working in the office, on a break or working remotely.",
+        "Tanto la empresa como los empleados pueden saber, en tiempo real, quién está trabajando en la oficina, en descanso o trabajando remotamente.",
     },
     {
       icon: Smartphone,
-      title: "Mobile APP",
+      title: "APP Móvil",
       description:
-        "The employee can register from their mobile the time they dedicate to each project and manage everything related to their workday.",
+        "El empleado puede registrar desde su móvil el tiempo que dedica a cada proyecto y gestionar todo lo relacionado con su jornada laboral.",
     },
     {
       icon: Calendar,
-      title: "Absences",
+      title: "Ausencias",
       description:
-        "With the remote work application, manage employee absences and remote work days with a couple of clicks.",
+        "Con la aplicación de teletrabajo, gestiona las ausencias de empleados y los días de trabajo remoto con un par de clics.",
     },
     {
       icon: Target,
-      title: "Planning",
+      title: "Planificación",
       description:
-        "Plan tasks and shifts and get reports and statistics on the performance and productivity of the employee workforce.",
+        "Planifica tareas y turnos y obtén informes y estadísticas sobre el rendimiento y productividad de la fuerza laboral de empleados.",
     },
     {
       icon: MapPin,
-      title: "Geolocated clock-in",
+      title: "Fichaje geolocalizado",
       description:
-        "Remote clock-in without complications through our APP, to know where your team works from.",
+        "Fichaje remoto sin complicaciones a través de nuestra APP, para saber desde dónde trabaja tu equipo.",
     },
   ];
 
   const benefits = [
-    "Adapt your company to new times",
-    "Real-time team status monitoring",
-    "Flexible work management",
-    "Improved work-life balance",
-    "Increased employee autonomy",
-    "Cost reduction for companies",
+    "Adapta tu empresa a los nuevos tiempos",
+    "Monitoreo del estado del equipo en tiempo real",
+    "Gestión flexible del trabajo",
+    "Mejor equilibrio trabajo-vida",
+    "Mayor autonomía de los empleados",
+    "Reducción de costos para las empresas",
   ];
 
   const stats = [
     {
       number: "5%",
-      description: "Companies offered remote work in early 2020",
+      description: "Empresas ofrecían teletrabajo a principios de 2020",
     },
     {
       number: "40%",
-      description: "Companies now offer remote work",
+      description: "Empresas ahora ofrecen teletrabajo",
     },
     {
       number: "8,000",
-      description: "Companies already trust us",
+      description: "Empresas ya confían en nosotros",
     },
   ];
 
@@ -95,23 +95,23 @@ export default function RemoteWork() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Remote work,
+                Teletrabajo,
                 <br />
-                <span className="text-green-600">simpler than ever</span>
+                <span className="text-green-600">más simple que nunca</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Work in the office, at home or on the move... We have an
-                application for you! Remote work is no longer the future, it's
-                the present! Optimize remote work management with Sesame.
+                Trabaja en la oficina, en casa o en movimiento... ¡Tenemos una
+                aplicación para ti! El teletrabajo ya no es el futuro, ¡es
+                el presente! Optimiza la gestión del teletrabajo con Tikneo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  Free trial
+                  Prueba gratuita
                 </button>
                 <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  View demo
+                  Ver demo
                 </button>
               </div>
             </div>
@@ -129,21 +129,21 @@ export default function RemoteWork() {
                         <Home className="w-4 h-4 text-white" />
                       </div>
                       <span className="font-bold text-gray-900">
-                        Remote Work
+                        Teletrabajo
                       </span>
                     </div>
-                    <div className="text-sm text-gray-500">Online</div>
+                    <div className="text-sm text-gray-500">En línea</div>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Team Status</span>
+                      <span className="text-sm text-gray-600">Estado del Equipo</span>
                       <span className="text-sm font-semibold text-green-600">
-                        8 Active
+                        8 Activos
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-gray-600">
-                        Remote Workers
+                        Trabajadores Remotos
                       </span>
                       <span className="text-sm font-semibold text-blue-600">
                         5
@@ -151,7 +151,7 @@ export default function RemoteWork() {
                     </div>
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-gray-600">
-                        Office Workers
+                        Trabajadores de Oficina
                       </span>
                       <span className="text-sm font-semibold text-purple-600">
                         3
@@ -170,17 +170,17 @@ export default function RemoteWork() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Adapt your company to new times
+              Adapta tu empresa a los nuevos tiempos
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
-              At the beginning of 2020 only 5% of companies offered the remote
-              work option to their employees, now nearly 40% of companies do it.
-              And the figure is increasing!
+              A principios de 2020 solo el 5% de las empresas ofrecían la opción de
+              teletrabajo a sus empleados, ahora casi el 40% de las empresas lo hacen.
+              ¡Y la cifra está aumentando!
               <br />
               <br />
-              Bet on software adapted to remote work, it's a great opportunity
-              to manage work from home, facilitate work-life balance and provide
-              greater autonomy.
+              Apuesta por software adaptado al teletrabajo, es una gran oportunidad
+              para gestionar el trabajo desde casa, facilitar el equilibrio trabajo-vida y proporcionar
+              mayor autonomía.
             </p>
 
             {/* Statistics */}
@@ -203,7 +203,7 @@ export default function RemoteWork() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Software adapted to remote work
+              Software adaptado al teletrabajo
             </h2>
           </div>
 
@@ -234,13 +234,13 @@ export default function RemoteWork() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Know your team's status from anywhere in the world
+                Conoce el estado de tu equipo desde cualquier parte del mundo
               </h2>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                Time tracking adapted to remote work.
+                Control horario adaptado al teletrabajo.
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                Manage work teams and know their status at any time.
+                Gestiona equipos de trabajo y conoce su estado en cualquier momento.
               </p>
 
               <div className="space-y-4">
@@ -255,7 +255,7 @@ export default function RemoteWork() {
 
             <div className="bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl shadow-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                Team Status Dashboard
+                Panel de Estado del Equipo
               </h3>
 
               <div className="space-y-4">
@@ -264,7 +264,7 @@ export default function RemoteWork() {
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
                     <span className="font-semibold">Sarah Johnson</span>
                   </div>
-                  <span className="text-sm text-green-600">Remote</span>
+                  <span className="text-sm text-green-600">Remoto</span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
@@ -272,7 +272,7 @@ export default function RemoteWork() {
                     <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
                     <span className="font-semibold">Mike Chen</span>
                   </div>
-                  <span className="text-sm text-blue-600">Office</span>
+                  <span className="text-sm text-blue-600">Oficina</span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
@@ -280,7 +280,7 @@ export default function RemoteWork() {
                     <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
                     <span className="font-semibold">Emma Wilson</span>
                   </div>
-                  <span className="text-sm text-yellow-600">Break</span>
+                  <span className="text-sm text-yellow-600">Descanso</span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
@@ -288,7 +288,7 @@ export default function RemoteWork() {
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
                     <span className="font-semibold">David Lee</span>
                   </div>
-                  <span className="text-sm text-green-600">Remote</span>
+                  <span className="text-sm text-green-600">Remoto</span>
                 </div>
               </div>
             </div>
@@ -301,40 +301,40 @@ export default function RemoteWork() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Useful resources for remote work
+              Recursos útiles para el teletrabajo
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Remote work management doesn't have to be difficult, with the
-              right resources, your team can work and enrich themselves from
-              that experience. What are you waiting for?
+              La gestión del teletrabajo no tiene que ser difícil, con los
+              recursos adecuados, tu equipo puede trabajar y enriquecerse de
+              esa experiencia. ¿Qué estás esperando?
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Remote Work Law
+                Ley de Teletrabajo
               </h3>
               <p className="text-gray-600 mb-6">
-                All information about the Remote Work Law in Spain.
+                Toda la información sobre la Ley de Teletrabajo en España.
               </p>
               <button className="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors flex items-center">
-                More information
+                Más información
                 <ArrowRight className="ml-2 h-5 w-5" />
               </button>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                Download our remote work guide
+                Descarga nuestra guía de teletrabajo
               </h3>
               <p className="text-gray-600 mb-6">
-                Get our comprehensive guide to implementing remote work in your
-                company.
+                Obtén nuestra guía completa para implementar el teletrabajo en tu
+                empresa.
               </p>
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
                 <Download className="mr-2 h-5 w-5" />
-                Download guide
+                Descargar guía
               </button>
             </div>
           </div>
@@ -342,14 +342,14 @@ export default function RemoteWork() {
           <div className="text-center mt-12">
             <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                I consent to the processing of my data to receive commercial
-                information from Sesame
+                Consiento el tratamiento de mis datos para recibir información
+                comercial de Tikneo
               </h3>
               <div className="flex items-center justify-center">
                 <div className="text-3xl font-bold text-green-600 mr-4">
                   8,000
                 </div>
-                <div className="text-gray-600">companies already trust us</div>
+                <div className="text-gray-600">empresas ya confían en nosotros</div>
               </div>
             </div>
           </div>
@@ -360,20 +360,20 @@ export default function RemoteWork() {
       <section className="py-20 bg-green-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Free trial for 14 days
+            Prueba gratuita durante 14 días
           </h2>
           <p className="text-xl text-green-100 mb-8">
-            If you want to know how to do it (this is the part we like the most)
-            we tell you how.
+            Si quieres saber cómo hacerlo (esta es la parte que más nos gusta)
+            te contamos cómo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
-              Free trial
+              Prueba gratuita
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors flex items-center justify-center">
               <FileText className="mr-2 h-5 w-5" />
-              More information
+              Más información
             </button>
           </div>
         </div>

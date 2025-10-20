@@ -8,67 +8,61 @@ import {
   Settings,
   Users,
   CheckCircle,
-  TrendingUp,
   Calendar,
   Play,
-  ArrowRight,
   Download,
-  Target,
-  Zap,
-  Shield,
-  Eye,
 } from "lucide-react";
 
 export default function TimeBank() {
   const features = [
     {
       icon: Calculator,
-      title: "Simple counting",
+      title: "Conteo simple",
       description:
-        "At a glance you'll discover all the information about your employees' overtime, the total of compensated hours and those pending compensation.",
+        "De un vistazo descubrirás toda la información sobre las horas extra de tus empleados, el total de horas compensadas y las pendientes de compensación.",
     },
     {
       icon: Settings,
-      title: "Create a rule",
+      title: "Crear una regla",
       description:
-        "What type of rule can be applied to each employee? Configure a rule system based on your company and labor agreement to establish multipliers for weekends, night shifts, holidays...",
+        "¿Qué tipo de regla se puede aplicar a cada empleado? Configura un sistema de reglas basado en tu empresa y convenio laboral para establecer multiplicadores para fines de semana, turnos nocturnos, festivos...",
     },
     {
       icon: FileText,
-      title: "Work hours reports",
+      title: "Informes de horas trabajadas",
       description:
-        "With the time bank extract fully customized work hours reports about overtime at any time.",
+        "Con la bolsa de horas extrae informes de horas trabajadas completamente personalizados sobre horas extra en cualquier momento.",
     },
   ];
 
   const benefits = [
-    "Real-time overtime control and monitoring",
-    "Customized reports for each employee",
-    "Automatic calculation of positive and negative balances",
-    "Compensation management throughout the year",
-    "Integration with labor agreements",
-    "Simplified administrative management",
+    "Control y seguimiento de horas extra en tiempo real",
+    "Informes personalizados para cada empleado",
+    "Cálculo automático de saldos positivos y negativos",
+    "Gestión de compensaciones durante todo el año",
+    "Integración con convenios laborales",
+    "Gestión administrativa simplificada",
   ];
 
   const timeBankFeatures = [
     {
-      title: "Real-time tracking",
-      description: "Monitor overtime hours as they happen",
+      title: "Seguimiento en tiempo real",
+      description: "Monitorea las horas extra mientras suceden",
       icon: Clock,
     },
     {
-      title: "Balance management",
-      description: "Track positive and negative hour balances",
+      title: "Gestión de saldos",
+      description: "Rastrea saldos positivos y negativos de horas",
       icon: BarChart3,
     },
     {
-      title: "Compensation requests",
-      description: "Employees can request compensations in real-time",
+      title: "Solicitudes de compensación",
+      description: "Los empleados pueden solicitar compensaciones en tiempo real",
       icon: Users,
     },
     {
-      title: "Year-end settlement",
-      description: "Easy settlement before year-end",
+      title: "Liquidación de fin de año",
+      description: "Liquidación fácil antes del fin de año",
       icon: Calendar,
     },
   ];
@@ -76,15 +70,15 @@ export default function TimeBank() {
   const stats = [
     {
       number: "100%",
-      description: "Automated overtime tracking",
+      description: "Seguimiento automatizado de horas extra",
     },
     {
       number: "Real-time",
-      description: "Balance updates and monitoring",
+      description: "Actualizaciones y monitoreo de saldos",
     },
     {
       number: "Custom",
-      description: "Reports and rule configuration",
+      description: "Informes y configuración de reglas",
     },
   ];
 
@@ -98,22 +92,22 @@ export default function TimeBank() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Time bank,
+                Bolsa de horas,
                 <br />
-                <span className="text-purple-600">overtime registration</span>
+                <span className="text-purple-600">registro de horas extra</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Know and control in real-time the total overtime hours of your
-                team and design personalized reports.
+                Conoce y controla en tiempo real el total de horas extra de tu
+                equipo y diseña informes personalizados.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  Free trial
+                  Prueba gratuita
                 </button>
                 <button className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-50 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  View demo
+                  Ver demo
                 </button>
               </div>
             </div>
@@ -130,29 +124,29 @@ export default function TimeBank() {
                       <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
                         <Clock className="w-4 h-4 text-white" />
                       </div>
-                      <span className="font-bold text-gray-900">Time Bank</span>
+                      <span className="font-bold text-gray-900">Bolsa de Horas</span>
                     </div>
                     <div className="text-sm text-purple-600 font-semibold">
-                      Active
+                      Activo
                     </div>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
                       <span className="text-sm text-gray-600">
-                        Overtime Hours
+                        Horas Extra
                       </span>
                       <span className="text-sm font-semibold text-red-600">
                         +24h
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Compensated</span>
+                      <span className="text-sm text-gray-600">Compensadas</span>
                       <span className="text-sm font-semibold text-green-600">
                         -12h
                       </span>
                     </div>
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Balance</span>
+                      <span className="text-sm text-gray-600">Saldo</span>
                       <span className="text-sm font-semibold text-purple-600">
                         +12h
                       </span>
@@ -170,22 +164,22 @@ export default function TimeBank() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Learn to register hour balance
+              Aprende a registrar el saldo de horas
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
-              Do you want to compute the worked and unworked hours of each
-              employee and create positive and negative balances that are
-              compensated over time?
+              ¿Quieres computar las horas trabajadas y no trabajadas de cada
+              empleado y crear saldos positivos y negativos que se
+              compensan con el tiempo?
               <br />
               <br />
-              With the time bank functionality you can get a count of real
-              hours, overtime hours, compensated hours and the total balance of
-              each worker.
+              Con la funcionalidad de bolsa de horas puedes obtener un conteo de
+              horas reales, horas extra, horas compensadas y el saldo total de
+              cada trabajador.
             </p>
 
             <div className="bg-purple-50 rounded-xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                How does Sesame's time bank work
+                Cómo funciona la bolsa de horas de Tikneo
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
@@ -248,12 +242,12 @@ export default function TimeBank() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Adjust work organization and labor production thanks to Sesame's
-                time bank
+                Ajusta la organización del trabajo y la producción laboral gracias a la
+                bolsa de horas de Tikneo
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                With our HR software you won't have to worry anymore about
-                overtime control and proper hour balance management.
+                Con nuestro software de RRHH ya no tendrás que preocuparte por
+                el control de horas extra y la gestión adecuada del saldo de horas.
               </p>
 
               <div className="space-y-4">
@@ -268,7 +262,7 @@ export default function TimeBank() {
 
             <div className="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-2xl shadow-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                Time Bank Management
+                Gestión de Bolsa de Horas
               </h3>
 
               <div className="space-y-4">
@@ -301,16 +295,16 @@ export default function TimeBank() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Manage your team's overtime in a few clicks
+              Gestiona las horas extra de tu equipo en pocos clics
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              As a project manager or project leader, properly organize your
-              department's time bank, easily measure hour balance, bonuses and
-              compensation of those hours at any time.
+              Como jefe de proyecto o líder de proyecto, organiza adecuadamente la
+              bolsa de horas de tu departamento, mide fácilmente el saldo de horas, bonificaciones y
+              compensación de esas horas en cualquier momento.
               <br />
               <br />
-              Employees can request those compensations in real-time and the
-              administrator can settle them easily before year-end.
+              Los empleados pueden solicitar esas compensaciones en tiempo real y el
+              administrador puede liquidarlas fácilmente antes del fin de año.
             </p>
           </div>
 
@@ -331,20 +325,20 @@ export default function TimeBank() {
       <section className="py-20 bg-purple-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Free trial for 14 days
+            Prueba gratuita durante 14 días
           </h2>
           <p className="text-xl text-purple-100 mb-8">
-            If you want to know how to do it (this is the part we like the most)
-            we tell you how.
+            Si quieres saber cómo hacerlo (esta es la parte que más nos gusta)
+            te contamos cómo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
-              Free trial
+              Prueba gratuita
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center">
               <Download className="mr-2 h-5 w-5" />
-              More information
+              Más información
             </button>
           </div>
         </div>
@@ -354,4 +348,3 @@ export default function TimeBank() {
     </main>
   );
 }
-

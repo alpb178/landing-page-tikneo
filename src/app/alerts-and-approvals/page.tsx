@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import {
   Bell,
-  Smartphone,
   Clock,
   Calendar,
   MapPin,
@@ -10,88 +9,80 @@ import {
   CheckCircle,
   AlertTriangle,
   Users,
-  Settings,
   Play,
-  ArrowRight,
   FileText,
-  Download,
-  Eye,
-  Send,
-  Zap,
-  Shield,
-  Target,
 } from "lucide-react";
 
 export default function AlertsAndApprovals() {
   const features = [
     {
       icon: Bell,
-      title: "Push notifications",
+      title: "Notificaciones push",
       description:
-        "Send your team the information they need and make sure it reaches them by activating push notifications in the Sesame APP.",
+        "Envía a tu equipo la información que necesitan y asegúrate de que les llegue activando las notificaciones push en la APP de Tikneo.",
     },
     {
       icon: Clock,
-      title: "Overtime alerts",
+      title: "Alertas de horas extra",
       description:
-        "Alert your employees when they have reached the end of their workday and avoid involuntary overtime.",
+        "Alerte a tus empleados cuando hayan llegado al final de su jornada laboral y evita las horas extra involuntarias.",
     },
     {
       icon: Calendar,
-      title: "Schedules on mobile",
+      title: "Horarios en móvil",
       description:
-        "Your employees will have all the information about their shifts and schedules on their mobile, they can request absences and you can notify them if changes are made.",
+        "Tus empleados tendrán toda la información sobre sus turnos y horarios en su móvil, pueden solicitar ausencias y puedes notificarles si se realizan cambios.",
     },
     {
       icon: AlertTriangle,
-      title: "Forgotten clock-in alerts",
+      title: "Alertas de fichaje olvidado",
       description:
-        "Mark in Sesame's configuration the end of workday time and alert with an automatic message employees who haven't clocked out yet.",
+        "Marca en la configuración de Tikneo la hora de finalización de la jornada y alerta con un mensaje automático a los empleados que aún no han fichado la salida.",
     },
     {
       icon: MapPin,
-      title: "Start and end of workday alerts",
+      title: "Alertas de inicio y fin de jornada",
       description:
-        "Remind employees of the start of workday. Very useful in shift work. You can also remind them where they need to go when necessary.",
+        "Recuerda a los empleados el inicio de la jornada laboral. Muy útil en trabajo por turnos. También puedes recordarles dónde necesitan ir cuando sea necesario.",
     },
     {
       icon: MessageSquare,
-      title: "Send communications",
+      title: "Enviar comunicaciones",
       description:
-        "Communicate easily with your employees by sending information directly to their smartphones.",
+        "Comunícate fácilmente con tus empleados enviando información directamente a sus smartphones.",
     },
   ];
 
   const communicationFeatures = [
     {
-      title: "Shift communication",
-      description: "Employees can check their shifts at any time.",
+      title: "Comunicación de turnos",
+      description: "Los empleados pueden consultar sus turnos en cualquier momento.",
       icon: Calendar,
     },
     {
-      title: "Absence communication",
+      title: "Comunicación de ausencias",
       description:
-        "Automatically receive notifications when your employees request absence permits.",
+        "Recibe notificaciones automáticamente cuando tus empleados soliciten permisos de ausencia.",
       icon: Users,
     },
   ];
 
   const benefits = [
-    "Convert Sesame to SMART",
-    "Use smart alerts to improve how employees compute their times",
-    "Avoid mistakes and easily correct clock-in errors",
-    "Real-time notifications",
-    "Mobile management",
-    "Automated communications",
+    "Convierte Tikneo en INTELIGENTE",
+    "Usa alertas inteligentes para mejorar cómo los empleados computan sus tiempos",
+    "Evita errores y corrige fácilmente los errores de fichaje",
+    "Notificaciones en tiempo real",
+    "Gestión móvil",
+    "Comunicaciones automatizadas",
   ];
 
   const testimonials = [
     {
       name: "Sarah Martinez",
-      position: "HR Manager",
+      position: "Gerente de RRHH",
       company: "TechCorp",
       content:
-        "The truth is that it's very comfortable to be able to check my schedules in the Sesame app. Also, if there are any changes they notify me automatically.",
+        "La verdad es que es muy cómodo poder consultar mis horarios en la app de Tikneo. Además, si hay algún cambio me notifican automáticamente.",
       rating: 5,
     },
   ];
@@ -106,26 +97,26 @@ export default function AlertsAndApprovals() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                Alerts and
+                Alertas y
                 <br />
-                <span className="text-orange-600">approvals</span>
+                <span className="text-orange-600">aprobaciones</span>
               </h1>
               <h2 className="text-2xl font-semibold text-gray-800 mb-4">
-                Alerts and notifications. Don't miss anything
+                Alertas y notificaciones. No te pierdas nada
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                Receive and send notifications when you need them. Employee
-                notices, overtime, absence requests or overtime and forgotten
-                clock-ins.
+                Recibe y envía notificaciones cuando las necesites. Avisos de
+                empleados, horas extra, solicitudes de ausencia o horas extra y
+                fichajes olvidados.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-orange-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-700 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  Free trial
+                  Prueba gratuita
                 </button>
                 <button className="border-2 border-orange-600 text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-orange-50 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  View demo
+                  Ver demo
                 </button>
               </div>
             </div>
@@ -143,11 +134,11 @@ export default function AlertsAndApprovals() {
                         <Bell className="w-4 h-4 text-white" />
                       </div>
                       <span className="font-bold text-gray-900">
-                        Alerts Center
+                        Centro de Alertas
                       </span>
                     </div>
                     <div className="text-sm text-orange-600 font-semibold">
-                      3 New
+                      3 Nuevas
                     </div>
                   </div>
                   <div className="space-y-3">
@@ -155,10 +146,10 @@ export default function AlertsAndApprovals() {
                       <AlertTriangle className="h-4 w-4 text-red-500 mr-3" />
                       <div>
                         <div className="text-sm font-semibold text-gray-900">
-                          Overtime Alert
+                          Alerta de Horas Extra
                         </div>
                         <div className="text-xs text-gray-600">
-                          John exceeded work hours
+                          John excedió las horas de trabajo
                         </div>
                       </div>
                     </div>
@@ -166,10 +157,10 @@ export default function AlertsAndApprovals() {
                       <Clock className="h-4 w-4 text-yellow-500 mr-3" />
                       <div>
                         <div className="text-sm font-semibold text-gray-900">
-                          Forgotten Clock-in
+                          Fichaje Olvidado
                         </div>
                         <div className="text-xs text-gray-600">
-                          Sarah hasn't clocked out
+                          Sarah no ha fichado la salida
                         </div>
                       </div>
                     </div>
@@ -177,10 +168,10 @@ export default function AlertsAndApprovals() {
                       <Calendar className="h-4 w-4 text-blue-500 mr-3" />
                       <div>
                         <div className="text-sm font-semibold text-gray-900">
-                          Schedule Change
+                          Cambio de Horario
                         </div>
                         <div className="text-xs text-gray-600">
-                          Shift update for tomorrow
+                          Actualización de turno para mañana
                         </div>
                       </div>
                     </div>
@@ -197,11 +188,11 @@ export default function AlertsAndApprovals() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Convert Sesame to SMART
+              Convierte Tikneo en INTELIGENTE
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-              Use smart alerts to improve the way employees compute their times.
-              Avoid mistakes and easily correct clock-in errors.
+              Usa alertas inteligentes para mejorar la forma en que los empleados computan sus tiempos.
+              Evita errores y corrige fácilmente los errores de fichaje.
             </p>
           </div>
 
@@ -253,14 +244,14 @@ export default function AlertsAndApprovals() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                App manager
+                Gestor de APP
               </h2>
               <h3 className="text-2xl font-semibold text-gray-800 mb-4">
-                Manage everything easily from your mobile
+                Gestiona todo fácilmente desde tu móvil
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                You don't need to get to the office to approve and manage your
-                team's incidents. Do it wherever and whenever you want from the
+                No necesitas ir a la oficina para aprobar y gestionar los
+                incidentes de tu equipo. Hazlo donde y cuando quieras desde la
                 APP.
               </p>
 
@@ -276,44 +267,44 @@ export default function AlertsAndApprovals() {
 
             <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl shadow-xl p-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">
-                Mobile Management
+                Gestión Móvil
               </h3>
 
               <div className="space-y-4">
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
-                    <span className="font-semibold">Approved</span>
+                    <span className="font-semibold">Aprobado</span>
                   </div>
                   <span className="text-sm text-green-600">
-                    Vacation Request
+                    Solicitud de Vacaciones
                   </span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-yellow-500 rounded-full mr-3"></div>
-                    <span className="font-semibold">Pending</span>
+                    <span className="font-semibold">Pendiente</span>
                   </div>
                   <span className="text-sm text-yellow-600">
-                    Overtime Request
+                    Solicitud de Horas Extra
                   </span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-red-500 rounded-full mr-3"></div>
-                    <span className="font-semibold">Rejected</span>
+                    <span className="font-semibold">Rechazado</span>
                   </div>
-                  <span className="text-sm text-red-600">Schedule Change</span>
+                  <span className="text-sm text-red-600">Cambio de Horario</span>
                 </div>
 
                 <div className="bg-white rounded-lg p-4 flex items-center justify-between">
                   <div className="flex items-center">
                     <div className="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
-                    <span className="font-semibold">New</span>
+                    <span className="font-semibold">Nuevo</span>
                   </div>
-                  <span className="text-sm text-blue-600">Absence Request</span>
+                  <span className="text-sm text-blue-600">Solicitud de Ausencia</span>
                 </div>
               </div>
             </div>
@@ -326,7 +317,7 @@ export default function AlertsAndApprovals() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-6">
-              What our users say
+              Lo que dicen nuestros usuarios
             </h2>
           </div>
 
@@ -360,20 +351,20 @@ export default function AlertsAndApprovals() {
       <section className="py-20 bg-orange-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Free trial for 14 days
+            Prueba gratuita durante 14 días
           </h2>
           <p className="text-xl text-orange-100 mb-8">
-            If you want to know how to do it (this is the part we like the most)
-            we tell you how.
+            Si quieres saber cómo hacerlo (esta es la parte que más nos gusta)
+            te contamos cómo.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-orange-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
               <Play className="mr-2 h-5 w-5" />
-              Free trial
+              Prueba gratuita
             </button>
             <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-orange-600 transition-colors flex items-center justify-center">
               <FileText className="mr-2 h-5 w-5" />
-              More information
+              Más información
             </button>
           </div>
         </div>
@@ -383,4 +374,3 @@ export default function AlertsAndApprovals() {
     </main>
   );
 }
-

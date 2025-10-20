@@ -13,20 +13,20 @@ export default function PricingPage() {
       minMonthly: "78,75 €",
       minAnnual: "71,25 €",
       features: [
-        "Time Tracking",
-        "Absences and Vacations",
-        "Reports and Statistics",
-        "Admin and Employee Portal",
+        "Control horario",
+        "Ausencias y Vacaciones",
+        "Informes y Estadísticas",
+        "Portal de Administrador y Empleado",
         "Automatizaciones",
         "Avisos",
-        "Shifts",
-        "Task Manager",
-        "Time Bank",
-        "Document Manager",
-        "Integrations",
+        "Turnos",
+        "Gestor de Tareas",
+        "Bolsa de Horas",
+        "Gestor Documental",
+        "Integraciones",
         "Face ID",
         "Firma avanzada (2 por empleado/año)",
-        "Whistleblower Channel",
+        "Canal de Denuncias",
       ],
       popular: false,
     },
@@ -211,18 +211,18 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pricing and Plans
+              Precios y Planes
             </h1>
 
             {/* Toggle */}
             <div className="flex items-center justify-center mb-12">
-              <span className="text-gray-600 mr-4">Annual</span>
+              <span className="text-gray-600 mr-4">Anual</span>
               <div className="relative">
                 <input type="checkbox" className="sr-only" />
                 <div className="w-14 h-7 bg-gray-200 rounded-full shadow-inner"></div>
                 <div className="absolute top-1 left-1 w-5 h-5 bg-white rounded-full shadow transform transition-transform"></div>
               </div>
-              <span className="text-gray-600 ml-4">Monthly</span>
+              <span className="text-gray-600 ml-4">Mensual</span>
             </div>
           </div>
         </div>
