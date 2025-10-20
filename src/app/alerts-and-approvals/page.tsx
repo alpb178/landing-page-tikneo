@@ -336,7 +336,7 @@ export default function AlertsAndApprovals() {
               ))}
             </div>
             <p className="text-gray-700 mb-6 italic text-lg">
-              "{testimonials[0].content}"
+              &quot;{testimonials[0].content}&quot;
             </p>
             <div>
               <div className="font-semibold text-gray-900">

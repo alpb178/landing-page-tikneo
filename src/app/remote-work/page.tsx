@@ -7,21 +7,15 @@ import {
   Calendar,
   MapPin,
   CheckCircle,
-  Globe,
-  Home,
-  Building,
-  Wifi,
   Download,
   FileText,
   Play,
   ArrowRight,
-  BarChart3,
   Target,
-  UserCheck,
-  Settings,
+  Home,
 } from "lucide-react";
 
-export default function RemotoWork() {
+export default function RemoteWork() {
   const features = [
     {
       icon: Clock,
@@ -101,8 +95,8 @@ export default function RemotoWork() {
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Trabaja en la oficina, en casa o en movimiento... ¡Tenemos una
-                aplicación para ti! El teletrabajo ya no es el futuro, ¡es
-                el presente! Optimiza la gestión del teletrabajo con Tikneo.
+                aplicación para ti! El teletrabajo ya no es el futuro, ¡es el
+                presente! Optimiza la gestión del teletrabajo con Tikneo.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center">
@@ -136,7 +130,9 @@ export default function RemotoWork() {
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-sm text-gray-600">Estado del Equipo</span>
+                      <span className="text-sm text-gray-600">
+                        Estado del Equipo
+                      </span>
                       <span className="text-sm font-semibold text-green-600">
                         8 Activos
                       </span>
@@ -173,14 +169,14 @@ export default function RemotoWork() {
               Adapta tu empresa a los nuevos tiempos
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto mb-12">
-              A principios de 2020 solo el 5% de las empresas ofrecían la opción de
-              teletrabajo a sus empleados, ahora casi el 40% de las empresas lo hacen.
-              ¡Y la cifra está aumentando!
+              A principios de 2020 solo el 5% de las empresas ofrecían la opción
+              de teletrabajo a sus empleados, ahora casi el 40% de las empresas
+              lo hacen. ¡Y la cifra está aumentando!
               <br />
               <br />
-              Apuesta por software adaptado al teletrabajo, es una gran oportunidad
-              para gestionar el trabajo desde casa, facilitar el equilibrio trabajo-vida y proporcionar
-              mayor autonomía.
+              Apuesta por software adaptado al teletrabajo, es una gran
+              oportunidad para gestionar el trabajo desde casa, facilitar el
+              equilibrio trabajo-vida y proporcionar mayor autonomía.
             </p>
 
             {/* Statistics */}
@@ -240,7 +236,8 @@ export default function RemotoWork() {
                 Control horario adaptado al teletrabajo.
               </h3>
               <p className="text-lg text-gray-600 mb-8">
-                Gestiona equipos de trabajo y conoce su estado en cualquier momento.
+                Gestiona equipos de trabajo y conoce su estado en cualquier
+                momento.
               </p>
 
               <div className="space-y-4">
@@ -305,8 +302,8 @@ export default function RemotoWork() {
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               La gestión del teletrabajo no tiene que ser difícil, con los
-              recursos adecuados, tu equipo puede trabajar y enriquecerse de
-              esa experiencia. ¿Qué estás esperando?
+              recursos adecuados, tu equipo puede trabajar y enriquecerse de esa
+              experiencia. ¿Qué estás esperando?
             </p>
           </div>
 
@@ -329,8 +326,8 @@ export default function RemotoWork() {
                 Descarga nuestra guía de teletrabajo
               </h3>
               <p className="text-gray-600 mb-6">
-                Obtén nuestra guía completa para implementar el teletrabajo en tu
-                empresa.
+                Obtén nuestra guía completa para implementar el teletrabajo en
+                tu empresa.
               </p>
               <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors flex items-center">
                 <Download className="mr-2 h-5 w-5" />
@@ -349,7 +346,9 @@ export default function RemotoWork() {
                 <div className="text-3xl font-bold text-green-600 mr-4">
                   8,000
                 </div>
-                <div className="text-gray-600">empresas ya confían en nosotros</div>
+                <div className="text-gray-600">
+                  empresas ya confían en nosotros
+                </div>
               </div>
             </div>
           </div>
@@ -383,4 +382,3 @@ export default function RemotoWork() {
     </main>
   );
 }
-

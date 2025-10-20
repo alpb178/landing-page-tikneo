@@ -11,8 +11,6 @@ import {
   CheckCircle,
   AlertTriangle,
   Target,
-  Eye,
-  Filter,
   ArrowRight,
   Play,
 } from "lucide-react";
@@ -61,15 +59,6 @@ export default function ReportsAndStatistics() {
       description:
         "Cumple con las regulaciones de fichaje de horas y almacena la información de registro de jornada de tus empleados.",
     },
-  ];
-
-  const benefits = [
-    "Filtros avanzados por fecha, empleado y proyecto",
-    "Sincronización de datos en tiempo real",
-    "Programación automática de informes",
-    "Vistas de panel personalizables",
-    "Opciones de exportación multi-formato",
-    "Cumplimiento de regulaciones laborales",
   ];
 
   const reportTypes = [

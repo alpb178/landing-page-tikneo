@@ -7,14 +7,7 @@ import {
   Settings,
   Shield,
   ArrowRight,
-  Star,
-  Clock,
   BarChart3,
-  Calendar,
-  UserCheck,
-  Building,
-  Globe,
-  Zap,
 } from "lucide-react";
 
 export default function DemoPage() {
@@ -22,7 +15,8 @@ export default function DemoPage() {
     {
       icon: Play,
       title: "Te mostramos toda la plataforma",
-      description: "Completamente configurada para que veas el uso real de la herramienta",
+      description:
+        "Completamente configurada para que veas el uso real de la herramienta",
     },
     {
       icon: BarChart3,
@@ -32,7 +26,8 @@ export default function DemoPage() {
     {
       icon: Users,
       title: "Nuestros expertos están listos",
-      description: "Para resolver todas tus dudas y enseñarte cómo adaptar Tikneo a las necesidades de tu empresa",
+      description:
+        "Para resolver todas tus dudas y enseñarte cómo adaptar Tikneo a las necesidades de tu empresa",
     },
   ];
 
@@ -40,17 +35,20 @@ export default function DemoPage() {
     {
       icon: Settings,
       title: "Personalización",
-      description: "Cada demo se realiza con un experto de Tikneo y se adapta y personaliza a las necesidades y requerimientos de tu empresa.",
+      description:
+        "Cada demo se realiza con un experto de Tikneo y se adapta y personaliza a las necesidades y requerimientos de tu empresa.",
     },
     {
       icon: Shield,
       title: "Sin compromiso y 100% segura",
-      description: "Nuestro equipo te asesorará en base a tus necesidades sin ningún compromiso y garantizamos la seguridad de tus datos.",
+      description:
+        "Nuestro equipo te asesorará en base a tus necesidades sin ningún compromiso y garantizamos la seguridad de tus datos.",
     },
     {
       icon: CheckCircle,
       title: "Conocimiento en primera persona",
-      description: "Podrás conocer en primera persona cómo funciona Tikneo y qué solución es la más adecuada para tu empresa",
+      description:
+        "Podrás conocer en primera persona cómo funciona Tikneo y qué solución es la más adecuada para tu empresa",
     },
   ];
 
@@ -82,17 +80,20 @@ export default function DemoPage() {
             {/* Top Banner */}
             <div className="bg-blue-600 text-white py-2 px-4 rounded-full inline-block mb-8">
               <span className="text-sm font-medium">
-                📢 Ficha a tu manera, ficha con Tikneo. Cumple con la nueva ley de fichaje digital sin cambiar tu rutina | Descubre cómo
+                📢 Ficha a tu manera, ficha con Tikneo. Cumple con la nueva ley
+                de fichaje digital sin cambiar tu rutina | Descubre cómo
               </span>
             </div>
 
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              La plataforma <span className="text-blue-600">all in one</span> de RRHH para{" "}
-              <span className="text-blue-600">gestionar talento</span>
+              La plataforma <span className="text-blue-600">all in one</span> de
+              RRHH para <span className="text-blue-600">gestionar talento</span>
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
-              Conoce <strong>Tikneo desde dentro</strong> y descubre cómo sacar todo el partido para todas las áreas de tu empresa con nuestra consultoría personalizada
+              Conoce <strong>Tikneo desde dentro</strong> y descubre cómo sacar
+              todo el partido para todas las áreas de tu empresa con nuestra
+              consultoría personalizada
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -104,9 +105,7 @@ export default function DemoPage() {
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
                     {feature.title}
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    {feature.description}
-                  </p>
+                  <p className="text-gray-600 text-sm">{feature.description}</p>
                 </div>
               ))}
             </div>
@@ -149,9 +148,7 @@ export default function DemoPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-4">
                   {item.title}
                 </h3>
-                <p className="text-gray-600">
-                  {item.description}
-                </p>
+                <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
           </div>
@@ -171,7 +168,8 @@ export default function DemoPage() {
             Revoluciona la experiencia de tu equipo e impulsa tu negocio.
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Solicita una demostración gratuita de Tikneo y te mostraremos cómo transformar todos sus procesos de RRHH
+            Solicita una demostración gratuita de Tikneo y te mostraremos cómo
+            transformar todos sus procesos de RRHH
           </p>
           <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
             Solicitar demo gratuita
