@@ -11,30 +11,6 @@ import {
 export default function Hero() {
   return (
     <>
-      {/* Trust Bar */}
-      <div className="bg-gray-100 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <p className="text-gray-600 text-sm">
-              14,000 companies already trust us
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Client Logos */}
-      <div className="bg-white py-8">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center space-x-8 opacity-60">
-            <div className="text-2xl font-bold text-gray-400">PUMA</div>
-            <div className="text-2xl font-bold text-gray-400">talent</div>
-            <div className="text-2xl font-bold text-gray-400">MADIC</div>
-            <div className="text-2xl font-bold text-gray-400">BALEARIA</div>
-            <div className="text-2xl font-bold text-gray-400">Scientific</div>
-          </div>
-        </div>
-      </div>
-
       {/* Main Hero Section */}
       <section className="bg-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -42,36 +18,36 @@ export default function Hero() {
             {/* Left side - Text content */}
             <div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Optimize employee management
+                Optimiza la gestión de empleados
                 <br />
                 <span className="text-blue-600">
-                  saving time, effort and money
+                  ahorrando tiempo, esfuerzo y dinero
                 </span>
               </h1>
 
               <p className="text-xl text-gray-600 mb-8">
-                And so you can see how Sesame works, we offer you{" "}
+                Y para que veas como funciona Tikneo, te ofrecemos{" "}
                 <span className="text-purple-600 font-semibold">
-                  14 days of completely free trial
+                  14 días de prueba totalmente gratuita
                 </span>{" "}
-                with no commitment
+                sin compromiso
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-12">
                 <button className="bg-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center">
-                  Free Trial
+                  Prueba gratis
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </button>
                 <button className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-purple-50 transition-colors flex items-center justify-center">
                   <Play className="mr-2 h-5 w-5" />
-                  View Demo
+                  Ver demo
                 </button>
               </div>
 
               <div className="flex items-center text-sm text-gray-500">
                 <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
-                <span className="font-semibold">14,000 companies</span>
-                <span className="ml-2">already trust us</span>
+                <span className="font-semibold">14.000 compañías</span>
+                <span className="ml-2">ya confían en nosotros</span>
               </div>
             </div>
 
@@ -86,7 +62,7 @@ export default function Hero() {
                       <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
                         <div className="w-4 h-4 bg-white rounded-sm"></div>
                       </div>
-                      <span className="font-bold text-gray-900">sesame</span>
+                      <span className="font-bold text-gray-900">Tikneo</span>
                     </div>
                     <div className="flex items-center space-x-4">
                       <Search className="h-5 w-5 text-gray-500" />
@@ -95,7 +71,7 @@ export default function Hero() {
                         <span className="text-sm text-gray-600">04:21:34</span>
                       </div>
                       <button className="bg-blue-600 text-white px-3 py-1 rounded text-sm">
-                        Login
+                        Entrar
                       </button>
                       <div className="flex items-center space-x-2">
                         <div className="w-8 h-8 bg-gray-300 rounded-full"></div>
@@ -106,7 +82,7 @@ export default function Hero() {
                     </div>
                     <button className="bg-green-600 text-white px-4 py-2 rounded-lg text-sm flex items-center">
                       <Plus className="h-4 w-4 mr-1" />
-                      Add Employee
+                      Añadir empleado
                     </button>
                   </div>
 
@@ -117,34 +93,34 @@ export default function Hero() {
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg bg-gray-100">
                           <User className="h-5 w-5 text-gray-600" />
                           <span className="text-sm text-gray-700">
-                            Employees
+                            Empleados
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg">
                           <Clock className="h-5 w-5 text-gray-600" />
-                          <span className="text-sm text-gray-700">Records</span>
+                          <span className="text-sm text-gray-700">Registros</span>
                         </div>
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg">
                           <User className="h-5 w-5 text-gray-600" />
                           <span className="text-sm text-gray-700">
-                            Absences
+                            Ausencias
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg bg-purple-100">
                           <User className="h-5 w-5 text-purple-600" />
                           <span className="text-sm text-purple-700 font-semibold">
-                            Tasks
+                            Tareas
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg">
                           <User className="h-5 w-5 text-gray-600" />
                           <span className="text-sm text-gray-700">
-                            Requests
+                            Solicitudes
                           </span>
                         </div>
                         <div className="flex items-center space-x-3 py-2 px-3 rounded-lg">
                           <User className="h-5 w-5 text-gray-600" />
-                          <span className="text-sm text-gray-700">Reports</span>
+                          <span className="text-sm text-gray-700">Informes</span>
                         </div>
                       </div>
                     </div>
@@ -152,20 +128,20 @@ export default function Hero() {
                     {/* Main content */}
                     <div className="flex-1 p-6">
                       <h2 className="text-xl font-bold text-gray-900 mb-4">
-                        Employees
+                        Empleados
                       </h2>
 
                       {/* Filters */}
                       <div className="flex space-x-4 mb-4">
                         <select className="border border-gray-300 rounded-lg px-3 py-2 text-sm">
-                          <option>Center</option>
+                          <option>Centro</option>
                         </select>
                         <select className="border border-gray-300 rounded-lg px-3 py-2 text-sm">
-                          <option>Department</option>
+                          <option>Departamento</option>
                         </select>
                         <input
                           type="text"
-                          placeholder="Search..."
+                          placeholder="Buscar..."
                           className="border border-gray-300 rounded-lg px-3 py-2 text-sm flex-1"
                         />
                       </div>
@@ -176,19 +152,19 @@ export default function Hero() {
                           <thead>
                             <tr className="border-b">
                               <th className="text-left py-3 text-sm font-semibold text-gray-700">
-                                Employee
+                                Empleado
                               </th>
                               <th className="text-left py-3 text-sm font-semibold text-gray-700">
-                                Status
+                                Estado
                               </th>
                               <th className="text-left py-3 text-sm font-semibold text-gray-700">
-                                Hours Today
+                                Horas Hoy
                               </th>
                               <th className="text-left py-3 text-sm font-semibold text-gray-700">
-                                % Completed
+                                % Completado
                               </th>
                               <th className="text-left py-3 text-sm font-semibold text-gray-700">
-                                Daily Schedule
+                                Jornada diaria
                               </th>
                             </tr>
                           </thead>
@@ -202,7 +178,7 @@ export default function Hero() {
                                       Matthew Vargas
                                     </div>
                                     <div className="text-xs text-gray-500">
-                                      1 task
+                                      1 tarea
                                     </div>
                                   </div>
                                 </div>
@@ -210,7 +186,7 @@ export default function Hero() {
                               <td className="py-3">
                                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800">
                                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                                  Online
+                                  En línea
                                 </span>
                               </td>
                               <td className="py-3 text-sm">7h 40 min</td>
@@ -242,7 +218,7 @@ export default function Hero() {
                                       Rachel Porter
                                     </div>
                                     <div className="text-xs text-gray-500">
-                                      2 tasks
+                                      2 tareas
                                     </div>
                                   </div>
                                 </div>
@@ -250,7 +226,7 @@ export default function Hero() {
                               <td className="py-3">
                                 <span className="inline-flex items-center px-2 py-1 rounded-full text-xs bg-green-100 text-green-800">
                                   <div className="w-2 h-2 bg-green-500 rounded-full mr-2"></div>
-                                  Online
+                                  En línea
                                 </span>
                               </td>
                               <td className="py-3 text-sm">4h 00 min</td>
@@ -297,7 +273,7 @@ export default function Hero() {
                           </button>
                         </div>
                         <div className="text-sm text-gray-600">
-                          Show:{" "}
+                          Mostrar:{" "}
                           <select className="border border-gray-300 rounded px-2 py-1 text-sm">
                             <option>10</option>
                             <option>50</option>

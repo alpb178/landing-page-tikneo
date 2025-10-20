@@ -118,7 +118,7 @@ export default function ShiftPlanningPage() {
       position: "Directora de Operaciones",
       company: "RetailMax",
       content:
-        "Sesame nos ha revolucionado la gestión de turnos. Antes tardábamos 4 horas semanales en planificar, ahora es automático.",
+        "Tikneo nos ha revolucionado la gestión de turnos. Antes tardábamos 4 horas semanales en planificar, ahora es automático.",
       rating: 5,
     },
     {
@@ -134,7 +134,7 @@ export default function ShiftPlanningPage() {
       position: "Supervisora",
       company: "Clínica San José",
       content:
-        "Para el sector sanitario es fundamental tener turnos bien organizados. Sesame nos da la tranquilidad que necesitamos.",
+        "Para el sector sanitario es fundamental tener turnos bien organizados. Tikneo nos da la tranquilidad que necesitamos.",
       rating: 5,
     },
   ];
@@ -187,7 +187,7 @@ export default function ShiftPlanningPage() {
                       <Calendar className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Sesame Turnos
+                      Tikneo Turnos
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Semana 15</div>
@@ -312,10 +312,10 @@ export default function ShiftPlanningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Sesame para planificar turnos?
+                ¿Por qué elegir Tikneo para planificar turnos?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Sesame para organizar los
+                Más de 14.000 empresas confían en Tikneo para organizar los
                 turnos de sus equipos de forma eficiente y sin conflictos.
               </p>
 
@@ -376,7 +376,7 @@ export default function ShiftPlanningPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              turnos con Sesame
+              turnos con Tikneo
             </p>
           </div>
 
@@ -424,7 +424,7 @@ export default function ShiftPlanningPage() {
                 ¿Puedo crear turnos rotativos automáticamente?
               </h3>
               <p className="text-gray-600">
-                Sí, Sesame permite crear patrones de turnos rotativos que se
+                Sí, Tikneo permite crear patrones de turnos rotativos que se
                 aplican automáticamente. Puedes configurar turnos de mañana,
                 tarde y noche que roten entre los empleados según tus reglas.
               </p>
@@ -435,7 +435,7 @@ export default function ShiftPlanningPage() {
                 ¿Cómo gestiono las vacaciones y ausencias en los turnos?
               </h3>
               <p className="text-gray-600">
-                Sesame integra la gestión de vacaciones con la planificación de
+                Tikneo integra la gestión de vacaciones con la planificación de
                 turnos. Cuando un empleado solicita vacaciones, el sistema
                 automáticamente busca cobertura y ajusta los turnos afectados.
               </p>
@@ -446,7 +446,7 @@ export default function ShiftPlanningPage() {
                 ¿Puedo cambiar turnos de última hora?
               </h3>
               <p className="text-gray-600">
-                Por supuesto. Sesame permite cambios de turno en tiempo real con
+                Por supuesto. Tikneo permite cambios de turno en tiempo real con
                 notificaciones automáticas a los empleados afectados. El sistema
                 busca automáticamente sustitutos disponibles.
               </p>
@@ -468,7 +468,7 @@ export default function ShiftPlanningPage() {
                 ¿Funciona para empresas con múltiples ubicaciones?
               </h3>
               <p className="text-gray-600">
-                Absolutamente. Sesame permite gestionar turnos para múltiples
+                Absolutamente. Tikneo permite gestionar turnos para múltiples
                 centros de trabajo, sucursales o departamentos desde una sola
                 plataforma centralizada.
               </p>

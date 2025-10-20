@@ -13,20 +13,20 @@ export default function PricingPage() {
       minMonthly: "78,75 €",
       minAnnual: "71,25 €",
       features: [
-        "Time Tracking",
-        "Absences and Vacations",
-        "Reports and Statistics",
-        "Admin and Employee Portal",
+        "Control horario",
+        "Ausencias y Vacaciones",
+        "Informes y Estadísticas",
+        "Portal de Administrador y Empleado",
         "Automatizaciones",
         "Avisos",
-        "Shifts",
-        "Task Manager",
-        "Time Bank",
-        "Document Manager",
-        "Integrations",
+        "Turnos",
+        "Gestor de Tareas",
+        "Bolsa de Horas",
+        "Gestor Documental",
+        "Integraciones",
         "Face ID",
         "Firma avanzada (2 por empleado/año)",
-        "Whistleblower Channel",
+        "Canal de Denuncias",
       ],
       popular: false,
     },
@@ -211,18 +211,18 @@ export default function PricingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Pricing and Plans
+              Precios y Planes
             </h1>
 
             {/* Toggle */}
             <div className="flex items-center justify-center mb-12">
-              <span className="text-gray-600 mr-4">Annual</span>
+              <span className="text-gray-600 mr-4">Anual</span>
               <div className="relative">
                 <input type="checkbox" className="sr-only" />
                 <div className="w-14 h-7 bg-gray-200 rounded-full shadow-inner"></div>
                 <div className="absolute top-1 left-1 w-5 h-5 bg-white rounded-full shadow transform transition-transform"></div>
               </div>
-              <span className="text-gray-600 ml-4">Monthly</span>
+              <span className="text-gray-600 ml-4">Mensual</span>
             </div>
           </div>
         </div>
@@ -534,7 +534,7 @@ export default function PricingPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Descarga la <strong>presentación de Sesame</strong> y descubre todos
+            Descarga la <strong>presentación de Tikneo</strong> y descubre todos
             los planes y funcionalidades
           </h2>
 
@@ -566,13 +566,13 @@ export default function PricingPage() {
               <p className="text-gray-600">
                 Si. En el periodo de prueba puedes disfrutar{" "}
                 <strong>durante 14 días</strong> de todas las funcionalidades de
-                Sesame gratis y sin necesidad de introducir datos de pago.
+                Tikneo gratis y sin necesidad de introducir datos de pago.
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Cuánto cuesta Sesame?
+                ¿Cuánto cuesta Tikneo?
               </h3>
               <p className="text-gray-600 mb-4">
                 Tenemos dos planes distintos y dos formas de pago: anual y
@@ -581,7 +581,7 @@ export default function PricingPage() {
               </p>
               <ul className="text-gray-600 space-y-2">
                 <li>
-                  <strong>Sesame Time Advanced</strong>
+                  <strong>Tikneo Time Advanced</strong>
                 </li>
                 <li>
                   El <strong>plan de pago anual</strong> serían 4,50€ al mes por
@@ -604,7 +604,7 @@ export default function PricingPage() {
               </p>
               <ul className="text-gray-600 mt-2 space-y-1">
                 <li>
-                  <strong>Sesame Time Advanced</strong>
+                  <strong>Tikneo Time Advanced</strong>
                 </li>
                 <li>Mensual – desde 75€</li>
                 <li>Anual – desde 67,50€</li>
@@ -613,10 +613,10 @@ export default function PricingPage() {
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Puedo pagar Sesame al mes?
+                ¿Puedo pagar Tikneo al mes?
               </h3>
               <p className="text-gray-600">
-                Por supuesto. En todos los planes de Sesame tienes la opción de
+                Por supuesto. En todos los planes de Tikneo tienes la opción de
                 pagar de forma <strong>mensual o anual</strong>. Sin embargo,
                 recuerda que si pagas de forma anual tendrás un{" "}
                 <strong>descuento importante.</strong>
@@ -628,7 +628,7 @@ export default function PricingPage() {
                 ¿Cuál es el plan de precios adecuado para mi?
               </h3>
               <p className="text-gray-600">
-                En Sesame entendemos que cada empresa es un mundo y, por tanto,
+                En Tikneo entendemos que cada empresa es un mundo y, por tanto,
                 tiene unas necesidades distintas. Si no sabes con seguridad cuál
                 es el plan de precios que mejor encaja con tu negocio{" "}
                 <strong>te recomendamos hablar con nuestros agentes</strong>.
@@ -643,7 +643,7 @@ export default function PricingPage() {
               </h3>
               <p className="text-gray-600">
                 Sí, podrás cancelar tus suscripción enviando un correo a
-                cancelacion@sesametime.com para hacer la solicitud. También
+                cancelacion@Tikneotime.com para hacer la solicitud. También
                 podrás contactar con nuestro servicio de soporte para solicitar
                 la gestión de la cancelación.
               </p>

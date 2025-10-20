@@ -5,11 +5,11 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SesameTime - Time tracking that simplifies your business",
+  title: "Tikneo - Control horario que simplifica tu negocio",
   description:
-    "Optimize employee management saving time, effort and money. Time tracking, shift management, task planning and much more.",
+    "Optimiza la gestión de empleados ahorrando tiempo, esfuerzo y dinero. Control horario, gestión de turnos, planificación de tareas y mucho más.",
   keywords:
-    "time tracking, employee management, clock in, shifts, payroll, human resources",
+    "control horario, gestión de empleados, fichar, turnos, nóminas, recursos humanos",
 };
 
 export default function RootLayout({
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={inter.className}>{children}</body>
     </html>
   );

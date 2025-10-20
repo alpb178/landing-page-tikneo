@@ -118,7 +118,7 @@ export default function TaskPlanningPage() {
       position: "CTO",
       company: "TechStart",
       content:
-        "Sesame nos ha permitido gestionar nuestros sprints de desarrollo de forma mucho más eficiente. La visibilidad del progreso es excelente.",
+        "Tikneo nos ha permitido gestionar nuestros sprints de desarrollo de forma mucho más eficiente. La visibilidad del progreso es excelente.",
       rating: 5,
     },
     {
@@ -134,7 +134,7 @@ export default function TaskPlanningPage() {
       position: "Gerente de Proyectos",
       company: "Consulting Pro",
       content:
-        "Para proyectos de consultoría es fundamental el seguimiento del tiempo. Sesame nos da la precisión que necesitamos para facturar correctamente.",
+        "Para proyectos de consultoría es fundamental el seguimiento del tiempo. Tikneo nos da la precisión que necesitamos para facturar correctamente.",
       rating: 5,
     },
   ];
@@ -187,7 +187,7 @@ export default function TaskPlanningPage() {
                       <Target className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Sesame Tareas
+                      Tikneo Tareas
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Proyecto Activo</div>
@@ -317,10 +317,10 @@ export default function TaskPlanningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Sesame para gestionar tareas?
+                ¿Por qué elegir Tikneo para gestionar tareas?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Sesame para organizar el
+                Más de 14.000 empresas confían en Tikneo para organizar el
                 trabajo de sus equipos y alcanzar objetivos de forma eficiente.
               </p>
 
@@ -379,7 +379,7 @@ export default function TaskPlanningPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              tareas con Sesame
+              tareas con Tikneo
             </p>
           </div>
 
@@ -427,7 +427,7 @@ export default function TaskPlanningPage() {
                 ¿Puedo crear proyectos con múltiples tareas y dependencias?
               </h3>
               <p className="text-gray-600">
-                Sí, Sesame permite crear proyectos complejos con tareas
+                Sí, Tikneo permite crear proyectos complejos con tareas
                 interdependientes, fechas límite y seguimiento de progreso.
                 Puedes establecer dependencias entre tareas y el sistema te
                 alertará sobre posibles retrasos.
@@ -451,7 +451,7 @@ export default function TaskPlanningPage() {
                 ¿Se integra con metodologías ágiles como Scrum?
               </h3>
               <p className="text-gray-600">
-                Absolutamente. Sesame incluye plantillas para metodologías
+                Absolutamente. Tikneo incluye plantillas para metodologías
                 ágiles, gestión de sprints, historias de usuario y
                 retrospectivas. Puedes adaptar el flujo de trabajo a tu
                 metodología preferida.
@@ -474,7 +474,7 @@ export default function TaskPlanningPage() {
                 ¿Cómo funciona la automatización de tareas?
               </h3>
               <p className="text-gray-600">
-                Sesame permite crear tareas recurrentes, automatizar
+                Tikneo permite crear tareas recurrentes, automatizar
                 aprobaciones, generar tareas basadas en eventos y configurar
                 flujos de trabajo que se ejecutan automáticamente según reglas
                 predefinidas.

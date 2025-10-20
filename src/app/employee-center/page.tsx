@@ -118,7 +118,7 @@ export default function CentroEmpleadosPage() {
       position: "Empleada",
       company: "TechCorp",
       content:
-        "El centro de empleados de Sesame es increíble. Puedo consultar mis horas, solicitar vacaciones y descargar mis nóminas desde el móvil. Todo súper fácil.",
+        "El centro de empleados de Tikneo es increíble. Puedo consultar mis horas, solicitar vacaciones y descargar mis nóminas desde el móvil. Todo súper fácil.",
       rating: 5,
     },
     {
@@ -188,7 +188,7 @@ export default function CentroEmpleadosPage() {
                     <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
                       <Users className="w-4 h-4 text-white" />
                     </div>
-                    <span className="font-bold text-gray-900">Mi Sesame</span>
+                    <span className="font-bold text-gray-900">Mi Tikneo</span>
                   </div>
                   <div className="text-sm text-gray-500">Empleado</div>
                 </div>
@@ -307,7 +307,7 @@ export default function CentroEmpleadosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir el centro de empleados de Sesame?
+                ¿Por qué elegir el centro de empleados de Tikneo?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Más de 14.000 empresas confían en nuestro centro de empleados

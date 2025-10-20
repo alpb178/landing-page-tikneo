@@ -7,7 +7,7 @@ export default function VisualElements() {
       <div className="w-32 h-56 bg-gray-900 rounded-2xl p-2 shadow-2xl">
         <div className="w-full h-full bg-white rounded-xl flex flex-col">
           <div className="h-8 bg-blue-600 rounded-t-xl flex items-center justify-center">
-            <span className="text-white text-xs font-bold">Sesame</span>
+            <span className="text-white text-xs font-bold">Tikneo</span>
           </div>
           <div className="flex-1 p-3">
             <div className="w-full h-3 bg-gray-200 rounded mb-2"></div>
@@ -24,7 +24,7 @@ export default function VisualElements() {
       <div className="w-40 h-56 bg-gray-800 rounded-xl p-2 shadow-2xl">
         <div className="w-full h-full bg-white rounded-lg flex flex-col">
           <div className="h-6 bg-green-600 rounded-t-lg flex items-center justify-center">
-            <span className="text-white text-xs font-bold">Sesame Wall</span>
+            <span className="text-white text-xs font-bold">Tikneo Wall</span>
           </div>
           <div className="flex-1 p-4">
             <div className="w-full h-4 bg-gray-200 rounded mb-3"></div>

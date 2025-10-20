@@ -6,13 +6,13 @@ export default function ClockInMethods() {
       icon: Smartphone,
       title: "Mobile APP",
       description:
-        "Empleados y administradores usan Sesame APP cada día para registrar su jornada, pedir vacaciones o comunicarse con su empresa. Además, las notificaciones push y los recordatorios harán más fácil la gestión de los tiempos en la empresa y mantendrán al equipo siempre informado.",
+        "Empleados y administradores usan Tikneo APP cada día para registrar su jornada, pedir vacaciones o comunicarse con su empresa. Además, las notificaciones push y los recordatorios harán más fácil la gestión de los tiempos en la empresa y mantendrán al equipo siempre informado.",
       link: "Más detalles",
       image: (
         <div className="w-32 h-56 bg-gray-900 rounded-2xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-xl flex flex-col">
             <div className="h-8 bg-blue-600 rounded-t-xl flex items-center justify-center">
-              <span className="text-white text-xs font-bold">Sesame</span>
+              <span className="text-white text-xs font-bold">Tikneo</span>
             </div>
             <div className="flex-1 p-3">
               <div className="w-full h-3 bg-gray-200 rounded mb-2"></div>
@@ -30,13 +30,13 @@ export default function ClockInMethods() {
       icon: Tablet,
       title: "Tablet de fichaje",
       description:
-        "Con Sesame Wall convierte cualquier tablet en un punto de fichaje. Una gran alternativa a los sistemas de fichaje tradicionales, más económica y lista para utilizar en minutos.",
+        "Con Tikneo Wall convierte cualquier tablet en un punto de fichaje. Una gran alternativa a los sistemas de fichaje tradicionales, más económica y lista para utilizar en minutos.",
       link: "Más detalles",
       image: (
         <div className="w-40 h-56 bg-gray-800 rounded-xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-lg flex flex-col">
             <div className="h-6 bg-green-600 rounded-t-lg flex items-center justify-center">
-              <span className="text-white text-xs font-bold">Sesame Wall</span>
+              <span className="text-white text-xs font-bold">Tikneo Wall</span>
             </div>
             <div className="flex-1 p-4">
               <div className="w-full h-4 bg-gray-200 rounded mb-3"></div>

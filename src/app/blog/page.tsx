@@ -8,7 +8,7 @@ export default function BlogPage() {
       title: "Cómo implementar el control horario en tu empresa paso a paso",
       excerpt:
         "Guía completa para implementar un sistema de control horario efectivo que cumpla con la normativa y mejore la productividad de tu equipo.",
-      author: "Equipo Sesame",
+      author: "Equipo Tikneo",
       date: "15 Enero 2025",
       category: "Control Horario",
       readTime: "5 min",
@@ -89,7 +89,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Blog de Sesame
+              Blog de Tikneo
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Descubre las últimas tendencias en gestión de recursos humanos,
