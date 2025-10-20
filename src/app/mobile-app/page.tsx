@@ -41,7 +41,7 @@ export default function AppMovil() {
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
                 App móvil
                 <br />
-                <span className="text-blue-600">Sesame</span>
+                <span className="text-blue-600">Tikneo</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
                 Descarga nuestra app de control horario tanto en iOS como
@@ -63,7 +63,7 @@ export default function AppMovil() {
               <div className="w-64 h-96 bg-gray-900 rounded-3xl p-4 shadow-2xl">
                 <div className="w-full h-full bg-white rounded-2xl flex flex-col">
                   <div className="h-12 bg-blue-600 rounded-t-2xl flex items-center justify-center">
-                    <span className="text-white text-lg font-bold">Sesame</span>
+                    <span className="text-white text-lg font-bold">Tikneo</span>
                   </div>
                   <div className="flex-1 p-6">
                     <div className="w-full h-4 bg-gray-200 rounded mb-4"></div>

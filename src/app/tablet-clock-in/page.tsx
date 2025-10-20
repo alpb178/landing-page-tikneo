@@ -118,7 +118,7 @@ export default function TabletClockInPage() {
       position: "Director de Operaciones",
       company: "Constructora Plus",
       content:
-        "El tablet de fichaje de Sesame ha sido una revolución en nuestras obras. Los trabajadores fichan en segundos y nosotros tenemos control total.",
+        "El tablet de fichaje de Tikneo ha sido una revolución en nuestras obras. Los trabajadores fichan en segundos y nosotros tenemos control total.",
       rating: 5,
     },
     {
@@ -188,7 +188,7 @@ export default function TabletClockInPage() {
                     <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
                       <Tablet className="w-4 h-4 text-white" />
                     </div>
-                    <span className="font-bold text-gray-900">Sesame Wall</span>
+                    <span className="font-bold text-gray-900">Tikneo Wall</span>
                   </div>
                   <div className="text-sm text-gray-500">Online</div>
                 </div>
@@ -318,7 +318,7 @@ export default function TabletClockInPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Sesame Wall?
+                ¿Por qué elegir Tikneo Wall?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Más de 14.000 empresas confían en nuestros tablets de fichaje
@@ -376,7 +376,7 @@ export default function TabletClockInPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su fichaje con
-              Sesame Wall
+              Tikneo Wall
             </p>
           </div>
 
@@ -421,7 +421,7 @@ export default function TabletClockInPage() {
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Qué tablet necesito para usar Sesame Wall?
+                ¿Qué tablet necesito para usar Tikneo Wall?
               </h3>
               <p className="text-gray-600">
                 Cualquier tablet Android o iPad funciona perfectamente.

@@ -107,7 +107,7 @@ export default function VacationManagerPage() {
       position: "Directora de RRHH",
       company: "TechCorp",
       content:
-        "El gestor de vacaciones de Sesame nos ha ahorrado horas semanales. Los empleados pueden solicitar desde el móvil y nosotros aprobamos en segundos.",
+        "El gestor de vacaciones de Tikneo nos ha ahorrado horas semanales. Los empleados pueden solicitar desde el móvil y nosotros aprobamos en segundos.",
       rating: 5,
     },
     {
@@ -176,7 +176,7 @@ export default function VacationManagerPage() {
                       <Calendar className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Sesame Vacaciones
+                      Tikneo Vacaciones
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Enero 2025</div>
@@ -301,10 +301,10 @@ export default function VacationManagerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Sesame para gestionar vacaciones?
+                ¿Por qué elegir Tikneo para gestionar vacaciones?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Sesame para gestionar las
+                Más de 14.000 empresas confían en Tikneo para gestionar las
                 vacaciones de sus equipos de forma eficiente y sin errores.
               </p>
 
@@ -359,7 +359,7 @@ export default function VacationManagerPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              vacaciones con Sesame
+              vacaciones con Tikneo
             </p>
           </div>
 
@@ -407,7 +407,7 @@ export default function VacationManagerPage() {
                 ¿Puedo configurar diferentes tipos de ausencias?
               </h3>
               <p className="text-gray-600">
-                Sí, Sesame permite configurar múltiples tipos de ausencias:
+                Sí, Tikneo permite configurar múltiples tipos de ausencias:
                 vacaciones, días personales, enfermedad, formación, etc. Cada
                 tipo puede tener sus propias reglas y políticas.
               </p>

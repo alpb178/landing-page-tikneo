@@ -170,7 +170,7 @@ export default function WebPlatform() {
                       Access URL
                     </span>
                     <span className="text-blue-600 font-mono">
-                      app.sesametime.com
+                      app.Tikneotime.com
                     </span>
                   </div>
                 </div>

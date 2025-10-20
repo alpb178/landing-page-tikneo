@@ -44,11 +44,11 @@ export default function Support() {
             </h3>
 
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              ¿Quieres que te ayudemos a configurar Sesame? Estamos disponibles
+              ¿Quieres que te ayudemos a configurar Tikneo? Estamos disponibles
               a través de chat, email o teléfono. Te ayudamos a resolver tus
               dudas y a sacar el máximo partido a todas las funcionalidades de
-              Sesame. Queremos que te sientas cómodo y seguro, desde el primer
-              día. Queremos que usar Sesame sea tan sencillo como usarlo en el
+              Tikneo. Queremos que te sientas cómodo y seguro, desde el primer
+              día. Queremos que usar Tikneo sea tan sencillo como usarlo en el
               día a día.
             </p>
 
