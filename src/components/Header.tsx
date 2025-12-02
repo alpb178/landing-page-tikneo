@@ -53,12 +53,13 @@ export default function Header() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-20 h-20 sm:w-8 sm:h-8 bg-teal-500 rounded-full flex items-center justify-center mr-2">
+              <div className=" w-8 h-8 md:w-10 md:h-10  bg-teal-500 rounded-full flex items-center justify-center mr-2">
                 <Image
                   src="/images/image.png"
                   alt="Humancore"
-                  width={100}
-                  height={100}
+                  width={128}
+                  height={128}
+                  className="w-full h-full object-contain rounded-full"
                 />
               </div>
               <Link href="/">
