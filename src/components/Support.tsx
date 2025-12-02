@@ -44,12 +44,12 @@ export default function Support() {
             </h3>
 
             <p className="text-lg text-gray-300 mb-6 leading-relaxed">
-              ¿Quieres que te ayudemos a configurar Tikneo? Estamos disponibles
-              a través de chat, email o teléfono. Te ayudamos a resolver tus
-              dudas y a sacar el máximo partido a todas las funcionalidades de
-              Tikneo. Queremos que te sientas cómodo y seguro, desde el primer
-              día. Queremos que usar Tikneo sea tan sencillo como usarlo en el
-              día a día.
+              ¿Quieres que te ayudemos a configurar Humancore? Estamos
+              disponibles a través de chat, email o teléfono. Te ayudamos a
+              resolver tus dudas y a sacar el máximo partido a todas las
+              funcionalidades de Humancore. Queremos que te sientas cómodo y
+              seguro, desde el primer día. Queremos que usar Humancore sea tan
+              sencillo como usarlo en el día a día.
             </p>
 
             <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center">

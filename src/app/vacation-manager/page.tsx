@@ -107,7 +107,7 @@ export default function VacationManagerPage() {
       position: "Directora de RRHH",
       company: "TechCorp",
       content:
-        "El gestor de vacaciones de Tikneo nos ha ahorrado horas semanales. Los empleados pueden solicitar desde el móvil y nosotros aprobamos en segundos.",
+        "El gestor de vacaciones de Humancore nos ha ahorrado horas semanales. Los empleados pueden solicitar desde el móvil y nosotros aprobamos en segundos.",
       rating: 5,
     },
     {
@@ -150,16 +150,7 @@ export default function VacationManagerPage() {
                 transparente y sin errores. Desde solicitudes hasta
                 aprobaciones, todo en una sola plataforma.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
+
               <div className="mt-6 flex items-center text-sm text-gray-600">
                 <Check className="h-5 w-5 text-green-500 mr-2" />
                 <span>
@@ -176,7 +167,7 @@ export default function VacationManagerPage() {
                       <Calendar className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Tikneo Vacaciones
+                      Humancore Vacaciones
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Enero 2025</div>
@@ -301,10 +292,10 @@ export default function VacationManagerPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Tikneo para gestionar vacaciones?
+                ¿Por qué elegir Humancore para gestionar vacaciones?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Tikneo para gestionar las
+                Más de cientos empresas confían en Humancore para gestionar las
                 vacaciones de sus equipos de forma eficiente y sin errores.
               </p>
 
@@ -359,7 +350,7 @@ export default function VacationManagerPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              vacaciones con Tikneo
+              vacaciones con Humancore
             </p>
           </div>
 
@@ -407,7 +398,7 @@ export default function VacationManagerPage() {
                 ¿Puedo configurar diferentes tipos de ausencias?
               </h3>
               <p className="text-gray-600">
-                Sí, Tikneo permite configurar múltiples tipos de ausencias:
+                Sí, Humancore permite configurar múltiples tipos de ausencias:
                 vacaciones, días personales, enfermedad, formación, etc. Cada
                 tipo puede tener sus propias reglas y políticas.
               </p>
@@ -470,17 +461,6 @@ export default function VacationManagerPage() {
             Únete a miles de empresas que ya gestionan vacaciones sin
             complicaciones
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 

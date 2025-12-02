@@ -118,7 +118,7 @@ export default function CentroEmpleadosPage() {
       position: "Empleada",
       company: "TechCorp",
       content:
-        "El centro de empleados de Tikneo es increíble. Puedo consultar mis horas, solicitar vacaciones y descargar mis nóminas desde el móvil. Todo súper fácil.",
+        "El centro de empleados de Humancore es increíble. Puedo consultar mis horas, solicitar vacaciones y descargar mis nóminas desde el móvil. Todo súper fácil.",
       rating: 5,
     },
     {
@@ -163,16 +163,7 @@ export default function CentroEmpleadosPage() {
                 laboral desde un portal web y app móvil intuitivos. Autogestión,
                 transparencia y satisfacción garantizada.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
+
               <div className="mt-6 flex items-center text-sm text-gray-600">
                 <Check className="h-5 w-5 text-green-500 mr-2" />
                 <span>
@@ -188,7 +179,9 @@ export default function CentroEmpleadosPage() {
                     <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center mr-3">
                       <Users className="w-4 h-4 text-white" />
                     </div>
-                    <span className="font-bold text-gray-900">Mi Tikneo</span>
+                    <span className="font-bold text-gray-900">
+                      Mi Humancore
+                    </span>
                   </div>
                   <div className="text-sm text-gray-500">Empleado</div>
                 </div>
@@ -307,10 +300,10 @@ export default function CentroEmpleadosPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir el centro de empleados de Tikneo?
+                ¿Por qué elegir el centro de empleados de Humancore?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en nuestro centro de empleados
+                Más de cientos empresas confían en nuestro centro de empleados
                 para mejorar la experiencia de sus equipos.
               </p>
 
@@ -476,17 +469,6 @@ export default function CentroEmpleadosPage() {
             Únete a miles de empresas que ya tienen empleados más satisfechos y
             autónomos
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 

@@ -18,8 +18,8 @@ export default function Compliance() {
               Cumplimiento legal garantizado
             </h3>
             <p className="text-lg text-gray-600 mb-8">
-              Tikneo cumple con todas las normativas laborales y de protección
-              de datos. Tu empresa estará siempre en regla.
+              Humancore cumple con todas las normativas laborales y de
+              protección de datos. Tu empresa estará siempre en regla.
             </p>
             <div className="space-y-4">
               <div className="flex items-center">

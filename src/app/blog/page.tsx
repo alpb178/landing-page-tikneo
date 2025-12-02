@@ -8,7 +8,7 @@ export default function BlogPage() {
       title: "Cómo implementar el control horario en tu empresa paso a paso",
       excerpt:
         "Guía completa para implementar un sistema de control horario efectivo que cumpla con la normativa y mejore la productividad de tu equipo.",
-      author: "Equipo Tikneo",
+      author: "Equipo Humancore",
       date: "15 Enero 2025",
       category: "Control Horario",
       readTime: "5 min",
@@ -89,7 +89,7 @@ export default function BlogPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Blog de Tikneo
+              Blog de Humancore
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               Descubre las últimas tendencias en gestión de recursos humanos,
@@ -213,29 +213,6 @@ export default function BlogPage() {
                 </div>
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Newsletter Section */}
-      <section className="py-16 bg-blue-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-white mb-4">
-            Mantente al día con las últimas tendencias
-          </h2>
-          <p className="text-xl text-blue-100 mb-8">
-            Suscríbete a nuestro newsletter y recibe los mejores artículos sobre
-            RRHH y productividad
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Tu email"
-              className="flex-1 px-4 py-3 rounded-lg border-0 focus:ring-2 focus:ring-white"
-            />
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
-              Suscribirse
-            </button>
           </div>
         </div>
       </section>

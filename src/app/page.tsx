@@ -6,6 +6,7 @@ import ClockInMethods from "@/components/ClockInMethods";
 import Integrations from "@/components/Integrations";
 import Compliance from "@/components/Compliance";
 import Footer from "@/components/Footer";
+import { Metadata } from "next";
 
 export default function Home() {
   return (

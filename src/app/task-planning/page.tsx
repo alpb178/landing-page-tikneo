@@ -118,7 +118,7 @@ export default function TaskPlanningPage() {
       position: "CTO",
       company: "TechStart",
       content:
-        "Tikneo nos ha permitido gestionar nuestros sprints de desarrollo de forma mucho más eficiente. La visibilidad del progreso es excelente.",
+        "Humancore nos ha permitido gestionar nuestros sprints de desarrollo de forma mucho más eficiente. La visibilidad del progreso es excelente.",
       rating: 5,
     },
     {
@@ -134,7 +134,7 @@ export default function TaskPlanningPage() {
       position: "Gerente de Proyectos",
       company: "Consulting Pro",
       content:
-        "Para proyectos de consultoría es fundamental el seguimiento del tiempo. Tikneo nos da la precisión que necesitamos para facturar correctamente.",
+        "Para proyectos de consultoría es fundamental el seguimiento del tiempo. Humancore nos da la precisión que necesitamos para facturar correctamente.",
       rating: 5,
     },
   ];
@@ -161,16 +161,7 @@ export default function TaskPlanningPage() {
                 Desde proyectos complejos hasta tareas diarias, maximiza la
                 productividad y cumple objetivos.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
+
               <div className="mt-6 flex items-center text-sm text-gray-600">
                 <Check className="h-5 w-5 text-green-500 mr-2" />
                 <span>
@@ -187,7 +178,7 @@ export default function TaskPlanningPage() {
                       <Target className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Tikneo Tareas
+                      Humancore Tareas
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Proyecto Activo</div>
@@ -317,10 +308,10 @@ export default function TaskPlanningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Tikneo para gestionar tareas?
+                ¿Por qué elegir Humancore para gestionar tareas?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Tikneo para organizar el
+                Más de cientos empresas confían en Humancore para organizar el
                 trabajo de sus equipos y alcanzar objetivos de forma eficiente.
               </p>
 
@@ -379,7 +370,7 @@ export default function TaskPlanningPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              tareas con Tikneo
+              tareas con Humancore
             </p>
           </div>
 
@@ -427,7 +418,7 @@ export default function TaskPlanningPage() {
                 ¿Puedo crear proyectos con múltiples tareas y dependencias?
               </h3>
               <p className="text-gray-600">
-                Sí, Tikneo permite crear proyectos complejos con tareas
+                Sí, Humancore permite crear proyectos complejos con tareas
                 interdependientes, fechas límite y seguimiento de progreso.
                 Puedes establecer dependencias entre tareas y el sistema te
                 alertará sobre posibles retrasos.
@@ -451,7 +442,7 @@ export default function TaskPlanningPage() {
                 ¿Se integra con metodologías ágiles como Scrum?
               </h3>
               <p className="text-gray-600">
-                Absolutamente. Tikneo incluye plantillas para metodologías
+                Absolutamente. Humancore incluye plantillas para metodologías
                 ágiles, gestión de sprints, historias de usuario y
                 retrospectivas. Puedes adaptar el flujo de trabajo a tu
                 metodología preferida.
@@ -474,7 +465,7 @@ export default function TaskPlanningPage() {
                 ¿Cómo funciona la automatización de tareas?
               </h3>
               <p className="text-gray-600">
-                Tikneo permite crear tareas recurrentes, automatizar
+                Humancore permite crear tareas recurrentes, automatizar
                 aprobaciones, generar tareas basadas en eventos y configurar
                 flujos de trabajo que se ejecutan automáticamente según reglas
                 predefinidas.
@@ -493,17 +484,6 @@ export default function TaskPlanningPage() {
           <p className="text-xl text-green-100 mb-8">
             Únete a miles de empresas que ya gestionan tareas de forma eficiente
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 

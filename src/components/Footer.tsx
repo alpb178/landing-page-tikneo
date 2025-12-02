@@ -126,7 +126,7 @@ export default function Footer() {
                   href="#"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  Condiciones de contratación Tikneo Finance
+                  Condiciones de contratación Humancore Finance
                 </a>
               </li>
               <li>
@@ -281,10 +281,6 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-4">¿Quieres saber más?</h3>
             <div className="space-y-4">
-              <button className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors">
-                Prueba gratuita durante 14 días
-              </button>
-              <p className="text-sm text-gray-300">Prueba gratis</p>
               <p className="text-sm text-gray-300">Más información</p>
             </div>
           </div>
@@ -329,8 +325,8 @@ export default function Footer() {
             </div>
             <div className="text-sm text-gray-300">
               <p>
-                Tikneo Labs S.L. dentro del Programa ICEX Next, ha contado con el
-                apoyo de ICEX y cofinanciación del fondo europeo FEDER.
+                Humancore Labs S.L. dentro del Programa ICEX Next, ha contado
+                con el apoyo de ICEX y cofinanciación del fondo europeo FEDER.
               </p>
               <p className="mt-2">
                 El propósito de este apoyo es contribuir al desarrollo
@@ -400,7 +396,9 @@ export default function Footer() {
             <div className="flex items-center space-x-4">
               <span className="text-sm text-gray-300">Español</span>
               <span className="text-sm text-gray-300">English</span>
-              <span className="text-sm text-gray-300">© 2025 Tikneotime</span>
+              <span className="text-sm text-gray-300">
+                © 2025 Humancoretime
+              </span>
             </div>
           </div>
         </div>
