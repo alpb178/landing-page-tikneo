@@ -21,13 +21,14 @@ export default function DemoPage() {
     {
       icon: BarChart3,
       title: "Descubre cómo aprovechar al máximo",
-      description: "Todas las funcionalidades con recorrido guiado por Tikneo",
+      description:
+        "Todas las funcionalidades con recorrido guiado por Humancore",
     },
     {
       icon: Users,
       title: "Nuestros expertos están listos",
       description:
-        "Para resolver todas tus dudas y enseñarte cómo adaptar Tikneo a las necesidades de tu empresa",
+        "Para resolver todas tus dudas y enseñarte cómo adaptar Humancore a las necesidades de tu empresa",
     },
   ];
 
@@ -36,7 +37,7 @@ export default function DemoPage() {
       icon: Settings,
       title: "Personalización",
       description:
-        "Cada demo se realiza con un experto de Tikneo y se adapta y personaliza a las necesidades y requerimientos de tu empresa.",
+        "Cada demo se realiza con un experto de Humancore y se adapta y personaliza a las necesidades y requerimientos de tu empresa.",
     },
     {
       icon: Shield,
@@ -48,7 +49,7 @@ export default function DemoPage() {
       icon: CheckCircle,
       title: "Conocimiento en primera persona",
       description:
-        "Podrás conocer en primera persona cómo funciona Tikneo y qué solución es la más adecuada para tu empresa",
+        "Podrás conocer en primera persona cómo funciona Humancore y qué solución es la más adecuada para tu empresa",
     },
   ];
 
@@ -80,8 +81,8 @@ export default function DemoPage() {
             {/* Top Banner */}
             <div className="bg-blue-600 text-white py-2 px-4 rounded-full inline-block mb-8">
               <span className="text-sm font-medium">
-                📢 Ficha a tu manera, ficha con Tikneo. Cumple con la nueva ley
-                de fichaje digital sin cambiar tu rutina | Descubre cómo
+                📢 Ficha a tu manera, ficha con Humancore. Cumple con la nueva
+                ley de fichaje digital sin cambiar tu rutina | Descubre cómo
               </span>
             </div>
 
@@ -91,9 +92,9 @@ export default function DemoPage() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto">
-              Conoce <strong>Tikneo desde dentro</strong> y descubre cómo sacar
-              todo el partido para todas las áreas de tu empresa con nuestra
-              consultoría personalizada
+              Conoce <strong>Humancore desde dentro</strong> y descubre cómo
+              sacar todo el partido para todas las áreas de tu empresa con
+              nuestra consultoría personalizada
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -168,8 +169,8 @@ export default function DemoPage() {
             Revoluciona la experiencia de tu equipo e impulsa tu negocio.
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Solicita una demostración gratuita de Tikneo y te mostraremos cómo
-            transformar todos sus procesos de RRHH
+            Solicita una demostración gratuita de Humancore y te mostraremos
+            cómo transformar todos sus procesos de RRHH
           </p>
           <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
             Solicitar demo gratuita

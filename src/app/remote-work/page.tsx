@@ -96,7 +96,7 @@ export default function RemoteWork() {
               <p className="text-xl text-gray-600 mb-8">
                 Trabaja en la oficina, en casa o en movimiento... ¡Tenemos una
                 aplicación para ti! El teletrabajo ya no es el futuro, ¡es el
-                presente! Optimiza la gestión del teletrabajo con Tikneo.
+                presente! Optimiza la gestión del teletrabajo con Humancore.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center">
@@ -340,7 +340,7 @@ export default function RemoteWork() {
             <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl mx-auto">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
                 Consiento el tratamiento de mis datos para recibir información
-                comercial de Tikneo
+                comercial de Humancore
               </h3>
               <div className="flex items-center justify-center">
                 <div className="text-3xl font-bold text-green-600 mr-4">

@@ -65,33 +65,6 @@ export default function TimeTrackingSoftwarePage() {
     "Soporte técnico 24/7",
   ];
 
-  const testimonials = [
-    {
-      name: "María González",
-      position: "Directora de RRHH",
-      company: "TechCorp",
-      content:
-        "Tikneo nos ha permitido automatizar completamente el control horario. Ahorramos 10 horas semanales en tareas administrativas.",
-      rating: 5,
-    },
-    {
-      name: "Carlos Ruiz",
-      position: "CEO",
-      company: "InnovateLab",
-      content:
-        "La facilidad de uso es increíble. Nuestros empleados pueden fichar desde cualquier lugar y nosotros tenemos control total.",
-      rating: 5,
-    },
-    {
-      name: "Ana Martínez",
-      position: "Gerente",
-      company: "RetailPlus",
-      content:
-        "Los informes son muy detallados y nos ayudan a optimizar la productividad del equipo. Excelente herramienta.",
-      rating: 5,
-    },
-  ];
-
   return (
     <main className="min-h-screen bg-white">
       <Header />
@@ -102,7 +75,7 @@ export default function TimeTrackingSoftwarePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                📢 Ficha a tu manera, ficha con Tikneo.
+                📢 Ficha a tu manera, ficha con Humancore.
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                 Software de control horario
@@ -114,68 +87,6 @@ export default function TimeTrackingSoftwarePage() {
                 rutina. Control horario completo, multidispositivo y con todas
                 las garantías legales.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Contacta con ventas
-                </button>
-              </div>
-              <div className="mt-6 flex items-center text-sm text-gray-600">
-                <Shield className="h-5 w-5 text-green-500 mr-2" />
-                <span>
-                  Sin compromiso • Sin tarjeta de crédito • Configuración en 5
-                  minutos
-                </span>
-              </div>
-            </div>
-
-            <div className="relative">
-              <div className="bg-white rounded-2xl shadow-2xl p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <div className="flex items-center">
-                    <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center mr-3">
-                      <div className="w-4 h-4 bg-white rounded-sm"></div>
-                    </div>
-                    <span className="font-bold text-gray-900">Tikneo</span>
-                  </div>
-                  <div className="text-sm text-gray-500">09:45</div>
-                </div>
-
-                <div className="space-y-4">
-                  <div className="bg-gray-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-gray-900">
-                        Control horario
-                      </span>
-                      <span className="text-sm text-green-600">● Online</span>
-                    </div>
-                    <div className="text-sm text-gray-600">
-                      <p>Entrada: 08:30</p>
-                      <p>Salida: 17:30</p>
-                      <p>Horas trabajadas: 8h 00min</p>
-                    </div>
-                  </div>
-
-                  <div className="bg-blue-50 rounded-lg p-4">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="font-semibold text-gray-900">
-                        Empleados activos
-                      </span>
-                      <span className="text-sm text-blue-600">12/15</span>
-                    </div>
-                    <div className="flex space-x-2">
-                      <div className="w-8 h-8 bg-blue-500 rounded-full"></div>
-                      <div className="w-8 h-8 bg-green-500 rounded-full"></div>
-                      <div className="w-8 h-8 bg-purple-500 rounded-full"></div>
-                      <div className="w-8 h-8 bg-orange-500 rounded-full"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -223,10 +134,10 @@ export default function TimeTrackingSoftwarePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Tikneo para tu control horario?
+                ¿Por qué elegir Humancore para tu control horario?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Tikneo para gestionar el
+                Más de cientos empresas confían en Humancore para gestionar el
                 tiempo de sus empleados de forma eficiente y legal.
               </p>
 
@@ -278,50 +189,6 @@ export default function TimeTrackingSoftwarePage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Lo que dicen nuestros clientes
-            </h2>
-            <p className="text-lg text-gray-600">
-              Miles de empresas ya han transformado su gestión del tiempo con
-              Tikneo
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-gray-50 rounded-xl p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <StarIcon
-                      key={i}
-                      className="h-5 w-5 text-yellow-400 fill-current"
-                    />
-                  ))}
-                </div>
-                <p className="text-gray-700 mb-6 italic">
-                  &quot;{testimonial.content}&quot;
-                </p>
-                <div>
-                  <div className="font-semibold text-gray-900">
-                    {testimonial.name}
-                  </div>
-                  <div className="text-sm text-gray-600">
-                    {testimonial.position}
-                  </div>
-                  <div className="text-sm text-blue-600">
-                    {testimonial.company}
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -336,18 +203,18 @@ export default function TimeTrackingSoftwarePage() {
               </h3>
               <p className="text-gray-600">
                 Sí, desde mayo de 2019 es obligatorio para todas las empresas
-                registrar la jornada diaria de sus empleados. Tikneo te ayuda a
-                cumplir con esta normativa de forma automática.
+                registrar la jornada diaria de sus empleados. Humancore te ayuda
+                a cumplir con esta normativa de forma automática.
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Puedo usar Tikneo desde el móvil?
+                ¿Puedo usar Humancore desde el móvil?
               </h3>
               <p className="text-gray-600">
-                Por supuesto. Tikneo cuenta con aplicaciones nativas para iOS y
-                Android, además de acceso web responsive. Tus empleados pueden
+                Por supuesto. Humancore cuenta con aplicaciones nativas para iOS
+                y Android, además de acceso web responsive. Tus empleados pueden
                 fichar desde cualquier dispositivo.
               </p>
             </div>
@@ -368,7 +235,7 @@ export default function TimeTrackingSoftwarePage() {
                 ¿Se integra con mi software de nóminas?
               </h3>
               <p className="text-gray-600">
-                Sí, Tikneo se integra con los principales software de nóminas
+                Sí, Humancore se integra con los principales software de nóminas
                 del mercado. Esto te permite automatizar la transferencia de
                 datos y evitar duplicar trabajo.
               </p>
@@ -376,14 +243,16 @@ export default function TimeTrackingSoftwarePage() {
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Es posible gestionar turnos, vacaciones y ausencias con Tikneo?
+                ¿Es posible gestionar turnos, vacaciones y ausencias con
+                Humancore?
               </h3>
               <p className="text-gray-600">
-                Sí. Además del control horario, Tikneo incluye funcionalidades
-                para la gestión de turnos, vacaciones y ausencias. Los empleados
-                pueden solicitar días libres y los responsables pueden aprobar o
-                rechazar estas solicitudes, todo desde la misma plataforma, lo
-                que simplifica la planificación y organización del equipo.
+                Sí. Además del control horario, Humancore incluye
+                funcionalidades para la gestión de turnos, vacaciones y
+                ausencias. Los empleados pueden solicitar días libres y los
+                responsables pueden aprobar o rechazar estas solicitudes, todo
+                desde la misma plataforma, lo que simplifica la planificación y
+                organización del equipo.
               </p>
             </div>
           </div>
@@ -397,19 +266,8 @@ export default function TimeTrackingSoftwarePage() {
             ¿Listo para transformar tu control horario?
           </h2>
           <p className="text-xl text-blue-100 mb-8">
-            Únete a más de 14.000 empresas que ya confían en Tikneo
+            Únete a más de cientos empresas que ya confían en Humancore
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 

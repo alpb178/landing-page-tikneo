@@ -253,9 +253,9 @@ export default function ReportsAndStatistics() {
               </h3>
               <p className="text-lg text-gray-600 mb-6">Para todos.</p>
               <p className="text-gray-600 mb-8">
-                Más y mejor información crea equipos más eficientes. Con Tikneo,
-                los empleados podrán consultar toda la información relacionada
-                con sus fichajes, sus vacaciones y sus proyectos.
+                Más y mejor información crea equipos más eficientes. Con
+                Humancore, los empleados podrán consultar toda la información
+                relacionada con sus fichajes, sus vacaciones y sus proyectos.
                 <br />
                 <br />
                 Empodera a tus equipos y haz crecer tus proyectos.

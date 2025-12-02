@@ -11,7 +11,7 @@ export default function Integrations() {
             <span className="text-blue-600">con sistemas biométricos</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Tikneo se integra con los principales fabricantes de sistemas de
+            Humancore se integra con los principales fabricantes de sistemas de
             accesos o sistemas biométricos. Combina cualquier tipo de acceso
             para dar una gran libertad a los empleados.
           </p>

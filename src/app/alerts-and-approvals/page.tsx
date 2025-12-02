@@ -19,7 +19,7 @@ export default function AlertsAndApprovals() {
       icon: Bell,
       title: "Notificaciones push",
       description:
-        "Envía a tu equipo la información que necesitan y asegúrate de que les llegue activando las notificaciones push en la APP de Tikneo.",
+        "Envía a tu equipo la información que necesitan y asegúrate de que les llegue activando las notificaciones push en la APP de Humancore.",
     },
     {
       icon: Clock,
@@ -37,7 +37,7 @@ export default function AlertsAndApprovals() {
       icon: AlertTriangle,
       title: "Alertas de fichaje olvidado",
       description:
-        "Marca en la configuración de Tikneo la hora de finalización de la jornada y alerta con un mensaje automático a los empleados que aún no han fichado la salida.",
+        "Marca en la configuración de Humancore la hora de finalización de la jornada y alerta con un mensaje automático a los empleados que aún no han fichado la salida.",
     },
     {
       icon: MapPin,
@@ -69,7 +69,7 @@ export default function AlertsAndApprovals() {
   ];
 
   const benefits = [
-    "Convierte Tikneo en INTELIGENTE",
+    "Convierte Humancore en INTELIGENTE",
     "Usa alertas inteligentes para mejorar cómo los empleados computan sus tiempos",
     "Evita errores y corrige fácilmente los errores de fichaje",
     "Notificaciones en tiempo real",
@@ -83,7 +83,7 @@ export default function AlertsAndApprovals() {
       position: "Gerente de RRHH",
       company: "TechCorp",
       content:
-        "La verdad es que es muy cómodo poder consultar mis horarios en la app de Tikneo. Además, si hay algún cambio me notifican automáticamente.",
+        "La verdad es que es muy cómodo poder consultar mis horarios en la app de Humancore. Además, si hay algún cambio me notifican automáticamente.",
       rating: 5,
     },
   ];
@@ -189,7 +189,7 @@ export default function AlertsAndApprovals() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Convierte Tikneo en INTELIGENTE
+              Convierte Humancore en INTELIGENTE
             </h2>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto">
               Usa alertas inteligentes para mejorar la forma en que los

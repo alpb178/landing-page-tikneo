@@ -16,6 +16,7 @@ import {
   User,
 } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -52,12 +53,17 @@ export default function Header() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <div className="w-6 h-6 sm:w-8 sm:h-8 bg-teal-500 rounded-lg flex items-center justify-center mr-2">
-                <div className="w-3 h-3 sm:w-4 sm:h-4 bg-white rounded-sm"></div>
+              <div className="w-20 h-20 sm:w-8 sm:h-8 bg-teal-500 rounded-full flex items-center justify-center mr-2">
+                <Image
+                  src="/images/image.png"
+                  alt="Humancore"
+                  width={100}
+                  height={100}
+                />
               </div>
               <Link href="/">
                 <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                  Tikneo
+                  Humancore
                 </h1>
               </Link>
             </div>
@@ -240,21 +246,12 @@ export default function Header() {
               >
                 Demo
               </a>
-              <a
-                href="#"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                Acceder
-              </a>
             </nav>
 
             {/* CTA Buttons */}
             <div className="hidden md:flex items-center space-x-4">
               <button className="bg-green-500 text-white px-3 py-2 rounded-lg hover:bg-green-600 transition-colors text-sm">
                 Acceder
-              </button>
-              <button className="bg-purple-600 text-white px-3 py-2 rounded-lg hover:bg-purple-700 transition-colors text-sm">
-                Prueba gratuita
               </button>
             </div>
 

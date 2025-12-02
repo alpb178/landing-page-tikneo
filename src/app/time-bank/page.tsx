@@ -180,7 +180,7 @@ export default function TimeBank() {
 
             <div className="bg-purple-50 rounded-xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold text-gray-900 mb-6">
-                Cómo funciona la bolsa de horas de Tikneo
+                Cómo funciona la bolsa de horas de Humancore
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center">
@@ -244,7 +244,7 @@ export default function TimeBank() {
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Ajusta la organización del trabajo y la producción laboral
-                gracias a la bolsa de horas de Tikneo
+                gracias a la bolsa de horas de Humancore
               </h2>
               <p className="text-lg text-gray-600 mb-8">
                 Con nuestro software de RRHH ya no tendrás que preocuparte por

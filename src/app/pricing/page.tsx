@@ -534,8 +534,8 @@ export default function PricingPage() {
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Descarga la <strong>presentación de Tikneo</strong> y descubre todos
-            los planes y funcionalidades
+            Descarga la <strong>presentación de Humancore</strong> y descubre
+            todos los planes y funcionalidades
           </h2>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -566,13 +566,13 @@ export default function PricingPage() {
               <p className="text-gray-600">
                 Si. En el periodo de prueba puedes disfrutar{" "}
                 <strong>durante 14 días</strong> de todas las funcionalidades de
-                Tikneo gratis y sin necesidad de introducir datos de pago.
+                Humancore gratis y sin necesidad de introducir datos de pago.
               </p>
             </div>
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Cuánto cuesta Tikneo?
+                ¿Cuánto cuesta Humancore?
               </h3>
               <p className="text-gray-600 mb-4">
                 Tenemos dos planes distintos y dos formas de pago: anual y
@@ -581,7 +581,7 @@ export default function PricingPage() {
               </p>
               <ul className="text-gray-600 space-y-2">
                 <li>
-                  <strong>Tikneo Time Advanced</strong>
+                  <strong>Humancore Time Advanced</strong>
                 </li>
                 <li>
                   El <strong>plan de pago anual</strong> serían 4,50€ al mes por
@@ -604,7 +604,7 @@ export default function PricingPage() {
               </p>
               <ul className="text-gray-600 mt-2 space-y-1">
                 <li>
-                  <strong>Tikneo Time Advanced</strong>
+                  <strong>Humancore Time Advanced</strong>
                 </li>
                 <li>Mensual – desde 75€</li>
                 <li>Anual – desde 67,50€</li>
@@ -613,11 +613,11 @@ export default function PricingPage() {
 
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Puedo pagar Tikneo al mes?
+                ¿Puedo pagar Humancore al mes?
               </h3>
               <p className="text-gray-600">
-                Por supuesto. En todos los planes de Tikneo tienes la opción de
-                pagar de forma <strong>mensual o anual</strong>. Sin embargo,
+                Por supuesto. En todos los planes de Humancore tienes la opción
+                de pagar de forma <strong>mensual o anual</strong>. Sin embargo,
                 recuerda que si pagas de forma anual tendrás un{" "}
                 <strong>descuento importante.</strong>
               </p>
@@ -628,9 +628,10 @@ export default function PricingPage() {
                 ¿Cuál es el plan de precios adecuado para mi?
               </h3>
               <p className="text-gray-600">
-                En Tikneo entendemos que cada empresa es un mundo y, por tanto,
-                tiene unas necesidades distintas. Si no sabes con seguridad cuál
-                es el plan de precios que mejor encaja con tu negocio{" "}
+                En Humancore entendemos que cada empresa es un mundo y, por
+                tanto, tiene unas necesidades distintas. Si no sabes con
+                seguridad cuál es el plan de precios que mejor encaja con tu
+                negocio{" "}
                 <strong>te recomendamos hablar con nuestros agentes</strong>.
                 Seguro que pueden ayudarte a entender más en profundidad tus
                 necesidades y darte un buen servicio de asesoramiento.
@@ -643,7 +644,7 @@ export default function PricingPage() {
               </h3>
               <p className="text-gray-600">
                 Sí, podrás cancelar tus suscripción enviando un correo a
-                cancelacion@Tikneotime.com para hacer la solicitud. También
+                cancelacion@Humancoretime.com para hacer la solicitud. También
                 podrás contactar con nuestro servicio de soporte para solicitar
                 la gestión de la cancelación.
               </p>

@@ -118,7 +118,7 @@ export default function TabletClockInPage() {
       position: "Director de Operaciones",
       company: "Constructora Plus",
       content:
-        "El tablet de fichaje de Tikneo ha sido una revolución en nuestras obras. Los trabajadores fichan en segundos y nosotros tenemos control total.",
+        "El tablet de fichaje de Humancore ha sido una revolución en nuestras obras. Los trabajadores fichan en segundos y nosotros tenemos control total.",
       rating: 5,
     },
     {
@@ -163,16 +163,7 @@ export default function TabletClockInPage() {
                 con reconocimiento facial, código QR y todas las funcionalidades
                 que necesitas para el control horario.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-green-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-green-600 text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
+
               <div className="mt-6 flex items-center text-sm text-gray-600">
                 <Check className="h-5 w-5 text-green-500 mr-2" />
                 <span>
@@ -188,7 +179,9 @@ export default function TabletClockInPage() {
                     <div className="w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center mr-3">
                       <Tablet className="w-4 h-4 text-white" />
                     </div>
-                    <span className="font-bold text-gray-900">Tikneo Wall</span>
+                    <span className="font-bold text-gray-900">
+                      Humancore Wall
+                    </span>
                   </div>
                   <div className="text-sm text-gray-500">Online</div>
                 </div>
@@ -318,10 +311,10 @@ export default function TabletClockInPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Tikneo Wall?
+                ¿Por qué elegir Humancore Wall?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en nuestros tablets de fichaje
+                Más de cientos empresas confían en nuestros tablets de fichaje
                 para el control horario de sus equipos.
               </p>
 
@@ -376,7 +369,7 @@ export default function TabletClockInPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su fichaje con
-              Tikneo Wall
+              Humancore Wall
             </p>
           </div>
 
@@ -421,7 +414,7 @@ export default function TabletClockInPage() {
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-xl shadow-lg p-6">
               <h3 className="text-xl font-bold text-gray-900 mb-4">
-                ¿Qué tablet necesito para usar Tikneo Wall?
+                ¿Qué tablet necesito para usar Humancore Wall?
               </h3>
               <p className="text-gray-600">
                 Cualquier tablet Android o iPad funciona perfectamente.
@@ -486,17 +479,6 @@ export default function TabletClockInPage() {
             Únete a miles de empresas que ya fichan con tablets de forma
             profesional
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-green-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 

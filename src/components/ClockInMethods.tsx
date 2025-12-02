@@ -6,13 +6,13 @@ export default function ClockInMethods() {
       icon: Smartphone,
       title: "Mobile APP",
       description:
-        "Empleados y administradores usan Tikneo APP cada día para registrar su jornada, pedir vacaciones o comunicarse con su empresa. Además, las notificaciones push y los recordatorios harán más fácil la gestión de los tiempos en la empresa y mantendrán al equipo siempre informado.",
+        "Empleados y administradores usan Humancore APP cada día para registrar su jornada, pedir vacaciones o comunicarse con su empresa. Además, las notificaciones push y los recordatorios harán más fácil la gestión de los tiempos en la empresa y mantendrán al equipo siempre informado.",
       link: "Más detalles",
       image: (
         <div className="w-32 h-56 bg-gray-900 rounded-2xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-xl flex flex-col">
             <div className="h-8 bg-blue-600 rounded-t-xl flex items-center justify-center">
-              <span className="text-white text-xs font-bold">Tikneo</span>
+              <span className="text-white text-xs font-bold">Humancore</span>
             </div>
             <div className="flex-1 p-3">
               <div className="w-full h-3 bg-gray-200 rounded mb-2"></div>
@@ -30,13 +30,15 @@ export default function ClockInMethods() {
       icon: Tablet,
       title: "Tablet de fichaje",
       description:
-        "Con Tikneo Wall convierte cualquier tablet en un punto de fichaje. Una gran alternativa a los sistemas de fichaje tradicionales, más económica y lista para utilizar en minutos.",
+        "Con Humancore Wall convierte cualquier tablet en un punto de fichaje. Una gran alternativa a los sistemas de fichaje tradicionales, más económica y lista para utilizar en minutos.",
       link: "Más detalles",
       image: (
         <div className="w-40 h-56 bg-gray-800 rounded-xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-lg flex flex-col">
             <div className="h-6 bg-green-600 rounded-t-lg flex items-center justify-center">
-              <span className="text-white text-xs font-bold">Tikneo Wall</span>
+              <span className="text-white text-xs font-bold">
+                Humancore Wall
+              </span>
             </div>
             <div className="flex-1 p-4">
               <div className="w-full h-4 bg-gray-200 rounded mb-3"></div>
@@ -101,11 +103,11 @@ export default function ClockInMethods() {
               <a
                 href={
                   method.title === "Mobile APP"
-                    ? "/app-movil"
+                    ? "/mobile-app"
                     : method.title === "Tablet de fichaje"
-                    ? "/tablet-fichar"
+                    ? "/tablet-clock-in"
                     : method.title === "Web"
-                    ? "/plataforma-web"
+                    ? "/time-tracking-software"
                     : "#"
                 }
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors flex items-center justify-center"
@@ -115,12 +117,6 @@ export default function ClockInMethods() {
               </a>
             </div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
-            Prueba gratis
-          </button>
         </div>
       </div>
     </section>

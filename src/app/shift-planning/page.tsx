@@ -118,7 +118,7 @@ export default function ShiftPlanningPage() {
       position: "Directora de Operaciones",
       company: "RetailMax",
       content:
-        "Tikneo nos ha revolucionado la gestión de turnos. Antes tardábamos 4 horas semanales en planificar, ahora es automático.",
+        "Humancore nos ha revolucionado la gestión de turnos. Antes tardábamos 4 horas semanales en planificar, ahora es automático.",
       rating: 5,
     },
     {
@@ -134,7 +134,7 @@ export default function ShiftPlanningPage() {
       position: "Supervisora",
       company: "Clínica San José",
       content:
-        "Para el sector sanitario es fundamental tener turnos bien organizados. Tikneo nos da la tranquilidad que necesitamos.",
+        "Para el sector sanitario es fundamental tener turnos bien organizados. Humancore nos da la tranquilidad que necesitamos.",
       rating: 5,
     },
   ];
@@ -161,16 +161,7 @@ export default function ShiftPlanningPage() {
                 automática y sin conflictos. Desde retail hasta sanidad, adapta
                 los horarios a las necesidades de tu negocio.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center">
-                  <Zap className="mr-2 h-5 w-5" />
-                  Prueba gratis 14 días
-                </button>
-                <button className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-50 transition-colors flex items-center justify-center">
-                  <MessageCircle className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
+
               <div className="mt-6 flex items-center text-sm text-gray-600">
                 <Check className="h-5 w-5 text-green-500 mr-2" />
                 <span>
@@ -187,7 +178,7 @@ export default function ShiftPlanningPage() {
                       <Calendar className="w-4 h-4 text-white" />
                     </div>
                     <span className="font-bold text-gray-900">
-                      Tikneo Turnos
+                      Humancore Turnos
                     </span>
                   </div>
                   <div className="text-sm text-gray-500">Semana 15</div>
@@ -312,10 +303,10 @@ export default function ShiftPlanningPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                ¿Por qué elegir Tikneo para planificar turnos?
+                ¿Por qué elegir Humancore para planificar turnos?
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Más de 14.000 empresas confían en Tikneo para organizar los
+                Más de cientos empresas confían en Humancore para organizar los
                 turnos de sus equipos de forma eficiente y sin conflictos.
               </p>
 
@@ -376,7 +367,7 @@ export default function ShiftPlanningPage() {
             </h2>
             <p className="text-lg text-gray-600">
               Empresas de todos los sectores han transformado su gestión de
-              turnos con Tikneo
+              turnos con Humancore
             </p>
           </div>
 
@@ -424,7 +415,7 @@ export default function ShiftPlanningPage() {
                 ¿Puedo crear turnos rotativos automáticamente?
               </h3>
               <p className="text-gray-600">
-                Sí, Tikneo permite crear patrones de turnos rotativos que se
+                Sí, Humancore permite crear patrones de turnos rotativos que se
                 aplican automáticamente. Puedes configurar turnos de mañana,
                 tarde y noche que roten entre los empleados según tus reglas.
               </p>
@@ -435,8 +426,8 @@ export default function ShiftPlanningPage() {
                 ¿Cómo gestiono las vacaciones y ausencias en los turnos?
               </h3>
               <p className="text-gray-600">
-                Tikneo integra la gestión de vacaciones con la planificación de
-                turnos. Cuando un empleado solicita vacaciones, el sistema
+                Humancore integra la gestión de vacaciones con la planificación
+                de turnos. Cuando un empleado solicita vacaciones, el sistema
                 automáticamente busca cobertura y ajusta los turnos afectados.
               </p>
             </div>
@@ -446,9 +437,9 @@ export default function ShiftPlanningPage() {
                 ¿Puedo cambiar turnos de última hora?
               </h3>
               <p className="text-gray-600">
-                Por supuesto. Tikneo permite cambios de turno en tiempo real con
-                notificaciones automáticas a los empleados afectados. El sistema
-                busca automáticamente sustitutos disponibles.
+                Por supuesto. Humancore permite cambios de turno en tiempo real
+                con notificaciones automáticas a los empleados afectados. El
+                sistema busca automáticamente sustitutos disponibles.
               </p>
             </div>
 
@@ -468,7 +459,7 @@ export default function ShiftPlanningPage() {
                 ¿Funciona para empresas con múltiples ubicaciones?
               </h3>
               <p className="text-gray-600">
-                Absolutamente. Tikneo permite gestionar turnos para múltiples
+                Absolutamente. Humancore permite gestionar turnos para múltiples
                 centros de trabajo, sucursales o departamentos desde una sola
                 plataforma centralizada.
               </p>
@@ -487,17 +478,6 @@ export default function ShiftPlanningPage() {
             Únete a miles de empresas que ya planifican turnos sin
             complicaciones
           </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-50 transition-colors flex items-center justify-center">
-              <Zap className="mr-2 h-5 w-5" />
-              Prueba gratis 14 días
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar guía
-            </button>
-          </div>
         </div>
       </section>
 
