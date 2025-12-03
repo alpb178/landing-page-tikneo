@@ -64,15 +64,6 @@ export default function WebPlatform() {
                 and manage your teams. Everything through a cloud platform, from
                 any device.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
-                  <Globe className="mr-2 h-5 w-5" />
-                  Access Platform
-                </button>
-                <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center">
-                  View Demo
-                </button>
-              </div>
             </div>
             <div className="flex justify-center">
               <div className="w-full max-w-lg bg-gray-100 rounded-lg p-4 shadow-2xl">
@@ -204,15 +195,6 @@ export default function WebPlatform() {
             Access our web platform and discover all the features that can
             improve your company&apos;s management.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
-              <Globe className="mr-2 h-5 w-5" />
-              Access Now
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center">
-              Request Demo
-            </button>
-          </div>
         </div>
       </section>
 

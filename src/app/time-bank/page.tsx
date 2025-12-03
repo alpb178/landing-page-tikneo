@@ -315,29 +315,6 @@ export default function TimeBank() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-purple-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            Prueba gratuita durante 14 días
-          </h2>
-          <p className="text-xl text-purple-100 mb-8">
-            Si quieres saber cómo hacerlo (esta es la parte que más nos gusta)
-            te contamos cómo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
-              <Play className="mr-2 h-5 w-5" />
-              Prueba gratuita
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-purple-600 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Más información
-            </button>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );

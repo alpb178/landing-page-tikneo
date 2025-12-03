@@ -41,9 +41,6 @@ export default function Compliance() {
                 </span>
               </div>
             </div>
-            <button className="mt-8 bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
-              Más información
-            </button>
           </div>
 
           <div className="bg-white rounded-2xl shadow-lg p-8">
@@ -106,10 +103,6 @@ export default function Compliance() {
                 </p>
               </div>
             </div>
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center mx-auto">
-              Descubre Smart Working
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
           </div>
         </div>
       </div>

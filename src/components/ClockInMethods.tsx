@@ -7,7 +7,7 @@ export default function ClockInMethods() {
       title: "Mobile APP",
       description:
         "Empleados y administradores usan Humancore APP cada día para registrar su jornada, pedir vacaciones o comunicarse con su empresa. Además, las notificaciones push y los recordatorios harán más fácil la gestión de los tiempos en la empresa y mantendrán al equipo siempre informado.",
-      link: "Más detalles",
+
       image: (
         <div className="w-32 h-56 bg-gray-900 rounded-2xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-xl flex flex-col">
@@ -31,7 +31,7 @@ export default function ClockInMethods() {
       title: "Tablet de fichaje",
       description:
         "Con Humancore Wall convierte cualquier tablet en un punto de fichaje. Una gran alternativa a los sistemas de fichaje tradicionales, más económica y lista para utilizar en minutos.",
-      link: "Más detalles",
+
       image: (
         <div className="w-40 h-56 bg-gray-800 rounded-xl p-2 shadow-2xl mx-auto mb-6">
           <div className="w-full h-full bg-white rounded-lg flex flex-col">
@@ -57,7 +57,7 @@ export default function ClockInMethods() {
       title: "Web",
       description:
         "Registra las entradas y salidas, obtén informes en tiempo real, edita fichajes y gestiona tus equipos. Todo a través de una plataforma cloud, desde cualquier dispositivo.",
-      link: "Más detalles",
+
       image: (
         <div className="w-48 h-32 bg-gray-100 rounded-lg p-2 shadow-lg mx-auto mb-6">
           <div className="w-full h-full bg-white rounded flex flex-col">
@@ -100,21 +100,6 @@ export default function ClockInMethods() {
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {method.description}
               </p>
-              <a
-                href={
-                  method.title === "Mobile APP"
-                    ? "/mobile-app"
-                    : method.title === "Tablet de fichaje"
-                    ? "/tablet-clock-in"
-                    : method.title === "Web"
-                    ? "/time-tracking-software"
-                    : "#"
-                }
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors flex items-center justify-center"
-              >
-                {method.link}
-                <ArrowRight className="ml-1 h-4 w-4" />
-              </a>
             </div>
           ))}
         </div>

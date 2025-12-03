@@ -89,7 +89,7 @@ export default function Features() {
                     : feature.title === "Planificación"
                     ? "/shift-planning"
                     : feature.title === "Integraciones"
-                    ? "/demo"
+                    ? "/web-platform"
                     : feature.title === "Horas extra"
                     ? "/ime-tracking-software"
                     : feature.title === "Informes"
