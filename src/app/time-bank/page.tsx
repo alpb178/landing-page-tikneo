@@ -101,16 +101,6 @@ export default function TimeBank() {
                 Conoce y controla en tiempo real el total de horas extra de tu
                 equipo y diseña informes personalizados.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-purple-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-700 transition-colors flex items-center justify-center">
-                  <Play className="mr-2 h-5 w-5" />
-                  Prueba gratuita
-                </button>
-                <button className="border-2 border-purple-600 text-purple-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-purple-50 transition-colors flex items-center justify-center">
-                  <Play className="mr-2 h-5 w-5" />
-                  Ver demo
-                </button>
-              </div>
             </div>
             <div className="flex justify-center">
               <div className="w-full max-w-lg bg-gray-100 rounded-lg p-4 shadow-2xl">
