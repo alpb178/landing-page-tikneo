@@ -63,10 +63,6 @@ export default function ReportsPage() {
               toda la información que necesites en formato Excel y PDF. Obtén
               una gran ventaja en la gestión de tus equipos.
             </p>
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center mx-auto">
-              <BarChart3 className="mr-2 h-5 w-5" />
-              Ver demo de informes
-            </button>
           </div>
         </div>
       </section>
