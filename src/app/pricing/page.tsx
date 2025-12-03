@@ -213,17 +213,6 @@ export default function PricingPage() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Precios y Planes
             </h1>
-
-            {/* Toggle */}
-            <div className="flex items-center justify-center mb-12">
-              <span className="text-gray-600 mr-4">Anual</span>
-              <div className="relative">
-                <input type="checkbox" className="sr-only" />
-                <div className="w-14 h-7 bg-gray-200 rounded-full shadow-inner"></div>
-                <div className="absolute top-1 left-1 w-5 h-5 bg-white rounded-full shadow transform transition-transform"></div>
-              </div>
-              <span className="text-gray-600 ml-4">Mensual</span>
-            </div>
           </div>
         </div>
       </section>
@@ -530,29 +519,8 @@ export default function PricingPage() {
         </div>
       </section>
 
-      {/* Download Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6">
-            Descarga la <strong>presentación de Humancore</strong> y descubre
-            todos los planes y funcionalidades
-          </h2>
-
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center">
-              <Download className="h-5 w-5 mr-2" />
-              Descarga el dossier
-            </button>
-            <button className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-blue-50 transition-colors flex items-center justify-center">
-              <MessageCircle className="h-5 w-5 mr-2" />
-              Hablar con ventas
-            </button>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">
             Preguntas frecuentes
