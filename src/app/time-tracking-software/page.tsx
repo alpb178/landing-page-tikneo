@@ -72,22 +72,20 @@ export default function TimeTrackingSoftwarePage() {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                📢 Ficha a tu manera, ficha con Humancore.
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Software de control horario
-                <br />
-                <span className="text-blue-600">que cumple con la ley</span>
-              </h1>
-              <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                Cumple con la nueva ley de fichaje digital sin cambiar tu
-                rutina. Control horario completo, multidispositivo y con todas
-                las garantías legales.
-              </p>
+          <div>
+            <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              📢 Ficha a tu manera, ficha con Humancore.
             </div>
+            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+              Software de control horario
+              <br />
+              <span className="text-blue-600">que cumple con la ley</span>
+            </h1>
+            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
+              Cumple con la nueva ley de fichaje digital sin cambiar tu rutina.
+              Control horario completo, multidispositivo y con todas las
+              garantías legales.
+            </p>
           </div>
         </div>
       </section>

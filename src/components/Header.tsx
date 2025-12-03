@@ -31,10 +31,7 @@ export default function Header() {
             <span className="text-center">
               <span className="hidden sm:inline">
                 Nueva funcionalidad: control de gastos, ¡olvídate de los tickets
-                y la gestión manual! |
-                <a href="#" className="underline ml-1">
-                  Más información aquí
-                </a>
+                y la gestión manual!
               </span>
               <span className="sm:hidden">
                 Nueva funcionalidad: control de gastos!
@@ -218,17 +215,6 @@ export default function Header() {
                             Centro de empleados
                           </span>
                         </a>
-                        <a
-                          href="#"
-                          className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors"
-                        >
-                          <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mr-3">
-                            <User className="h-4 w-4 text-green-600" />
-                          </div>
-                          <span className="text-sm text-gray-700">
-                            Panel del empleado
-                          </span>
-                        </a>
                       </div>
                     </div>
                   </div>
@@ -240,12 +226,6 @@ export default function Header() {
                 className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
               >
                 Precios
-              </a>
-              <a
-                href="/demo"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
-              >
-                Demo
               </a>
             </nav>
 
@@ -323,21 +303,6 @@ export default function Header() {
                 >
                   Precios
                 </a>
-                <a
-                  href="/demo"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600"
-                >
-                  Demo
-                </a>
-                <a
-                  href="#"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-blue-600"
-                >
-                  Acceder
-                </a>
-                <button className="w-full text-left px-3 py-2 text-base font-medium text-white bg-blue-600 rounded-lg">
-                  Prueba gratuita
-                </button>
               </div>
             </div>
           )}
