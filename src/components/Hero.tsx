@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <>
       {/* Main Hero Section */}
-      <section className="bg-white py-20">
+      <section className="bg-white pt-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
