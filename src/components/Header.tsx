@@ -13,7 +13,7 @@ import {
   BarChart3,
   Tablet,
   Users,
-  User,
+  Zap,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -23,27 +23,6 @@ export default function Header() {
 
   return (
     <>
-      {/* Top Banner */}
-      <div className="bg-purple-600 text-white py-2">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center text-xs sm:text-sm">
-            <Bell className="h-3 w-3 sm:h-4 sm:w-4 mr-2" />
-            <span className="text-center">
-              <span className="hidden sm:inline">
-                Nueva funcionalidad: control de gastos, ¡olvídate de los tickets
-                y la gestión manual!
-              </span>
-              <span className="sm:hidden">
-                Nueva funcionalidad: control de gastos!
-                <a href="#" className="underline ml-1">
-                  Más info
-                </a>
-              </span>
-            </span>
-          </div>
-        </div>
-      </div>
-
       {/* Main Header */}
       <header className="bg-white shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -110,6 +89,15 @@ export default function Header() {
                           className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors"
                         >
                           <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
+                            <Zap className="h-4 w-4 text-purple-600" />
+                          </div>
+                          <span className="text-sm text-gray-700">Gastos</span>
+                        </a>
+                        <a
+                          href="/shift-planning"
+                          className="flex items-center p-3 rounded-lg hover:bg-gray-50 transition-colors"
+                        >
+                          <div className="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mr-3">
                             <Calendar className="h-4 w-4 text-purple-600" />
                           </div>
                           <span className="text-sm text-gray-700">
@@ -124,7 +112,7 @@ export default function Header() {
                             <Globe className="h-4 w-4 text-purple-600" />
                           </div>
                           <span className="text-sm text-gray-700">
-                            Teletrabajo
+                            Movilidad
                           </span>
                         </a>
                       </div>
@@ -168,7 +156,7 @@ export default function Header() {
                             <Clock className="h-4 w-4 text-blue-600" />
                           </div>
                           <span className="text-sm text-gray-700">
-                            Bolsa de horas
+                            Checklist
                           </span>
                         </a>
                         <a

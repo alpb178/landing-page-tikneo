@@ -43,7 +43,6 @@ export default function Features() {
       title: "Horas extra",
       description:
         "Crea reglas para contabilizar las horas extra y asígnales distintos precios en función del día o la hora en que se realicen para que el sistema te ayude a calcular el pago. Además, establece límites al número de horas y avisa a tus empleados cuando los alcancen.",
-      link: "Más detalles",
     },
     {
       icon: BarChart3,
