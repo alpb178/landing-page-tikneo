@@ -459,19 +459,6 @@ export default function CentroEmpleadosPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-purple-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            ¿Listo para empoderar a tus empleados?
-          </h2>
-          <p className="text-xl text-purple-100 mb-8">
-            Únete a miles de empresas que ya tienen empleados más satisfechos y
-            autónomos
-          </p>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
