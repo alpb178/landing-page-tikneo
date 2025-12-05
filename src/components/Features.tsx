@@ -98,7 +98,7 @@ export default function Features() {
                 className="text-blue-600 font-semibold hover:text-blue-700 transition-colors flex items-center justify-center"
               >
                 {feature.link}
-                <ArrowRight className="ml-1 h-4 w-4" />
+                {feature.link && <ArrowRight className="ml-1 h-4 w-4" />}
               </a>
             </div>
           ))}

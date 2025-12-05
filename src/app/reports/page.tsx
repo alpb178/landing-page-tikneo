@@ -165,31 +165,6 @@ export default function ReportsPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-blue-600">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-            ¿Listo para obtener
-            <br />
-            <span className="text-blue-200">insights valiosos?</span>
-          </h2>
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Descubre cómo nuestros informes pueden ayudarte a tomar mejores
-            decisiones y optimizar la gestión de tu equipo.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors flex items-center justify-center">
-              <Download className="mr-2 h-5 w-5" />
-              Descargar informe de ejemplo
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors flex items-center justify-center">
-              <FileText className="mr-2 h-5 w-5" />
-              Ver más informes
-            </button>
-          </div>
-        </div>
-      </section>
-
       <Footer />
     </main>
   );
