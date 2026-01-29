@@ -9,7 +9,7 @@ export default function Container({ children }: { children: React.ReactNode }) {
       <div className="absolute bottom-0 left-1/3 w-[420px] h-[420px] bg-pink-400/10 rounded-full blur-3xl" />
 
       {/* Light overlay */}
-      <div className="absolute inset-0 bg-linear-to-t from-white/60 via-transparent to-transparent" />
+
 
       {/* Content */}
       {children}
