@@ -18,13 +18,13 @@ export default function Hero() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
           <Link
             href="/signup"
-            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3.5 rounded-lg transition-colors"
+            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3.5 rounded-full transition-colors"
           >
             Prueba gratis 15 días
           </Link>
           <Link
             href="#demo"
-            className="inline-flex items-center justify-center bg-white border-2 border-purple-400 text-purple-600 hover:bg-purple-50 font-semibold px-8 py-3.5 rounded-lg transition-colors"
+            className="inline-flex items-center justify-center bg-white border-2 border-purple-400 text-purple-600 hover:bg-purple-50 font-semibold px-8 py-3.5 rounded-full transition-colors"
           >
             <Play className="h-5 w-5 mr-2" />
             Ver demostración
