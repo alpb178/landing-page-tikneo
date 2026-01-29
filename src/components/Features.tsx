@@ -54,13 +54,13 @@ export default function Features() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             El control horario
             <br />
-            <span className="text-blue-600">que simplifica tu negocio</span>
+            <span className="text-purple-600">que simplifica tu negocio</span>
           </h2>
         </div>
 
@@ -70,7 +70,7 @@ export default function Features() {
               key={index}
               className="bg-white rounded-xl shadow-lg p-8 text-center"
             >
-              <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-6">
                 <feature.icon className="h-8 w-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">
@@ -95,7 +95,7 @@ export default function Features() {
                     ? "/reports-and-statistics"
                     : "#"
                 }
-                className="text-blue-600 font-semibold hover:text-blue-700 transition-colors flex items-center justify-center"
+                className="text-purple-600 font-semibold hover:text-purple-700 transition-colors flex items-center justify-center"
               >
                 {feature.link}
                 {feature.link && <ArrowRight className="ml-1 h-4 w-4" />}
