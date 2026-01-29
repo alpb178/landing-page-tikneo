@@ -24,32 +24,33 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <header className="bg-white/90 backdrop-blur-sm shadow-sm border-b border-purple-100/50">
+        <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
-            {/* Logo */}
-            <div className="flex-shrink-0 flex items-center">
-              <div className=" w-8 h-8 md:w-10 md:h-10  bg-teal-500 rounded-full flex items-center justify-center mr-2">
+            {/* Logo TikNEO */}
+            <div className="shrink-0 flex items-center">
+              <div className="w-8 h-8 md:w-10 md:h-10  rounded-full flex items-center justify-center">
                 <Image
-                  src="/images/image.png"
-                  alt="Humancore"
+                  src="/logo.png"
+                  alt="TikNEO"
                   width={128}
                   height={128}
                   className="w-full h-full object-contain rounded-full"
                 />
               </div>
               <Link href="/">
-                <h1 className="text-lg sm:text-xl font-bold text-gray-900">
-                  Humancore
-                </h1>
+              <div className=" flex flex-row text-textHeader text-3xl">
+            <div className="text-textHeader">Tik</div>
+            <div className=" font-bold text-textHeader">Neo</div>
+          </div>
               </Link>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex space-x-8">
+            <nav className="hidden md:flex items-center space-x-6">
               <div className="relative group">
-                <button className="flex items-center text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium">
-                  Funcionalidades
+                <button className="flex items-center text-gray-600 hover:text-purple-600 px-3 py-2 text-sm font-medium">
+                  Inicio
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
                 <div className="absolute flex left-0 mt-2 w-200 bg-white rounded-lg shadow-xl border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
@@ -58,7 +59,7 @@ export default function Header() {
                       <div className="flex items-center mb-4">
                         <div className="w-2 h-2 bg-purple-500 rounded-full mr-3"></div>
                         <h3 className="text-sm font-bold text-gray-900 uppercase tracking-wider">
-                          Gestión del tiempo
+                          ¿Por qué Tikneo?
                         </h3>
                       </div>
                       <div className="flex flex-col gap-3">
@@ -210,18 +211,50 @@ export default function Header() {
               </div>
 
               <a
-                href="/pricing"
-                className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium"
+                href="#por-que-tikneo"
+                className="text-gray-600 hover:text-purple-600 px-3 py-2 text-sm font-medium"
               >
-                Precios
+                ¿Por qué Tikneo?
               </a>
+              <a
+                href="#caracteristicas"
+                className="text-gray-600 hover:text-purple-600 px-3 py-2 text-sm font-medium"
+              >
+                Características
+              </a>
+              <a
+                href="#contacto"
+                className="text-gray-600 hover:text-purple-600 px-3 py-2 text-sm font-medium"
+              >
+                Contacto
+              </a>
+            
+            </nav>
+
+            <nav className="hidden md:flex items-center space-x-6">
+             
+           
+
+           
+              <a
+                href="/login"
+                className="text-gray-600 hover:text-purple-600 px-3 py-2 text-sm font-medium"
+              >
+                Iniciar sesión
+              </a>
+              <Link
+                href="/signup"
+                className="ml-2 bg-purple-600 hover:bg-purple-700 text-white text-sm font-medium px-5 py-2.5 rounded-full transition-colors"
+              >
+                Prueba Gratuita
+              </Link>
             </nav>
 
             {/* Mobile menu button */}
             <div className="md:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-blue-600"
+                className="text-gray-700 hover:text-purple-600"
               >
                 {isMenuOpen ? (
                   <X className="h-6 w-6" />

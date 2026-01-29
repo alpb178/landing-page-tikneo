@@ -5,24 +5,24 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Humancore",
+  title: "Tikneo",
   description:
-    "Optimiza la gestión de empleados ahorrando tiempo, esfuerzo y dinero. Control horario, gestión de turnos, planificación de tareas y mucho más.",
+    "La plataforma de gestión de tareas y proyectos que te permite optimizar tu productividad y aumentar tu rendimiento.",
   keywords:
-    "control horario, gestión de empleados, fichar, turnos, nóminas, recursos humanos",
+    "gestión de tareas, gestión de proyectos, productividad, rendimiento, trabajo en equipo, colaboración",
   icons: {
-    icon: [{ url: "/ico.png", type: "image/png" }],
-    shortcut: "/ico.png",
-    apple: "/ico.png",
+    icon: [{ url: "/logo.png", type: "image/png" }],
+    shortcut: "/logo.png",
+    apple: "/logo.png",
   },
   openGraph: {
-    title: "Humancore",
+    title: "Tikneo",
     description:
-      "Optimiza la gestión de empleados ahorrando tiempo, esfuerzo y dinero. Control horario, gestión de turnos, planificación de tareas y mucho más.",
-    images: "/images/image.png",
+      "La plataforma de gestión de tareas y proyectos que te permite optimizar tu productividad y aumentar tu rendimiento.",
+    images: "/logo.png",
     type: "website",
-    url: "https://humancore.vercel.app",
-    siteName: "Humancore",
+    url: "https://tikneo.vercel.app",
+    siteName: "Tikneo",
     locale: "es_ES",
   },
 };
@@ -34,7 +34,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="min-h-screen w-full bg-layout-lavender">
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
