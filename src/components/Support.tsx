@@ -2,7 +2,7 @@ import { Play } from "lucide-react";
 
 export default function Support() {
   return (
-    <section className="relative py-20 bg-gray-900 text-white overflow-hidden">
+    <section className="relative py-20  text-white overflow-hidden">
       {/* Background with person silhouette */}
       <div className="absolute inset-0 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900">
         {/* Person silhouette */}

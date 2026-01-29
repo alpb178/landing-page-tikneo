@@ -1,24 +1,29 @@
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import AppMockup from "@/components/AppMockup";
+import HeroFeatureCards from "@/components/HeroFeatureCards";
 import Features from "@/components/Features";
 import Support from "@/components/Support";
 import ClockInMethods from "@/components/ClockInMethods";
 import Integrations from "@/components/Integrations";
 import Compliance from "@/components/Compliance";
 import Footer from "@/components/Footer";
-import { Metadata } from "next";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-white">
+    <>
       <Header />
       <Hero />
-      <Features />
+      <AppMockup />
+      <HeroFeatureCards />
+   
+        <Features />
+   
       <Support />
       <ClockInMethods />
       <Integrations />
       <Compliance />
       <Footer />
-    </main>
+    </>
   );
 }
