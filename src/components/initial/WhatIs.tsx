@@ -1,22 +1,24 @@
 import { CalendarCheck, Clock, Users2 } from "lucide-react";
+import Image from "next/image";
+import { ContainerCard } from "../Container";
 
 const cards = [
   {
-    icon: CalendarCheck,
+    icon: "/images/managment.jpeg",
     title: "Gestión de ausencias",
     description:
       "Gracias al portal del empleado de Tikneo, tus trabajadores podrán gestionar sus propias ausencias, consultar los días que les quedan de vacaciones y corroborar quiénes están ausentes.",
     footnote: null,
   },
   {
-    icon: Clock,
+    icon: "/images/signin.jpeg",
     title: "Facilita el fichaje",
     description:
       "Los trabajadores de tu empresa podrán marcar ingresos y salidas de forma sencilla, ya sea trabajando en remoto o presencial. Desde cualquier dispositivo.",
     footnote: "Fichar no es opcional, es la ley",
   },
   {
-    icon: Users2,
+    icon: "/images/performance.jpeg",
     title: "Evaluación del Desempeño",
     description:
       "Gestiona la evaluación del desempeño de tus empleados con una herramienta 360 grados. Saca lo mejor de tu equipo, ayúdalos a descubrir sus puntos fuertes y mejorar sus puntos débiles.",
@@ -40,25 +42,27 @@ export default function WhatIs() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
           {cards.map((card, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-xl shadow-lg p-6 md:p-8 border border-gray-100 transition-shadow hover:shadow-xl flex flex-col"
-            >
-              <div className="w-14 h-14 bg-purple-100 rounded-xl flex items-center justify-center mb-5 text-purple-600 shrink-0">
-                <card.icon className="h-7 w-7" />
-              </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-3">
-                {card.title}
-              </h3>
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed flex-1">
-                {card.description}
-              </p>
-              {card.footnote && (
-                <p className="text-xs text-gray-500 mt-3 italic">
-                  {card.footnote}
+            <ContainerCard key={index}>
+              <div
+                key={index}
+                className=" items-center justify-center flex flex-col"
+              >
+                <div className="w-full h-64 bg-purple-100 rounded-xl flex items-center justify-center mb-5 text-purple-600 shrink-0">
+                  <Image src={card.icon} alt={card.title} width={1024} height={1024} />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                  {card.title}
+                </h3>
+                <p className="text-sm md:text-base text-gray-600 leading-relaxed flex-1">
+                  {card.description}
                 </p>
-              )}
-            </div>
+                {card.footnote && (
+                  <p className="text-xs text-gray-500 mt-3 italic">
+                    {card.footnote}
+                  </p>
+                )}
+              </div>
+            </ContainerCard>
           ))}
         </div>
       </div>
