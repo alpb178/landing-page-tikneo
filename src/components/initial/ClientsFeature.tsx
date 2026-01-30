@@ -1,4 +1,5 @@
 import { Users, Briefcase, Paperclip, MessageCircle } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 const featurePills = [
@@ -69,61 +70,7 @@ export default function ClientsFeature() {
           </div>
 
           {/* Mockup smartphone derecho */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[280px] aspect-9/19 bg-gray-900 rounded-[2.5rem] p-2 shadow-2xl border-4 border-gray-800">
-              <div className="w-full h-full bg-white rounded-4xl overflow-hidden flex flex-col">
-                {/* Barra superior app */}
-                <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100 bg-purple-50">
-                  <span className="text-xs font-bold text-purple-700">
-                    TICKNEO
-                  </span>
-                  <div className="flex gap-2">
-                    <div className="w-6 h-6 rounded-full bg-purple-200" />
-                    <div className="w-5 h-5 rounded bg-purple-200" />
-                  </div>
-                </div>
-                <div className="flex-1 p-4 overflow-auto">
-                  <p className="text-xs font-semibold text-gray-900">
-                    Cardenas | Construcción García
-                  </p>
-                  <p className="text-xs text-gray-600 mb-3">
-                    Reforma Tidena Local
-                  </p>
-                  <div className="mb-4">
-                    <p className="text-[10px] text-gray-500 mb-1">Progreso</p>
-                    <div className="h-2 bg-gray-200 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-purple-500 rounded-full"
-                        style={{ width: "60%" }}
-                      />
-                    </div>
-                  </div>
-                  <ul className="space-y-2">
-                    {[
-                      { text: "Pendiente revisión de presupuesto", done: false },
-                      { text: "Realizado", done: true },
-                      { text: "Agenda", done: true },
-                    ].map((item, i) => (
-                      <li
-                        key={i}
-                        className="flex items-center gap-2 text-[10px] text-gray-600"
-                      >
-                        <span
-                          className={`w-4 h-4 rounded border flex items-center justify-center shrink-0 ${item.done
-                              ? "bg-green-100 border-green-300 text-green-600"
-                              : "border-gray-300"
-                            }`}
-                        >
-                          {item.done && "✓"}
-                        </span>
-                        {item.text}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+          <Image src="/images/clients.png" alt="Clients" width={1024} height={1024} />
         </div>
       </div>
     </section>
