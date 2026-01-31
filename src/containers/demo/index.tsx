@@ -1,13 +1,15 @@
 "use client";
 
 import Link from "next/link";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 export default function Demo() {
   return (
-    <section className="min-h-screen  py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 p-8 md:p-10">
-          <h1 className="text-2xl md:text-3xl font-bold text-purple-900 text-center mb-3">
+        <AnimateOnScroll variant="fadeUp">
+        <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-5 sm:p-6 md:p-10">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-900 text-center mb-3">
             Empieza tu prueba gratuita o solicita una demo
           </h1>
           <p className="text-gray-600 text-center text-sm md:text-base mb-8">
@@ -166,6 +168,7 @@ export default function Demo() {
             </div>
           </form>
         </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

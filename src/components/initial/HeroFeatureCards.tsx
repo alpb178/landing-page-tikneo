@@ -43,7 +43,7 @@ export default function HeroFeatureCards() {
               <card.icon className="h-14 w-14 shrink-0 shadow-2xl shadow-purple-200/50" />
 
               <div className="flex flex-col items-start justify-center">
-                <h3 className="text-lg font-bold text-gray-900 mb-1">
+                <h3 className="text-lg font-bold text-purple-900 mb-1">
                   {card.title}
                 </h3>
 
