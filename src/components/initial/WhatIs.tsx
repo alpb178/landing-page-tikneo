@@ -30,7 +30,7 @@ export default function WhatIs() {
   return (
     <section className=" px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-6">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-purple-900 text-center mb-6">
           ¿Qué es TIKNEO?
         </h2>
         <p className="text-base md:text-lg text-gray-600 text-center max-w-3xl mx-auto mb-12 md:mb-16 leading-relaxed">
@@ -50,7 +50,7 @@ export default function WhatIs() {
                 <div className="w-full h-64 bg-purple-100 rounded-xl flex items-center justify-center mb-5 text-purple-600 shrink-0">
                   <Image src={card.icon} alt={card.title} width={1024} height={1024} />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
+                <h3 className="text-lg font-bold text-purple-900 mb-3">
                   {card.title}
                 </h3>
                 <p className="text-sm md:text-base text-gray-600 leading-relaxed flex-1">

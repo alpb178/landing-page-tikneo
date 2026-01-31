@@ -2,6 +2,8 @@
 
 @theme {
   --color-textHeader: #473082;
+  /* Inter como fuente principal del proyecto (definida en layout.tsx con next/font) */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
 }
 
 @layer base {
@@ -10,6 +12,7 @@
   }
 
   body {
+    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
@@ -27,6 +30,15 @@
 }
 
 @layer components {
+  /* Oculta la barra de scroll pero mantiene el scroll */
+  .scrollbar-hide {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Fondo TikNEO: degradado blanco → morado pálido + ondas orgánicas en zona inferior central */
   .bg-layout-lavender {
     background-color: #faf8fc;
@@ -104,6 +116,27 @@
 
   .animate-fade-in-up {
     animation: fadeInUp 0.6s ease-out;
+  }
+
+  /* Animaciones al entrar en vista (usadas por AnimateOnScroll) */
+  .animate-fade-up-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-fade-in-on-scroll {
+    opacity: 1;
+    transform: none;
+  }
+
+  .animate-slide-up-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-scale-in-on-scroll {
+    opacity: 1;
+    transform: scale(1);
   }
 
   /* Hover effects */

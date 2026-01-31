@@ -1,3 +1,6 @@
+"use client";
+
+import Features from "@/components/initial/BussinessTools/Features";
 import {
   FileText,
   Clock,
@@ -8,6 +11,7 @@ import {
   MessageCircle,
 } from "lucide-react";
 import Link from "next/link";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const features = [
   { icon: FileText, label: "Informes Laborales" },
@@ -21,17 +25,20 @@ const features = [
 
 export default function WhyTikneo() {
   return (
-    <section className="min-h-screen py-16 md:py-24 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-3xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 text-center mb-10">
-          ¿Por qué usar Tikneo?
-        </h1>
+    <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
+      <div className="w-full md:max-w-5xl mx-auto">
+        <AnimateOnScroll variant="fadeUp">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-900 text-center mb-8 sm:mb-10">
+            ¿Por qué usar Tikneo?
+          </h1>
+        </AnimateOnScroll>
 
-        <div className="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed mb-12">
+        <AnimateOnScroll variant="fadeUp" delay={80}>
+        <div className="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed mb-10 sm:mb-12">
           <p>
-            ¿Por qué deberías elegir nuestra aplicación de control de horario? La
-            respuesta es simple: porque te ayuda a tomar el control de tu tiempo
-            de manera eficiente y efectiva.
+            ¿Por qué deberías elegir nuestra aplicación de control de horario?
+            La respuesta es simple: porque te ayuda a tomar el control de tu
+            tiempo de manera eficiente y efectiva.
           </p>
           <p>
             Nuestra aplicación te permite planificar, registrar y analizar tus
@@ -45,8 +52,8 @@ export default function WhyTikneo() {
             Con nuestra aplicación, puedes identificar fácilmente dónde estás
             invirtiendo tu tiempo y ajustar tus hábitos para ser más productivo.
             Desde profesionales independientes hasta equipos de trabajo, nuestra
-            aplicación se adapta a tus necesidades y te ayuda a alcanzar tus metas
-            de manera más eficiente.
+            aplicación se adapta a tus necesidades y te ayuda a alcanzar tus
+            metas de manera más eficiente.
           </p>
           <p>
             Además, la seguridad de tus datos es nuestra prioridad. Con
@@ -62,30 +69,19 @@ export default function WhyTikneo() {
           </p>
         </div>
 
-        <div className="flex justify-center mb-16">
+        <div className="flex justify-center mb-12 sm:mb-16">
           <Link
             href="/price"
-            className="inline-flex items-center justify-center bg-gray-200 hover:bg-gray-300 text-gray-900 font-semibold px-8 py-3.5 rounded-2xl shadow-md transition-colors"
+            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-3.5 rounded-full shadow-md transition-colors min-h-[44px] touch-manipulation"
           >
             Ver Planes
           </Link>
         </div>
+        </AnimateOnScroll>
 
-        <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-6 md:gap-8">
-          {features.map((item, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center text-center"
-            >
-              <div className="w-14 h-14 rounded-xl bg-purple-100 flex items-center justify-center text-purple-600 mb-3">
-                <item.icon className="h-7 w-7" />
-              </div>
-              <span className="text-sm font-medium text-gray-700">
-                {item.label}
-              </span>
-            </div>
-          ))}
-        </div>
+        <AnimateOnScroll variant="fadeUp" delay={120}>
+          <Features />
+        </AnimateOnScroll>
       </div>
     </section>
   );

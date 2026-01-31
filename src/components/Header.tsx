@@ -23,9 +23,10 @@ export default function Header() {
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   const linkClass = (href: string) =>
-    `px-3 py-2 text-lg font-medium border-t-2 pt-2 -mt-2 transition-colors ${isActive(href)
-      ? "text-textHeader border-textHeader"
-      : "text-gray-600 hover:text-purple-600 border-transparent"
+    `px-3 py-2 text-lg font-medium border-t-2 pt-2 -mt-2 transition-colors ${
+      isActive(href)
+        ? "text-textHeader border-textHeader"
+        : "text-gray-600 hover:text-purple-600 border-transparent"
     }`;
 
   return (
@@ -56,11 +57,7 @@ export default function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6 text-lg">
               {navLinks.map(({ href, label }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className={linkClass(href)}
-                >
+                <Link key={href} href={href} className={linkClass(href)}>
                   {label}
                 </Link>
               ))}
@@ -81,11 +78,14 @@ export default function Header() {
               </Link>
             </nav>
 
-            {/* Mobile menu button */}
-            <div className="md:hidden">
+            {/* Mobile menu button: área táctil amplia */}
+            <div className="md:hidden flex items-center">
               <button
+                type="button"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="text-gray-700 hover:text-purple-600"
+                className="p-2.5 -mr-2.5 text-gray-700 hover:text-purple-600 hover:bg-purple-50 rounded-lg transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
+                aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+                aria-expanded={isMenuOpen}
               >
                 {isMenuOpen ? (
                   <X className="h-6 w-6" />
@@ -96,60 +96,41 @@ export default function Header() {
             </div>
           </div>
 
-          {/* Mobile Navigation */}
+          {/* Mobile Navigation: panel deslizable, enlaces táctiles */}
           {isMenuOpen && (
-            <div className="md:hidden">
-              <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+            <div className="md:hidden border-t border-gray-100 animate-fade-in-up">
+              <nav className="px-3 pt-3 pb-4 space-y-0.5 bg-white/95 backdrop-blur-sm">
                 {navLinks.map(({ href, label }) => (
                   <Link
                     key={href}
                     href={href}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block px-3 py-2 text-base font-medium ${isActive(href)
-                      ? "text-textHeader"
-                      : "text-gray-700 hover:text-purple-600"
-                      }`}
+                    className={`block px-4 py-3.5 text-base font-medium rounded-xl min-h-[48px] flex items-center touch-manipulation ${
+                      isActive(href)
+                        ? "text-textHeader bg-purple-50"
+                        : "text-gray-700 hover:bg-purple-50 hover:text-purple-700 active:bg-purple-100"
+                    }`}
                   >
                     {label}
                   </Link>
                 ))}
-                <a
-                  href="/time-tracking-software"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Control horario
-                </a>
-                <a
-                  href="/shift-planning"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Planificación de turnos
-                </a>
-                <a
-                  href="/task-planning"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Planificación de tareas
-                </a>
-                <a
-                  href="/vacation-manager"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Gestor de vacaciones
-                </a>
-                <a
-                  href="/tablet-clock-in"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Tablet para fichar
-                </a>
-                <a
-                  href="/employee-center"
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-purple-600"
-                >
-                  Centro de empleados
-                </a>
-              </div>
+                <div className="pt-2 px-4 space-y-1 border-t border-gray-100 mt-2">
+                  <a
+                    href="https://app.tikneo.com/login"
+                    className="block py-3.5 text-gray-700 hover:text-purple-600 font-medium rounded-xl"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Iniciar sesión
+                  </a>
+                  <Link
+                    href="/demo"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="flex items-center justify-center py-3.5 bg-purple-600 hover:bg-purple-700 text-white font-semibold rounded-xl"
+                  >
+                    Prueba Gratuita
+                  </Link>
+                </div>
+              </nav>
             </div>
           )}
         </div>

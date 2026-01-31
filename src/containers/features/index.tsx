@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import {
   FileCheck,
   Building2,
@@ -14,6 +14,8 @@ import {
   Calendar,
   type LucideIcon,
 } from "lucide-react";
+import Image from "next/image";
+import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 type FeatureItem = {
   id: string;
@@ -97,63 +99,148 @@ const features: FeatureItem[] = [
 
 export default function Features() {
   const [activeId, setActiveId] = useState(features[0].id);
-  const active = features.find((f) => f.id === activeId) ?? features[0];
+  const contentRef = useRef<HTMLDivElement>(null);
+  const sectionRefs = useRef<Map<string, HTMLDivElement>>(new Map());
+
+  const setSectionRef = useCallback((id: string, el: HTMLDivElement | null) => {
+    if (el) sectionRefs.current.set(id, el);
+    else sectionRefs.current.delete(id);
+  }, []);
+
+  useEffect(() => {
+    const container = contentRef.current;
+    if (!container) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const containerRect = container.getBoundingClientRect();
+        let topmostId: string | null = null;
+        let topmostTop = Infinity;
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const id = entry.target.getAttribute("data-feature-id");
+          if (!id) continue;
+          const top = (entry.target as HTMLElement).getBoundingClientRect().top;
+          if (top < topmostTop) {
+            topmostTop = top;
+            topmostId = id;
+          }
+        }
+        if (topmostId) setActiveId(topmostId);
+      },
+      {
+        root: container,
+        rootMargin: "-10% 0px -50% 0px",
+        threshold: [0, 0.1, 0.5, 1],
+      }
+    );
+
+    const refs = sectionRefs.current;
+    refs.forEach((el) => observer.observe(el));
+    return () => observer.disconnect();
+  }, []);
+
+  const scrollToFeature = (id: string) => {
+    setActiveId(id);
+    const container = contentRef.current;
+    const el = sectionRefs.current.get(id);
+    if (!container || !el) return;
+    // Posición correcta relativa al contenedor (evita saltos al 5.º por offsetParent)
+    const isFirst = features[0].id === id;
+    const top = isFirst
+      ? 0
+      : Math.max(
+          0,
+          container.scrollTop +
+            el.getBoundingClientRect().top -
+            container.getBoundingClientRect().top -
+            16
+        );
+    container.scrollTo({ top, behavior: "smooth" });
+  };
 
   return (
-    <section className="min-h-screen  py-12 md:py-20 px-4 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-layout-lavender py-10 sm:py-12 md:py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-purple-900 mb-3">
-          Características
-        </h1>
-        <p className="text-gray-600 text-lg mb-10 max-w-2xl">
-          Descubre todas las funcionalidades que Tikneo ofrece para gestionar
-          eficientemente tu empresa.
-        </p>
+        <AnimateOnScroll variant="fadeUp">
+          <div className="text-center mb-6 sm:mb-8">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-900 mb-3">
+              Características
+            </h1>
+            <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
+              Descubre todas las funcionalidades que Tikneo ofrece para gestionar
+              eficientemente tu empresa.
+            </p>
+          </div>
+        </AnimateOnScroll>
 
-        <div className="grid lg:grid-cols-[280px_1fr] gap-8 lg:gap-12">
-          {/* Sidebar */}
-          <nav className="flex flex-row lg:flex-col gap-1 overflow-x-auto pb-2 lg:pb-0 lg:overflow-x-visible">
+        <div className="grid lg:grid-cols-[280px_1fr] gap-4 sm:gap-6 lg:gap-8 items-stretch lg:min-h-[65vh]">
+          {/* Sidebar: fijo, sin scroll vertical; solo el panel derecho hace scroll */}
+          <nav className="rounded-2xl shadow-md border border-gray-100 p-2 flex flex-row lg:flex-col gap-1 overflow-x-auto lg:overflow-x-visible lg:overflow-y-hidden shrink-0 scrollbar-hide overscroll-x-contain">
             {features.map((item) => {
               const isActive = activeId === item.id;
               return (
                 <button
                   key={item.id}
                   type="button"
-                  onClick={() => setActiveId(item.id)}
-                  className={`flex items-center gap-3 px-4 py-3 rounded-lg text-left whitespace-nowrap transition-colors ${isActive
-                      ? "bg-purple-100 text-purple-900 border-l-4 border-purple-600 lg:border-l-4 lg:border-l-purple-600"
-                      : "text-gray-600 hover:bg-purple-50 hover:text-purple-800"
-                    }`}
+                  onClick={() => scrollToFeature(item.id)}
+                  className={`flex items-center gap-3 px-4 py-3 rounded-xl text-left whitespace-nowrap transition-colors min-h-[44px] touch-manipulation shrink-0 ${
+                    isActive
+                      ? "bg-purple-200 text-purple-900 font-semibold"
+                      : "text-gray-500 hover:bg-purple-50 hover:text-purple-800 active:bg-purple-100"
+                  }`}
                 >
-                  <item.icon className="h-5 w-5 shrink-0 text-purple-600" />
+                  <item.icon
+                    className={`h-5 w-5 shrink-0 ${
+                      isActive ? "text-purple-700" : "text-purple-500"
+                    }`}
+                  />
                   <span className="font-medium">{item.label}</span>
                 </button>
               );
             })}
           </nav>
 
-          {/* Contenido + ilustración */}
-          <div className="min-w-0">
-            {/* Ilustración decorativa */}
-            <div className="flex justify-end mb-6">
-              <div className="w-full max-w-xs h-32 md:h-40 rounded-2xl bg-linear-to-br from-purple-200 to-purple-300 flex items-center justify-center">
-                <div className="flex gap-4 text-purple-700">
-                  <FileCheck className="h-12 w-12 md:h-16 md:w-16 opacity-90" />
-                  <Clock className="h-10 w-10 md:h-12 md:w-12 self-end opacity-80" />
-                </div>
-              </div>
+          {/* Panel de contenido: ilustración sobre el borde del contenedor; solo este hace scroll */}
+          <div className="min-w-0 relative">
+            {/* Ilustración sobre el borde superior del contenedor de tarjetas */}
+            <div className="absolute top-0 right-0 z-10  -translate-y-1/2 flex items-center justify-center pointer-events-none">
+              <Image
+                src="/features.png"
+                alt=""
+                width={1024}
+                height={1024}
+                className="hidden md:block w-full max-w-[200px] md:max-w-[240px] h-36 rounded-2xl object-contain object-center"
+              />
             </div>
-
-            <div className="bg-white rounded-2xl shadow-md border border-gray-100 p-6 md:p-8">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-purple-100 rounded-xl flex items-center justify-center text-purple-600">
-                  <active.icon className="h-5 w-5" />
-                </div>
-                <h2 className="text-xl md:text-2xl font-bold text-purple-900">
-                  {active.label}
-                </h2>
-              </div>
-              <p className="text-gray-600 leading-relaxed">{active.content}</p>
+            <div
+              ref={contentRef}
+              className="min-h-0 flex flex-col overflow-y-auto p-3 pt-16 sm:pt-20 md:pt-24 gap-4 max-h-[55vh] sm:max-h-[60vh] lg:max-h-[65vh] scrollbar-hide"
+            >
+              {features.map((item) => {
+                const isActiveCard = activeId === item.id;
+                return (
+                  <div
+                    key={item.id}
+                    ref={(el) => setSectionRef(item.id, el)}
+                    data-feature-id={item.id}
+                    className={`shrink-0 rounded-2xl shadow-md border p-6 md:p-8 scroll-mt-4 transition-colors ${
+                      isActiveCard
+                        ? "bg-purple-100/80 border-purple-200"
+                        : "bg-white border-gray-100"
+                    }`}
+                  >
+                    <div className="flex items-center gap-3 mb-4">
+                      <h2 className="text-xl md:text-2xl font-bold text-purple-900">
+                        {item.label}
+                      </h2>
+                    </div>
+                    <p className="text-gray-600 leading-relaxed">
+                      {item.content}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
