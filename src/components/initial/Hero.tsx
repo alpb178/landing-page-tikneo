@@ -3,30 +3,30 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="pt-8 pb-12 md:pt-12 md:pb-16">
+    <section className="pt-6 sm:pt-8 pb-10 sm:pb-12 md:pt-12 md:pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-purple-900 mb-6 leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold text-purple-900 mb-4 sm:mb-6 leading-tight">
           El control horario que crece con tu empresa
         </h1>
 
-        <p className="text-lg md:text-xl text-gray-600 mb-8">
+        <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-6 sm:mb-8">
           Gestiona turnos, ausencias y{" "}
           <span className="text-purple-600 font-semibold">fichajes</span> desde
           cualquier lugar.
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
           <Link
             href="/signup"
-            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3.5 rounded-full transition-colors"
+            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
           >
             Prueba gratis 15 días
           </Link>
           <Link
             href="#demo"
-            className="inline-flex items-center justify-center bg-white border-2 border-purple-400 text-purple-600 hover:bg-purple-50 font-semibold px-8 py-3.5 rounded-full transition-colors"
+            className="inline-flex items-center justify-center bg-white border-2 border-purple-400 text-purple-600 hover:bg-purple-50 font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
           >
-            <Play className="h-5 w-5 mr-2" />
+            <Play className="h-5 w-5 mr-2 shrink-0" />
             Ver demostración
           </Link>
         </div>
