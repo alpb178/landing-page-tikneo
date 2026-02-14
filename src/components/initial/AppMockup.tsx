@@ -16,11 +16,11 @@ export default function AppMockup() {
           <span className="w-3 h-3 rounded-full bg-amber-400" />
           <span className="w-3 h-3 rounded-full bg-green-400" />
         </div>
-        <div className="relative h-[380px] md:h-[420px] bg-gray-50 overflow-hidden">
+        <div className="relative min-h-[320px] bg-gray-50 overflow-hidden flex items-center justify-center">
           <img
             src="/images/expenses.png"
             alt="TikNEO Gastos"
-            className="absolute inset-0 w-full h-full object-cover object-top"
+            className="w-full h-auto max-h-[420px] md:max-h-[480px] object-contain object-top"
           />
         </div>
       </div>
