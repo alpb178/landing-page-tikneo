@@ -3,6 +3,48 @@
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
+const PAISES_TELEFONO: { value: string; label: string }[] = [
+  { value: "", label: "Seleccionar" },
+  { value: "es", label: "España (+34)" },
+  { value: "mx", label: "México (+52)" },
+  { value: "ar", label: "Argentina (+54)" },
+  { value: "co", label: "Colombia (+57)" },
+  { value: "cl", label: "Chile (+56)" },
+  { value: "pe", label: "Perú (+51)" },
+  { value: "ve", label: "Venezuela (+58)" },
+  { value: "ec", label: "Ecuador (+593)" },
+  { value: "gt", label: "Guatemala (+502)" },
+  { value: "cu", label: "Cuba (+53)" },
+  { value: "bo", label: "Bolivia (+591)" },
+  { value: "do", label: "Rep. Dominicana (+1 809)" },
+  { value: "hn", label: "Honduras (+504)" },
+  { value: "py", label: "Paraguay (+595)" },
+  { value: "sv", label: "El Salvador (+503)" },
+  { value: "ni", label: "Nicaragua (+505)" },
+  { value: "cr", label: "Costa Rica (+506)" },
+  { value: "pa", label: "Panamá (+507)" },
+  { value: "uy", label: "Uruguay (+598)" },
+  { value: "pr", label: "Puerto Rico (+1 787)" },
+  { value: "us", label: "Estados Unidos (+1)" },
+  { value: "ca", label: "Canadá (+1)" },
+  { value: "br", label: "Brasil (+55)" },
+  { value: "fr", label: "Francia (+33)" },
+  { value: "de", label: "Alemania (+49)" },
+  { value: "it", label: "Italia (+39)" },
+  { value: "gb", label: "Reino Unido (+44)" },
+  { value: "pt", label: "Portugal (+351)" },
+  { value: "other", label: "Otro" },
+];
+
+const NUMERO_EMPLEADOS_OPCIONES: { value: string; label: string }[] = [
+  { value: "", label: "Seleccionar opción" },
+  { value: "1-15", label: "De 1 a 15 empleados" },
+  { value: "16-50", label: "De 16 a 50 empleados" },
+  { value: "51-150", label: "De 51 a 150 empleados" },
+  { value: "151-500", label: "De 151 a 500 empleados" },
+  { value: "500+", label: "Más de 500 empleados" },
+];
+
 export default function Demo() {
   return (
     <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
@@ -60,18 +102,31 @@ export default function Demo() {
                 />
               </div>
               <div>
-                <label htmlFor="telefono" className="block text-sm font-medium text-gray-700 mb-1">
+                <label htmlFor="telefono-codigo" className="block text-sm font-medium text-gray-700 mb-1">
                   Teléfono
                 </label>
-                <select
-                  id="telefono"
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
-                >
-                  <option value="">Seleccionar</option>
-                  <option value="esp">España (+34)</option>
-                  <option value="mx">México (+52)</option>
-                  <option value="ar">Argentina (+54)</option>
-                </select>
+                <div className="flex gap-2">
+                  <select
+                    id="telefono-codigo"
+                    name="telefonoCodigo"
+                    aria-label="Código de país"
+                    className="w-[140px] shrink-0 px-3 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-8 text-sm"
+                  >
+                    {PAISES_TELEFONO.map((pais) => (
+                      <option key={pais.value || "sel"} value={pais.value}>
+                        {pais.label}
+                      </option>
+                    ))}
+                  </select>
+                  <input
+                    id="telefono"
+                    name="telefono"
+                    type="tel"
+                    autoComplete="tel-national"
+                    placeholder="Número de teléfono"
+                    className="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  />
+                </div>
               </div>
             </div>
 
@@ -95,11 +150,11 @@ export default function Demo() {
                   id="empleados"
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
                 >
-                  <option value="">Seleccionar opción</option>
-                  <option value="1-10">1-10</option>
-                  <option value="11-50">11-50</option>
-                  <option value="51-200">51-200</option>
-                  <option value="200+">200+</option>
+                  {NUMERO_EMPLEADOS_OPCIONES.map((opcion) => (
+                    <option key={opcion.value || "sel"} value={opcion.value}>
+                      {opcion.label}
+                    </option>
+                  ))}
                 </select>
               </div>
             </div>
