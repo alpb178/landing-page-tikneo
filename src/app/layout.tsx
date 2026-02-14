@@ -22,7 +22,7 @@ export const metadata: Metadata = {
       "La plataforma de gestión de tareas y proyectos que te permite optimizar tu productividad y aumentar tu rendimiento.",
     images: "/logo.png",
     type: "website",
-    url: "https://tikneo.vercel.app",
+    url: "https://tikneo.corpsc.com/",
     siteName: "Tikneo",
     locale: "es_ES",
   },
