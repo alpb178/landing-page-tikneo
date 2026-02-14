@@ -21,7 +21,7 @@ const cards: FeatureCard[] = [
   },
   {
     icon: "/images/features/shifts.png",
-    title: "Gestión de Turnos",
+    title: "Gestión de Turnos, Ausencias y Vacaciones",
     description:
       "Organiza y planifica los turnos de tus empleados de manera eficaz.",
     href: "#",

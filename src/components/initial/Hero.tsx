@@ -17,7 +17,7 @@ export default function Hero() {
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
           <Link
-            href="/signup"
+            href="/demo"
             className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
           >
             Prueba gratis 15 días

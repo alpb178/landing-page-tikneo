@@ -49,7 +49,7 @@ const features: FeatureItem[] = [
   {
     id: "turnos",
     icon: Clock,
-    label: "Gestión de turnos",
+    label: "Gestión de turnos, ausencias y vacaciones",
     content:
       "Planifica y asigna turnos de forma eficaz. Visualiza calendarios, cubre ausencias y evita conflictos de horarios. Los empleados consultan sus turnos desde la app y pueden solicitar cambios con validación del responsable.",
   },
@@ -132,7 +132,7 @@ export default function Features() {
         root: container,
         rootMargin: "-10% 0px -50% 0px",
         threshold: [0, 0.1, 0.5, 1],
-      }
+      },
     );
 
     const refs = sectionRefs.current;
@@ -154,7 +154,7 @@ export default function Features() {
           container.scrollTop +
             el.getBoundingClientRect().top -
             container.getBoundingClientRect().top -
-            16
+            16,
         );
     container.scrollTo({ top, behavior: "smooth" });
   };
@@ -168,8 +168,8 @@ export default function Features() {
               Características
             </h1>
             <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto">
-              Descubre todas las funcionalidades que Tikneo ofrece para gestionar
-              eficientemente tu empresa.
+              Descubre todas las funcionalidades que Tikneo ofrece para
+              gestionar eficientemente tu empresa.
             </p>
           </div>
         </AnimateOnScroll>
