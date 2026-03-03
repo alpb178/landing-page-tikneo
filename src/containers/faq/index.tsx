@@ -82,7 +82,7 @@ export default function FAQ() {
       />
       <div className="relative max-w-3xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-900 text-center mb-4">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center mb-4">
             Preguntas Frecuentes
           </h1>
           <p className="text-gray-600 text-center text-base md:text-lg mb-8 sm:mb-12">
@@ -103,11 +103,11 @@ export default function FAQ() {
                 <button
                   type="button"
                   onClick={() => setOpenIndex(isOpen ? null : index)}
-                  className="w-full flex items-center justify-between gap-4 px-4 sm:px-6 py-4 sm:py-5 text-left font-semibold text-purple-900 hover:bg-gray-50/50 active:bg-gray-100/50 transition-colors min-h-[52px] touch-manipulation rounded-2xl"
+                  className="w-full flex items-center justify-between gap-4 px-4 sm:px-6 py-4 sm:py-5 text-left font-semibold text-primary hover:bg-gray-50/50 active:bg-gray-100/50 transition-colors min-h-[52px] touch-manipulation rounded-2xl"
                 >
                   <span className="pr-4">{item.question}</span>
                   <ChevronDown
-                    className={`h-5 w-5 shrink-0 text-purple-600 transition-transform ${
+                    className={`h-5 w-5 shrink-0 text-primary transition-transform ${
                       isOpen ? "rotate-180" : ""
                     }`}
                   />
@@ -121,7 +121,7 @@ export default function FAQ() {
                           {" "}
                           <Link
                             href={item.linkHref}
-                            className="text-purple-600 hover:text-purple-700 underline font-medium inline-flex items-center gap-1"
+                            className="text-primary hover:text-primary underline font-medium inline-flex items-center gap-1"
                           >
                             {item.linkLabel}
                             <span className="sr-only">(enlace externo)</span>
@@ -134,7 +134,7 @@ export default function FAQ() {
                       <div className="mt-4 flex justify-end">
                         <Link
                           href="/contact"
-                          className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                          className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                         >
                           Contáctanos
                         </Link>
@@ -150,7 +150,7 @@ export default function FAQ() {
         <div className="mt-10 flex justify-end">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+            className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
             ¿Necesitas ayuda? Contáctanos
           </Link>

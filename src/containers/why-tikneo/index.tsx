@@ -28,7 +28,7 @@ export default function WhyTikneo() {
     <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="w-full md:max-w-5xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-900 text-center mb-8 sm:mb-10">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center mb-8 sm:mb-10">
             ¿Por qué usar Tikneo?
           </h1>
         </AnimateOnScroll>
@@ -72,7 +72,7 @@ export default function WhyTikneo() {
         <div className="flex justify-center mb-12 sm:mb-16">
           <Link
             href="/price"
-            className="inline-flex items-center justify-center bg-purple-600 hover:bg-purple-700 text-white font-semibold px-6 sm:px-8 py-3 sm:py-3.5 rounded-full shadow-md transition-colors min-h-[44px] touch-manipulation"
+            className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-3.5 rounded-full shadow-md transition-colors min-h-[44px] touch-manipulation"
           >
             Ver Planes
           </Link>

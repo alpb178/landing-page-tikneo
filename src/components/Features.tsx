@@ -57,10 +57,10 @@ export default function Features() {
     <section className="py-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-purple-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-6">
             El control horario
             <br />
-            <span className="text-purple-600">que simplifica tu negocio</span>
+            <span className="text-primary/70">que simplifica tu negocio</span>
           </h2>
         </div>
 
@@ -70,13 +70,13 @@ export default function Features() {
               key={index}
               className="bg-white rounded-xl shadow-lg p-8 text-center"
             >
-              <div className="w-16 h-16 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mx-auto mb-6">
+              <div className="w-16 h-16 bg-primary/10 text-primary rounded-lg flex items-center justify-center mx-auto mb-6">
                 <feature.icon className="h-8 w-8" />
               </div>
-              <h3 className="text-xl font-bold text-purple-900 mb-4">
+              <h3 className="text-xl font-bold text-primary mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-muted-foreground mb-6 leading-relaxed">
                 {feature.description}
               </p>
               <a
@@ -95,7 +95,7 @@ export default function Features() {
                     ? "/reports-and-statistics"
                     : "#"
                 }
-                className="text-purple-600 font-semibold hover:text-purple-700 transition-colors flex items-center justify-center"
+                className="text-primary font-semibold hover:opacity-70 transition-opacity flex items-center justify-center"
               >
                 {feature.link}
                 {feature.link && <ArrowRight className="ml-1 h-4 w-4" />}

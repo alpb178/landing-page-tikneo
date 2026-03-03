@@ -1,8 +1,15 @@
+import PricingCards from "@/components/pricing/PricingCards";
+import PricingCTABanner from "@/components/pricing/PricingCTABanner";
+import PricingComparisonTable from "@/components/pricing/PricingComparisonTable";
+import MobilityCard from "@/components/pricing/Mobility";
 
-import Price from "@/containers/price";
-
-export default function PricePage() {
+export default function PricingPage() {
   return (
-    <Price />
+    <main className="min-h-screen bg-white">
+      <PricingCards />
+      <MobilityCard />
+      <PricingCTABanner />
+      <PricingComparisonTable />
+    </main>
   );
 }

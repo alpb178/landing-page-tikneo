@@ -1,9 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-textHeader: #473082;
-  /* Inter como fuente principal del proyecto (definida en layout.tsx con next/font) */
+  /* Paleta Tikneo — tweakcn.com/themes/cmluzblyc000004l81pczcezq */
+  --color-primary: oklch(0.2667 0.08 263.3043);
+  --color-primary-foreground: oklch(0.9167 0.0399 263.6614);
+  --color-accent: oklch(0.6354 0.1842 347.5563);
+  --color-accent-foreground: oklch(1 0 0);
+  --color-secondary: oklch(0.97 0 0);
+  --color-secondary-foreground: oklch(0.205 0 0);
+  --color-muted: oklch(0.97 0 0);
+  --color-muted-foreground: oklch(0.556 0 0);
+  --color-destructive: oklch(0.577 0.245 27.325);
+  --color-border: oklch(0.922 0 0);
+  --color-ring: oklch(0.708 0 0);
+  --color-background: oklch(1 0 0);
+  --color-foreground: oklch(0.145 0 0);
+  --color-card: oklch(1 0 0);
+  --color-card-foreground: oklch(0.145 0 0);
+
+  /* Aliases de la paleta de precios (compatibilidad) */
+  --color-navy: oklch(0.2667 0.08 263.3043);
+  --color-blue-accent: #3064d9;
+  --color-light-blue: oklch(0.9167 0.0399 263.6614);
+  --color-bg-light: #f4f4f4;
+
+  /* Tipografía — tweakcn */
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-arvo), ui-serif, Georgia, serif;
+  --font-mono: var(--font-dm-mono), ui-monospace, monospace;
+
+  /* Radius global */
+  --radius: 1.5rem;
 }
 
 @layer base {
@@ -12,10 +39,11 @@
   }
 
   body {
-    font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.6;
+    letter-spacing: 0em;
   }
 
   h1,
@@ -39,44 +67,41 @@
     display: none;
   }
 
-  /* Fondo TikNEO: degradado blanco → morado pálido + ondas orgánicas en zona inferior central */
+  /* Fondo TikNEO: degradado blanco → azul pálido */
   .bg-layout-lavender {
-    background-color: #faf8fc;
+    background-color: #f8faff;
     background-image:
-      linear-gradient(180deg, #ffffff 0%, #f8f5fc 30%, #f0e8f5 70%, #ebe0f2 100%),
-      radial-gradient(ellipse 100% 60% at 50% 85%, rgba(88, 28, 135, 0.12) 0%, transparent 55%),
-      radial-gradient(ellipse 80% 50% at 30% 90%, rgba(126, 34, 206, 0.08) 0%, transparent 50%),
-      radial-gradient(ellipse 70% 45% at 70% 88%, rgba(109, 40, 217, 0.1) 0%, transparent 48%);
+      linear-gradient(180deg, #ffffff 0%, #f0f4ff 30%, #e4ecfc 70%, #dce6f8 100%),
+      radial-gradient(ellipse 100% 60% at 50% 85%, oklch(0.2667 0.08 263.3043 / 0.08) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 50% at 30% 90%, oklch(0.2667 0.08 263.3043 / 0.06) 0%, transparent 50%),
+      radial-gradient(ellipse 70% 45% at 70% 88%, oklch(0.2667 0.08 263.3043 / 0.07) 0%, transparent 48%);
     background-attachment: fixed;
   }
 
+  /* Botones estandarizados */
   .btn-primary {
-    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200;
+    @apply bg-primary text-primary-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200;
   }
 
   .btn-secondary {
-    @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200;
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors duration-200;
   }
 
-  .btn-purple {
-    @apply bg-purple-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-purple-700 transition-colors duration-200;
+  .btn-accent {
+    @apply bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity duration-200;
   }
 
   .btn-green {
     @apply bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition-colors duration-200;
   }
 
-  .btn-outline-purple {
-    @apply border-2 border-purple-600 text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-purple-50 transition-colors duration-200;
+  .btn-outline-primary {
+    @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors duration-200;
   }
 
-  .btn-outline-blue {
-    @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors duration-200;
-  }
-
-  /* HumancoreTime specific styles */
+  /* Legacy Humancore (mantener por retrocompatibilidad) */
   .Humancore-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, oklch(0.2667 0.08 263.3043) 0%, oklch(0.6354 0.1842 347.5563) 100%);
   }
 
   .Humancore-card {
@@ -84,14 +109,14 @@
   }
 
   .Humancore-text-gradient {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, oklch(0.2667 0.08 263.3043) 0%, oklch(0.6354 0.1842 347.5563) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .Humancore-nav-link {
-    @apply text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors duration-200;
+    @apply text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-colors duration-200;
   }
 
   .Humancore-section-padding {
