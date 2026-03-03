@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Arvo, DM_Mono } from "next/font/google";
 import "./globals.css";
 import Container from "@/components/Container";
 import Header from "@/components/Header";
@@ -9,6 +9,20 @@ const inter = Inter({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const arvo = Arvo({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-arvo",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
   display: "swap",
 });
 
@@ -41,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={inter.variable}>
+    <html lang="es" className={`${inter.variable} ${arvo.variable} ${dmMono.variable}`}>
       <body className={inter.className}>
         <Container>
           <Header />

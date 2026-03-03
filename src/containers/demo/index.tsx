@@ -51,7 +51,7 @@ export default function Demo() {
       <div className="max-w-3xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
         <div className="bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-5 sm:p-6 md:p-10">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-purple-900 text-center mb-3">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-primary text-center mb-3">
             Empieza tu prueba gratuita o solicita una demo
           </h1>
           <p className="text-gray-600 text-center text-sm md:text-base mb-8">
@@ -70,7 +70,7 @@ export default function Demo() {
                   id="nombre"
                   type="text"
                   required
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Nombre"
                 />
               </div>
@@ -82,7 +82,7 @@ export default function Demo() {
                   id="apellidos"
                   type="text"
                   required
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Apellidos"
                 />
               </div>
@@ -97,7 +97,7 @@ export default function Demo() {
                   id="email"
                   type="email"
                   required
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Email"
                 />
               </div>
@@ -110,7 +110,7 @@ export default function Demo() {
                     id="telefono-codigo"
                     name="telefonoCodigo"
                     aria-label="Código de país"
-                    className="w-[140px] shrink-0 px-3 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-8 text-sm"
+                    className="w-[140px] shrink-0 px-3 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-8 text-sm"
                   >
                     {PAISES_TELEFONO.map((pais) => (
                       <option key={pais.value || "sel"} value={pais.value}>
@@ -124,7 +124,7 @@ export default function Demo() {
                     type="tel"
                     autoComplete="tel-national"
                     placeholder="Número de teléfono"
-                    className="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                    className="flex-1 min-w-0 px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   />
                 </div>
               </div>
@@ -138,7 +138,7 @@ export default function Demo() {
                 <input
                   id="empresa"
                   type="text"
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Nombre de empresa"
                 />
               </div>
@@ -148,7 +148,7 @@ export default function Demo() {
                 </label>
                 <select
                   id="empleados"
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
                 >
                   {NUMERO_EMPLEADOS_OPCIONES.map((opcion) => (
                     <option key={opcion.value || "sel"} value={opcion.value}>
@@ -167,7 +167,7 @@ export default function Demo() {
                 <input
                   id="cargo"
                   type="text"
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none transition-colors"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Cargo en la empresa"
                 />
               </div>
@@ -178,7 +178,7 @@ export default function Demo() {
                 <select
                   id="sector"
                   required
-                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-purple-500 focus:ring-1 focus:ring-purple-500 outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
                 >
                   <option value="">Seleccionar opción</option>
                   <option value="tecnologia">Tecnología</option>
@@ -195,15 +195,15 @@ export default function Demo() {
                 id="terms"
                 type="checkbox"
                 required
-                className="mt-1 w-4 h-4 rounded border-gray-300 text-purple-600 focus:ring-purple-500"
+                className="mt-1 w-4 h-4 rounded border-gray-300 text-primary focus:ring-primary"
               />
               <label htmlFor="terms" className="text-sm text-gray-600">
                 Al continuar declaras que aceptas las{" "}
-                <Link href="/legal/condiciones" className="text-purple-700 font-medium hover:underline">
+                <Link href="/legal/condiciones" className="text-primary font-medium hover:underline">
                   Condiciones generales de contratación
                 </Link>{" "}
                 y la{" "}
-                <Link href="/legal/privacidad" className="text-purple-700 font-medium hover:underline">
+                <Link href="/legal/privacidad" className="text-primary font-medium hover:underline">
                   Política de privacidad
                 </Link>
                 .
@@ -213,7 +213,7 @@ export default function Demo() {
             <div className="pt-2">
               <button
                 type="submit"
-                className="w-full py-3.5 rounded-xl font-bold text-white bg-linear-to-r from-purple-500 to-purple-700 hover:from-purple-600 hover:to-purple-800 transition-all shadow-md"
+                className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
               >
                 Prueba gratuita
               </button>

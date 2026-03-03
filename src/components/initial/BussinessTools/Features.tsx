@@ -76,7 +76,7 @@ export default function Features() {
       {cards.map((card, index) => (
         <ContainerCard key={index}>
           <div className=" items-center justify-center flex flex-col">
-            <div className="w-full h-32  rounded-lg flex items-center justify-center mb-4 text-purple-600">
+            <div className="w-full h-32  rounded-lg flex items-center justify-center mb-4 text-primary">
               <Image
                 src={card.icon}
                 alt={card.title}
@@ -85,15 +85,15 @@ export default function Features() {
                 height={1024}
               />
             </div>
-            <h3 className="text-lg font-bold text-purple-900 mb-2">
+            <h3 className="text-lg font-bold text-primary mb-2">
               {card.title}
             </h3>
-            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+            <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               {card.description}
             </p>
             <Link
               href={card.href ?? "#"}
-              className="inline-flex items-center text-sm font-medium text-purple-600 hover:text-purple-700 transition-colors"
+              className="inline-flex items-center text-sm font-medium text-primary hover:opacity-70 transition-opacity"
             >
               Más info
               <ChevronRight className="h-4 w-4 ml-0.5" />
