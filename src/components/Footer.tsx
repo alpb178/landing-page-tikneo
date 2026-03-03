@@ -22,19 +22,19 @@ const contactInfo = [
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
+    <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-6 mb-10 sm:mb-12 text-center sm:text-left">
           {contactInfo.map((item) => {
             const Icon = item.icon;
             const block = (
               <>
-                <Icon className="h-5 w-5 text-purple-400 shrink-0 sm:mt-0.5" />
+                <Icon className="h-5 w-5 text-primary-foreground/70 shrink-0 sm:mt-0.5" />
                 <div>
-                  <p className="font-semibold text-white text-sm uppercase tracking-wide mb-1">
+                  <p className="font-semibold text-primary-foreground text-sm uppercase tracking-wide mb-1">
                     {item.label}
                   </p>
-                  <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+                  <p className="text-primary-foreground/70 text-sm sm:text-base leading-relaxed">
                     {item.value}
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export default function Footer() {
                 {item.href ? (
                   <Link
                     href={item.href}
-                    className={`${wrapperClass} text-gray-300 hover:text-white transition-colors`}
+                    className={`${wrapperClass} text-primary-foreground/70 hover:text-primary-foreground transition-colors`}
                   >
                     {block}
                   </Link>
@@ -59,13 +59,13 @@ export default function Footer() {
           })}
         </div>
 
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-700">
-          <span className="text-gray-400 text-sm sm:text-base">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-primary-foreground/20">
+          <span className="text-primary-foreground/60 text-sm sm:text-base">
             © 2026 Tikneo
           </span>
           <Link
             href="/contact"
-            className="text-purple-300 hover:text-purple-200 text-sm font-medium transition-colors"
+            className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
           >
             Contacto
           </Link>

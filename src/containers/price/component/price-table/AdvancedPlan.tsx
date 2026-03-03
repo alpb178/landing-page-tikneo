@@ -12,20 +12,20 @@ const avanzadoFeatures = [
 
 export default function AdvancedPlan() {
   return (
-    <div className="bg-purple-100/60 rounded-2xl shadow-md border flex flex-col justify-center items-center border-gray-200 p-3 ">
+    <div className="bg-primary/10 rounded-2xl shadow-md border flex flex-col justify-center items-center border-gray-200 p-3 ">
       <div className="rounded-2xl shadow-md border border-gray-200 p-6 md:p-8 flex flex-col">
         <div className="flex items-center gap-2 mb-3">
-          <Rocket className="h-6 w-6 text-purple-600 shrink-0" />
-          <Star className="h-5 w-5 text-purple-500 shrink-0" />
-          <h3 className="text-xl font-bold text-purple-900">Plan Avanzado</h3>
+          <Rocket className="h-6 w-6 text-primary shrink-0" />
+          <Star className="h-5 w-5 text-primary/70 shrink-0" />
+          <h3 className="text-xl font-bold text-primary">Plan Avanzado</h3>
         </div>
         <p className="text-gray-600 text-sm mb-4">
           El plan completo para automatizar y tener control total.
         </p>
         <div className="rounded-2xl shadow-md border border-gray-200 p-6 mt-4 mb-6 flex flex-col">
           <p className="text-gray-800 mb-2">
-            <span className="font-bold text-purple-900">Incluye:</span>{" "}
-            <span className="text-purple-900">
+            <span className="font-bold text-primary">Incluye:</span>{" "}
+            <span className="text-primary">
               Todo lo del Plan Esencial + 39.99 €/mes hasta 10 empleados + 3.50
               €/mes por cada empleado adicional
             </span>
@@ -48,13 +48,13 @@ export default function AdvancedPlan() {
           <div className="flex flex-col sm:flex-row gap-3 mb-4">
             <Link
               href="/demo"
-              className="flex-1 py-3 rounded-xl font-semibold text-center border-2 border-purple-600 text-purple-600 hover:bg-purple-50 transition-colors"
+              className="flex-1 py-3 rounded-xl font-semibold text-center border-2 border-primary text-primary hover:bg-primary/5 transition-colors"
             >
               Ver demo
             </Link>
             <Link
               href="/signup"
-              className="flex-1 py-3 rounded-xl font-semibold text-center bg-purple-600 hover:bg-purple-700 text-white transition-colors"
+              className="flex-1 py-3 rounded-xl font-semibold text-center bg-primary hover:opacity-90 text-white transition-colors"
             >
               Probar Avanzado
             </Link>
