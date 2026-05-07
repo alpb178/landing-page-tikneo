@@ -73,8 +73,8 @@ export function IconClockHistory(props: SVGProps<SVGSVGElement>) {
           y2="43.4805"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.26194" stop-color="#10234C" />
-          <stop offset="1" stop-color="#3064D9" />
+          <stop offset="0.26194" stopColor="#10234C" />
+          <stop offset="1" stopColor="#3064D9" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_7696_7694"
@@ -84,8 +84,8 @@ export function IconClockHistory(props: SVGProps<SVGSVGElement>) {
           y2="25.9102"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.26194" stop-color="#10234C" />
-          <stop offset="1" stop-color="#3064D9" />
+          <stop offset="0.26194" stopColor="#10234C" />
+          <stop offset="1" stopColor="#3064D9" />
         </linearGradient>
       </defs>
     </svg>
@@ -122,8 +122,8 @@ export function IconBarChartReport(props: SVGProps<SVGSVGElement>) {
           y2="5.61009"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.26194" stop-color="#10234C" />
-          <stop offset="1" stop-color="#3064D9" />
+          <stop offset="0.26194" stopColor="#10234C" />
+          <stop offset="1" stopColor="#3064D9" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_7696_7705"
@@ -133,8 +133,8 @@ export function IconBarChartReport(props: SVGProps<SVGSVGElement>) {
           y2="17.1278"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.26194" stop-color="#10234C" />
-          <stop offset="1" stop-color="#3064D9" />
+          <stop offset="0.26194" stopColor="#10234C" />
+          <stop offset="1" stopColor="#3064D9" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_7696_7705"
@@ -144,8 +144,8 @@ export function IconBarChartReport(props: SVGProps<SVGSVGElement>) {
           y2="32.4775"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.26194" stop-color="#10234C" />
-          <stop offset="1" stop-color="#3064D9" />
+          <stop offset="0.26194" stopColor="#10234C" />
+          <stop offset="1" stopColor="#3064D9" />
         </linearGradient>
       </defs>
     </svg>
