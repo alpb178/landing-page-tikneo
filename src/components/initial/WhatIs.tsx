@@ -1,23 +1,23 @@
-import Image from "next/image";
+import { Calendar, Clock, FileText } from "lucide-react";
 import { ContainerCard } from "../Container";
 
 const cards = [
   {
-    icon: "/images/what-is/managment.jpeg",
+    Icon: Calendar,
     title: "Gestión de ausencias",
     description:
       "Gracias al portal del empleado de Tikneo, tus trabajadores podrán gestionar sus propias ausencias, consultar los días que les quedan de vacaciones y corroborar quiénes están ausentes.",
     footnote: null,
   },
   {
-    icon: "/images/what-is/signin.jpeg",
+    Icon: Clock,
     title: "Facilita el fichaje",
     description:
       "Los trabajadores de tu empresa podrán marcar ingresos y salidas de forma sencilla, ya sea trabajando en remoto o presencial. Desde cualquier dispositivo.",
     footnote: "Fichar no es opcional, es la ley",
   },
   {
-    icon: "/images/what-is/performance.jpeg",
+    Icon: FileText,
     title: "Evaluación del Desempeño",
     description:
       "Gestiona la evaluación del desempeño de tus empleados con una herramienta 360 grados. Saca lo mejor de tu equipo, ayúdalos a descubrir sus puntos fuertes y mejorar sus puntos débiles.",
@@ -46,13 +46,8 @@ export default function WhatIs() {
                 key={index}
                 className=" items-center justify-center flex flex-col"
               >
-                <div className="w-full h-64 bg-primary/10 rounded-xl flex items-center justify-center mb-5 text-primary shrink-0">
-                  <Image
-                    src={card.icon}
-                    alt={card.title}
-                    width={1024}
-                    height={1024}
-                  />
+                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-primary shrink-0">
+                  <card.Icon className="h-10 w-10" strokeWidth={1.75} />
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-3">
                   {card.title}

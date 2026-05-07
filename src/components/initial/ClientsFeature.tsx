@@ -70,7 +70,12 @@ export default function ClientsFeature() {
           </div>
 
           {/* Mockup smartphone derecho */}
-          <Image src="/images/clients.png" alt="Clients" width={1024} height={1024} />
+          <Image
+            src="/images/chat.png"
+            alt="chats"
+            width={1024}
+            height={1024}
+          />
         </div>
       </div>
     </section>
