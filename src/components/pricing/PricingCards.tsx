@@ -1,64 +1,19 @@
+"use client";
+
 import { CircleCheckBig } from "lucide-react";
 import { Red_Hat_Display } from "next/font/google";
-import Link from "next/link";
+import { useState } from "react";
+import PlanContactModal from "./PlanContactModal";
+import { plans } from "./plans";
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   weight: ["600"],
 });
 
-interface Plan {
-  name: string;
-  label: string;
-  price: string;
-  extraEmployee: string;
-  baseDescription: string;
-  features: string[];
-  highlighted: boolean;
-  slug: string;
-}
-
-const plans: Plan[] = [
-  {
-    name: "Plan Esencial",
-    label: "PLAN ESENCIAL",
-    price: "24.99€",
-    extraEmployee: "+ 2.30€ /mes por cada empleado adicional",
-    baseDescription: "/mes hasta 10 empleados",
-    features: [
-      "Gestión de empleados",
-      "Turnos",
-      "Gestión de ausencias",
-      "Chat",
-      "Acceso con Face ID",
-      "Notificaciones",
-      "Calendario",
-      "Fichajes",
-    ],
-    highlighted: false,
-    slug: "esencial",
-  },
-  {
-    name: "Plan Avanzado",
-    label: "PLAN AVANZADO",
-    price: "38.99€",
-    extraEmployee: "+ 3.50€ /mes por cada empleado adicional",
-    baseDescription: "/mes hasta 10 empleados",
-    features: [
-      "Plan esencial +",
-      "Historial de fichajes",
-      "Proyectos",
-      "Chrono (control horario)",
-      "Check-List",
-      "Clientes",
-      "Presupuestos",
-    ],
-    highlighted: true,
-    slug: "avanzado",
-  },
-];
-
 export default function PricingCards() {
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
   return (
     <section className="bg-bg-light py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,16 +60,26 @@ export default function PricingCards() {
                 ))}
               </ul>
 
-              <Link
-                href={`/signup?plan=${plan.slug}`}
+              <button
+                type="button"
+                onClick={() => setSelectedSlug(plan.slug)}
                 className="block w-full text-center bg-navy text-light-blue rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
               >
                 Elegir plan
-              </Link>
+              </button>
             </div>
           ))}
         </div>
       </div>
+
+      {selectedSlug && (
+        <PlanContactModal
+          plans={plans}
+          selectedSlug={selectedSlug}
+          onSelectPlan={setSelectedSlug}
+          onClose={() => setSelectedSlug(null)}
+        />
+      )}
     </section>
   );
 }

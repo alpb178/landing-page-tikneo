@@ -1,6 +1,10 @@
+"use client";
+
 import { Check, X } from "lucide-react";
 import { Red_Hat_Display } from "next/font/google";
-import Link from "next/link";
+import { useState } from "react";
+import PlanContactModal from "./PlanContactModal";
+import { plans } from "./plans";
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -31,6 +35,8 @@ const comparisonFeatures: ComparisonRow[] = [
 ];
 
 export default function PricingComparisonTable() {
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-[858px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -62,12 +68,13 @@ export default function PricingComparisonTable() {
                       <span className="text-xl font-bold text-navy">
                         Plan Esencial
                       </span>
-                      <Link
-                        href="/signup?plan=esencial"
+                      <button
+                        type="button"
+                        onClick={() => setSelectedSlug("esencial")}
                         className="inline-block bg-navy text-light-blue rounded-[32px] px-3 py-1.5 text-base font-semibold hover:opacity-90 transition-opacity"
                       >
                         Elegir plan
-                      </Link>
+                      </button>
                     </div>
                   </th>
                   <th className="bg-white px-2 py-4 text-center w-[301px] rounded-tr-[32px]">
@@ -75,12 +82,13 @@ export default function PricingComparisonTable() {
                       <span className="text-xl font-bold text-navy">
                         Plan Avanzado
                       </span>
-                      <Link
-                        href="/signup?plan=avanzado"
+                      <button
+                        type="button"
+                        onClick={() => setSelectedSlug("avanzado")}
                         className="inline-block bg-navy text-light-blue rounded-[32px] px-3 py-1.5 text-base font-semibold hover:opacity-90 transition-opacity"
                       >
                         Elegir plan
-                      </Link>
+                      </button>
                     </div>
                   </th>
                 </tr>
@@ -112,6 +120,15 @@ export default function PricingComparisonTable() {
           </div>
         </div>
       </div>
+
+      {selectedSlug && (
+        <PlanContactModal
+          plans={plans}
+          selectedSlug={selectedSlug}
+          onSelectPlan={setSelectedSlug}
+          onClose={() => setSelectedSlug(null)}
+        />
+      )}
     </section>
   );
 }
