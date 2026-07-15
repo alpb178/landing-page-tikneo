@@ -4,7 +4,7 @@ import { CircleCheckBig } from "lucide-react";
 import { Red_Hat_Display } from "next/font/google";
 import { useState } from "react";
 import PlanContactModal from "./PlanContactModal";
-import { plans } from "./plans";
+import { plans, planOptions } from "./plans";
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -74,7 +74,7 @@ export default function PricingCards() {
 
       {selectedSlug && (
         <PlanContactModal
-          plans={plans}
+          plans={planOptions}
           selectedSlug={selectedSlug}
           onSelectPlan={setSelectedSlug}
           onClose={() => setSelectedSlug(null)}
