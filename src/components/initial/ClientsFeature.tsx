@@ -60,12 +60,6 @@ export default function ClientsFeature() {
               >
                 Ver demo
               </Link>
-              <Link
-                href="/signup"
-                className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-3.5 rounded-full transition-opacity"
-              >
-                Probar Avanzado
-              </Link>
             </div>
           </div>
 
