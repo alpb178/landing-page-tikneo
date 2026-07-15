@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import {
   FileCheck,
   Building2,
@@ -133,7 +136,35 @@ const features: FeatureItem[] = [
   },
 ];
 
+function FeatureCard({ item }: { item: FeatureItem }) {
+  return (
+    <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow h-full flex flex-col">
+      <div className="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-5">
+        <item.icon className="h-7 w-7" />
+      </div>
+
+      <h2 className="text-lg font-bold text-primary mb-2">{item.label}</h2>
+
+      <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+        {item.description}
+      </p>
+
+      <ul className="mt-auto space-y-2">
+        {item.highlights.map((point) => (
+          <li key={point} className="flex items-start gap-2">
+            <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
+            <span className="text-sm text-foreground/70">{point}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 export default function Features() {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const activeFeature = features[activeIndex];
+
   return (
     <section className="bg-layout-lavender py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -149,37 +180,42 @@ export default function Features() {
           </div>
         </AnimateOnScroll>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        {/* Móvil: tabs para navegar entre características sin scroll largo */}
+        <div className="sm:hidden">
+          <div
+            role="tablist"
+            aria-label="Características"
+            className="flex gap-2 overflow-x-auto pb-3 mb-5 -mx-4 px-4"
+          >
+            {features.map((item, index) => (
+              <button
+                key={item.label}
+                role="tab"
+                aria-selected={index === activeIndex}
+                onClick={() => setActiveIndex(index)}
+                className={`shrink-0 px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  index === activeIndex
+                    ? "bg-primary text-white shadow-md"
+                    : "bg-white text-primary border border-primary/20"
+                }`}
+              >
+                {item.label}
+              </button>
+            ))}
+          </div>
+
+          <FeatureCard key={activeFeature.label} item={activeFeature} />
+        </div>
+
+        {/* Tablet y escritorio: grid completo */}
+        <div className="hidden sm:grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {features.map((item, index) => (
             <AnimateOnScroll
               key={item.label}
               variant="fadeUp"
               delay={index * 80}
             >
-              <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow h-full flex flex-col">
-                <div className="w-14 h-14 bg-primary/10 text-primary rounded-xl flex items-center justify-center mb-5">
-                  <item.icon className="h-7 w-7" />
-                </div>
-
-                <h2 className="text-lg font-bold text-primary mb-2">
-                  {item.label}
-                </h2>
-
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                  {item.description}
-                </p>
-
-                <ul className="mt-auto space-y-2">
-                  {item.highlights.map((point) => (
-                    <li key={point} className="flex items-start gap-2">
-                      <span className="mt-1.5 h-2 w-2 shrink-0 rounded-full bg-primary/60" />
-                      <span className="text-sm text-foreground/70">
-                        {point}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+              <FeatureCard item={item} />
             </AnimateOnScroll>
           ))}
         </div>
