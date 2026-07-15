@@ -26,7 +26,7 @@ export default function PricingCTABanner() {
               Simplifica la gestión de tu empresa y enfócate en crecer.
             </p>
             <Link
-              href="/contacto"
+              href="/contact"
               className="block w-full text-center bg-white text-navy rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
             >
               Solicitar demo
