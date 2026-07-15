@@ -1,5 +1,3 @@
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
 import { ContainerCard } from "../../Container";
 import Image from "next/image";
 
@@ -7,7 +5,6 @@ type FeatureCard = {
   icon: string;
   title: string;
   description: string;
-  href?: string;
   badge?: string;
 };
 
@@ -17,55 +14,47 @@ const cards: FeatureCard[] = [
     title: "Informes Laborales",
     description:
       "Genera informes detallados sobre asistencia, puntualidad y horas trabajadas.",
-    href: "#",
   },
   {
     icon: "/images/features/shifts.png",
     title: "Gestión de Turnos, Ausencias y Vacaciones",
     description:
       "Organiza y planifica los turnos de tus empleados de manera eficaz.",
-    href: "#",
   },
   {
     icon: "/images/features/remote.png",
     title: "Fichaje en Remoto",
     description:
       "Permite a tus empleados fichar desde cualquier lugar, en remoto o presencial.",
-    href: "#",
   },
   {
     icon: "/images/features/multi-company.png",
     title: "Multiempresa",
     description:
       "Gestiona múltiples empresas desde una sola cuenta fácilmente.",
-    href: "#",
   },
   {
     icon: "/images/features/security.png",
     title: "Seguridad y Privacidad",
     description:
       "Protege la información sensible con protocolos de seguridad avanzados.",
-    href: "#",
   },
   {
     icon: "/images/features/project-task.png",
     title: "Proyectos y Tareas",
     description:
       "Asigna y supervisa proyectos y tareas colaborativas en tu equipo.",
-    href: "#",
   },
   {
     icon: "/images/features/chats.png",
     title: "Avisos y Chat",
     description:
       "Comunicación instantánea y notificaciones directas, para mantener a tu equipo informado.",
-    href: "#",
   },
   {
     icon: "/images/features/clients.png",
     title: "Clientes",
     description: "Comunicación interna con tus clientes.",
-    href: "#",
     badge: "Novedad",
   },
 ];
@@ -91,13 +80,6 @@ export default function Features() {
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               {card.description}
             </p>
-            <Link
-              href={card.href ?? "#"}
-              className="inline-flex items-center text-sm font-medium text-primary hover:opacity-70 transition-opacity"
-            >
-              Más info
-              <ChevronRight className="h-4 w-4 ml-0.5" />
-            </Link>
           </div>
         </ContainerCard>
       ))}
