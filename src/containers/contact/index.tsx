@@ -53,7 +53,7 @@ export default function Contact() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {cards.map((card, index) => (
             <AnimateOnScroll key={index} variant="scaleIn" delay={index * 80}>
-              <div className="h-full bg-primary/10 flex flex-col justify-center items-center rounded-2xl shadow-md border border-gray-100 p-5 sm:p-6 md:p-8 text-center md:text-left hover:shadow-lg transition-shadow min-h-[200px] sm:min-h-[220px]">
+              <div className="h-full bg-white flex flex-col justify-center items-center rounded-2xl shadow-md border border-gray-100 p-5 sm:p-6 md:p-8 text-center md:text-left hover:shadow-lg transition-shadow min-h-[200px] sm:min-h-[220px]">
                 <card.icon className="h-14 w-14 sm:h-20 sm:w-20 md:h-24 md:w-24 text-primary shrink-0 mb-3" />
                 <h2 className="text-base sm:text-lg font-bold text-primary mb-2 sm:mb-3">
                   {card.title}
@@ -65,6 +65,93 @@ export default function Contact() {
             </AnimateOnScroll>
           ))}
         </div>
+
+        <AnimateOnScroll variant="fadeUp" delay={120}>
+          <div className="mt-10 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-5 sm:p-6 md:p-10 max-w-3xl mx-auto">
+            <h2 className="text-xl sm:text-2xl font-bold text-primary text-center mb-3">
+              Envíanos un mensaje
+            </h2>
+            <p className="text-gray-600 text-center text-sm md:text-base mb-8">
+              Cuéntanos qué necesitas y te contactamos lo antes posible.
+            </p>
+
+            <form className="space-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label
+                    htmlFor="contacto-nombre"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Nombre*
+                  </label>
+                  <input
+                    id="contacto-nombre"
+                    type="text"
+                    required
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                    placeholder="Nombre"
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="contacto-email"
+                    className="block text-sm font-medium text-gray-700 mb-1"
+                  >
+                    Email*
+                  </label>
+                  <input
+                    id="contacto-email"
+                    type="email"
+                    required
+                    className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label
+                  htmlFor="contacto-asunto"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Asunto*
+                </label>
+                <input
+                  id="contacto-asunto"
+                  type="text"
+                  required
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
+                  placeholder="Asunto"
+                />
+              </div>
+
+              <div>
+                <label
+                  htmlFor="contacto-mensaje"
+                  className="block text-sm font-medium text-gray-700 mb-1"
+                >
+                  Mensaje*
+                </label>
+                <textarea
+                  id="contacto-mensaje"
+                  required
+                  rows={5}
+                  className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y"
+                  placeholder="Escribe tu mensaje"
+                />
+              </div>
+
+              <div className="pt-2">
+                <button
+                  type="submit"
+                  className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
+                >
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </AnimateOnScroll>
       </div>
     </section>
   );

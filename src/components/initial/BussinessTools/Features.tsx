@@ -1,89 +1,82 @@
-import { ChevronRight } from "lucide-react";
-import Link from "next/link";
+import {
+  FileText,
+  Calendar,
+  Clock,
+  Building2,
+  ShieldCheck,
+  FolderKanban,
+  MessageCircle,
+  Users,
+  type LucideIcon,
+} from "lucide-react";
 import { ContainerCard } from "../../Container";
-import Image from "next/image";
 
 type FeatureCard = {
-  icon: string;
+  Icon: LucideIcon;
   title: string;
   description: string;
-  href?: string;
   badge?: string;
 };
 
 const cards: FeatureCard[] = [
   {
-    icon: "/images/features/reports.png",
+    Icon: FileText,
     title: "Informes Laborales",
     description:
       "Genera informes detallados sobre asistencia, puntualidad y horas trabajadas.",
-    href: "#",
   },
   {
-    icon: "/images/features/shifts.png",
+    Icon: Calendar,
     title: "Gestión de Turnos, Ausencias y Vacaciones",
     description:
       "Organiza y planifica los turnos de tus empleados de manera eficaz.",
-    href: "#",
   },
   {
-    icon: "/images/features/remote.png",
+    Icon: Clock,
     title: "Fichaje en Remoto",
     description:
       "Permite a tus empleados fichar desde cualquier lugar, en remoto o presencial.",
-    href: "#",
   },
   {
-    icon: "/images/features/multi-company.png",
+    Icon: Building2,
     title: "Multiempresa",
     description:
       "Gestiona múltiples empresas desde una sola cuenta fácilmente.",
-    href: "#",
   },
   {
-    icon: "/images/features/security.png",
+    Icon: ShieldCheck,
     title: "Seguridad y Privacidad",
     description:
       "Protege la información sensible con protocolos de seguridad avanzados.",
-    href: "#",
   },
   {
-    icon: "/images/features/project-task.png",
+    Icon: FolderKanban,
     title: "Proyectos y Tareas",
     description:
       "Asigna y supervisa proyectos y tareas colaborativas en tu equipo.",
-    href: "#",
   },
   {
-    icon: "/images/features/chats.png",
+    Icon: MessageCircle,
     title: "Avisos y Chat",
     description:
       "Comunicación instantánea y notificaciones directas, para mantener a tu equipo informado.",
-    href: "#",
   },
   {
-    icon: "/images/features/clients.png",
+    Icon: Users,
     title: "Clientes",
     description: "Comunicación interna con tus clientes.",
-    href: "#",
     badge: "Novedad",
   },
 ];
 
 export default function Features() {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
       {cards.map((card, index) => (
         <ContainerCard key={index}>
           <div className=" items-center justify-center flex flex-col">
-            <div className="w-full h-32  rounded-lg flex items-center justify-center mb-4 text-primary">
-              <Image
-                src={card.icon}
-                alt={card.title}
-                className="w-full h-full object-contain"
-                width={1024}
-                height={1024}
-              />
+            <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-primary shrink-0">
+              <card.Icon className="h-10 w-10" strokeWidth={1.75} />
             </div>
             <h3 className="text-lg font-bold text-primary mb-2">
               {card.title}
@@ -91,13 +84,6 @@ export default function Features() {
             <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
               {card.description}
             </p>
-            <Link
-              href={card.href ?? "#"}
-              className="inline-flex items-center text-sm font-medium text-primary hover:opacity-70 transition-opacity"
-            >
-              Más info
-              <ChevronRight className="h-4 w-4 ml-0.5" />
-            </Link>
           </div>
         </ContainerCard>
       ))}

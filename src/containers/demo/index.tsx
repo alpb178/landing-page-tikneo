@@ -215,7 +215,7 @@ export default function Demo() {
                 type="submit"
                 className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
               >
-                Prueba gratuita
+                Enviar
               </button>
               <p className="text-center text-gray-500 text-sm mt-3">
                 Sin tarjeta | Cancela cuando quieras

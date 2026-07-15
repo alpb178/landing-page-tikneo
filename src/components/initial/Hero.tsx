@@ -23,7 +23,7 @@ export default function Hero() {
             Prueba gratis 15 días
           </Link>
           <Link
-            href="#demo"
+            href="/demo"
             className="inline-flex items-center justify-center bg-white border-2 border-primary text-primary hover:bg-primary/5 font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
           >
             <Play className="h-5 w-5 mr-2 shrink-0" />

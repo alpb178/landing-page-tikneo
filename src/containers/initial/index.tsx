@@ -1,6 +1,5 @@
 import AppMockup from "@/components/initial/AppMockup";
 import Hero from "@/components/initial/Hero";
-import BusinessTools from "@/components/initial/BussinessTools";
 import ClientsFeature from "@/components/initial/ClientsFeature";
 import WhatIs from "@/components/initial/WhatIs";
 import ReinventSection from "@/components/initial/ReinventSection";
@@ -17,9 +16,6 @@ export default function Initial() {
       </AnimateOnScroll>
       <AnimateOnScroll variant="fadeUp" delay={100}>
         <WhatIs />
-      </AnimateOnScroll>
-      <AnimateOnScroll variant="fadeUp" delay={100}>
-        <BusinessTools />
       </AnimateOnScroll>
       <AnimateOnScroll variant="fadeUp" delay={100}>
         <ClientsFeature />
