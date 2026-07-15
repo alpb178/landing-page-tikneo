@@ -78,7 +78,7 @@ export default function PricingCards() {
                   : "shadow-[0px_4px_4px_0px_rgba(12,12,13,0.05)]"
               }`}
             >
-              <p className="text-muted text-base font-semibold mb-6">
+              <p className="text-muted-foreground text-base font-semibold mb-6">
                 {plan.label}
               </p>
 
