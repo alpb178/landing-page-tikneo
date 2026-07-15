@@ -1,34 +1,9 @@
-import { Calendar, Clock, FileText } from "lucide-react";
-import { ContainerCard } from "../Container";
-
-const cards = [
-  {
-    Icon: Calendar,
-    title: "Gestión de ausencias",
-    description:
-      "Gracias al portal del empleado de Tikneo, tus trabajadores podrán gestionar sus propias ausencias, consultar los días que les quedan de vacaciones y corroborar quiénes están ausentes.",
-    footnote: null,
-  },
-  {
-    Icon: Clock,
-    title: "Facilita el fichaje",
-    description:
-      "Los trabajadores de tu empresa podrán marcar ingresos y salidas de forma sencilla, ya sea trabajando en remoto o presencial. Desde cualquier dispositivo.",
-    footnote: "Fichar no es opcional, es la ley",
-  },
-  {
-    Icon: FileText,
-    title: "Evaluación del Desempeño",
-    description:
-      "Gestiona la evaluación del desempeño de tus empleados con una herramienta 360 grados. Saca lo mejor de tu equipo, ayúdalos a descubrir sus puntos fuertes y mejorar sus puntos débiles.",
-    footnote: null,
-  },
-];
+import Features from "./BussinessTools/Features";
 
 export default function WhatIs() {
   return (
     <section className=" px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary text-center mb-6">
           ¿Qué es TIKNEO?
         </h2>
@@ -39,31 +14,16 @@ export default function WhatIs() {
           mejores decisiones para su negocio.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-          {cards.map((card, index) => (
-            <ContainerCard key={index}>
-              <div
-                key={index}
-                className=" items-center justify-center flex flex-col"
-              >
-                <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 text-primary shrink-0">
-                  <card.Icon className="h-10 w-10" strokeWidth={1.75} />
-                </div>
-                <h3 className="text-lg font-bold text-primary mb-3">
-                  {card.title}
-                </h3>
-                <p className="text-sm md:text-base text-muted-foreground leading-relaxed flex-1">
-                  {card.description}
-                </p>
-                {card.footnote && (
-                  <p className="text-xs text-muted-foreground mt-3 italic">
-                    {card.footnote}
-                  </p>
-                )}
-              </div>
-            </ContainerCard>
-          ))}
+        <div className="flex flex-col justify-center items-center text-center">
+          <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-3">
+            La mejor herramienta para el control de tu negocio
+          </h3>
+          <p className="text-muted-foreground text-base md:text-lg mb-12 md:mb-16 italic">
+            &ldquo;El orden es el primer paso hacia la productividad&rdquo;
+          </p>
         </div>
+
+        <Features />
       </div>
     </section>
   );
