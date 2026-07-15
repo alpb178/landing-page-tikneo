@@ -46,7 +46,7 @@ const faqItems = [
     answer:
       "En TikNEO, la seguridad de nuestros usuarios es lo más importante. Por eso, a través de un potente sistema de encriptación, protegemos toda tu información. Puedes leer más en nuestra",
     linkLabel: "política de privacidad",
-    linkHref: "/privacy",
+    linkHref: "/legal/privacidad",
   },
   {
     question: "¿Cómo puedo mejorar mi plan?",
