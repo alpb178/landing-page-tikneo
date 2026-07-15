@@ -36,37 +36,19 @@ export default function WhyTikneo() {
         <AnimateOnScroll variant="fadeUp" delay={80}>
         <div className="space-y-6 text-gray-600 text-base md:text-lg leading-relaxed mb-10 sm:mb-12">
           <p>
-            ¿Por qué deberías elegir nuestra aplicación de control de horario?
-            La respuesta es simple: porque te ayuda a tomar el control de tu
-            tiempo de manera eficiente y efectiva.
+            Gestionar una empresa no debería sentirse como apagar incendios.
+            Con TikNeo tienes todo en un solo lugar.
           </p>
           <p>
-            Nuestra aplicación te permite planificar, registrar y analizar tus
-            actividades diarias de manera intuitiva y conveniente. Con funciones
-            avanzadas como el seguimiento de tareas, el registro de horas
-            trabajadas y herramientas de análisis, puedes optimizar tu tiempo y
-            aumentar tu productividad como nunca antes.
+            Proyectos, tareas, tiempos, gastos, presupuestos, fichajes,
+            movilidad de flota e informes automáticos con IA — todo conectado,
+            todo visible, todo bajo control.
           </p>
           <p>
-            Imagina tener una visión clara de cómo empleas cada hora de tu día.
-            Con nuestra aplicación, puedes identificar fácilmente dónde estás
-            invirtiendo tu tiempo y ajustar tus hábitos para ser más productivo.
-            Desde profesionales independientes hasta equipos de trabajo, nuestra
-            aplicación se adapta a tus necesidades y te ayuda a alcanzar tus
-            metas de manera más eficiente.
+            Para que tú y tu equipo dejen de buscar información y empiecen a
+            tomar decisiones.
           </p>
-          <p>
-            Además, la seguridad de tus datos es nuestra prioridad. Con
-            tecnologías de encriptación avanzadas, puedes estar seguro de que tu
-            información está protegida en todo momento.
-          </p>
-          <p>
-            En resumen, usar nuestra aplicación de control de horario significa
-            tomar el control de tu tiempo y tu vida. Es una herramienta poderosa
-            que te ayuda a trabajar de manera más inteligente, no más difícil.
-            Únete a nosotros y descubre cómo puedes aprovechar al máximo cada
-            momento de tu día.
-          </p>
+          <p>Así es como crecen las empresas modernas.</p>
         </div>
 
         <div className="flex justify-center mb-12 sm:mb-16">
