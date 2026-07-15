@@ -3,14 +3,7 @@
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-
-export type PlanOption = {
-  name: string;
-  label: string;
-  price: string;
-  baseDescription: string;
-  slug: string;
-};
+import type { PlanOption } from "./plans";
 
 type PlanContactModalProps = {
   plans: PlanOption[];
@@ -73,7 +66,11 @@ export default function PlanContactModal({
         </p>
 
         {/* Switcher de planes */}
-        <div className="grid grid-cols-2 gap-3 mb-6">
+        <div
+          className={`grid gap-3 mb-6 ${
+            plans.length > 2 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2"
+          }`}
+        >
           {plans.map((plan) => {
             const isActive = plan.slug === selectedPlan.slug;
             return (

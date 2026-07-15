@@ -1,5 +1,9 @@
+"use client";
+
 import { CircleCheckBig } from "lucide-react";
-import Link from "next/link";
+import { useState } from "react";
+import PlanContactModal from "./PlanContactModal";
+import { planOptions } from "./plans";
 
 const features = [
   "Gestión de vehículos",
@@ -9,6 +13,8 @@ const features = [
 ];
 
 export default function MobilityCard() {
+  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+
   return (
     <section className="bg-bg-light pb-20">
       <div className="max-w-[858px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -57,14 +63,24 @@ export default function MobilityCard() {
             ))}
           </ul>
 
-          <Link
-            href="/contacto?addon=movilidad"
+          <button
+            type="button"
+            onClick={() => setSelectedSlug("movilidad")}
             className="block w-full text-center bg-navy text-light-blue rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
           >
             Consultar precio
-          </Link>
+          </button>
         </div>
       </div>
+
+      {selectedSlug && (
+        <PlanContactModal
+          plans={planOptions}
+          selectedSlug={selectedSlug}
+          onSelectPlan={setSelectedSlug}
+          onClose={() => setSelectedSlug(null)}
+        />
+      )}
     </section>
   );
 }

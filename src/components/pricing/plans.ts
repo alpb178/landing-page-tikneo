@@ -48,3 +48,22 @@ export const plans: Plan[] = [
     slug: "avanzado",
   },
 ];
+
+export interface PlanOption {
+  name: string;
+  label: string;
+  price: string;
+  baseDescription: string;
+  slug: string;
+}
+
+export const mobilityOption: PlanOption = {
+  name: "Complemento Movilidad",
+  label: "MOVILIDAD",
+  price: "A consultar",
+  baseDescription: "según vehículos",
+  slug: "movilidad",
+};
+
+// Opciones seleccionables en el modal de contacto de planes
+export const planOptions: PlanOption[] = [...plans, mobilityOption];
