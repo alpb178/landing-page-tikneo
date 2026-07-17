@@ -1,11 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PricingCTABanner({
-  demoHref = "/contact",
-}: {
-  demoHref?: string;
-}) {
+export default function PricingCTABanner() {
   return (
     <section className="bg-navy overflow-hidden">
       <div className="max-w-[1440px] mx-auto relative h-[430px]">
@@ -30,7 +26,7 @@ export default function PricingCTABanner({
               Simplifica la gestión de tu empresa y enfócate en crecer.
             </p>
             <Link
-              href={demoHref}
+              href="/contact"
               className="block w-full text-center bg-white text-navy rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
             >
               Solicitar demo

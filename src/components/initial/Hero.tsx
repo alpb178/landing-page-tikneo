@@ -1,11 +1,7 @@
 import { CheckCircle, Play } from "lucide-react";
 import Link from "next/link";
 
-export default function Hero({
-  variant = "default",
-}: {
-  variant?: "default" | "conversion";
-}) {
+export default function Hero() {
   return (
     <section className="pt-6 sm:pt-8 pb-10 sm:pb-12 md:pt-12 md:pb-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -20,30 +16,19 @@ export default function Hero({
         </p>
 
         <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center mb-6 sm:mb-8">
-          {variant === "conversion" ? (
-            <Link
-              href="#demo"
-              className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-10 sm:px-14 py-3.5 rounded-full transition-opacity min-h-[48px] touch-manipulation shadow-md"
-            >
-              Ver demostración
-            </Link>
-          ) : (
-            <>
-              <Link
-                href="/demo"
-                className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-opacity min-h-[48px] touch-manipulation"
-              >
-                Prueba gratis 15 días
-              </Link>
-              <Link
-                href="/demo"
-                className="inline-flex items-center justify-center bg-white border-2 border-primary text-primary hover:bg-primary/5 font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
-              >
-                <Play className="h-5 w-5 mr-2 shrink-0" />
-                Ver demostración
-              </Link>
-            </>
-          )}
+          <Link
+            href="/demo"
+            className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-opacity min-h-[48px] touch-manipulation"
+          >
+            Prueba gratis 15 días
+          </Link>
+          <Link
+            href="/demo"
+            className="inline-flex items-center justify-center bg-white border-2 border-primary text-primary hover:bg-primary/5 font-semibold px-6 sm:px-8 py-3.5 rounded-full transition-colors min-h-[48px] touch-manipulation"
+          >
+            <Play className="h-5 w-5 mr-2 shrink-0" />
+            Ver demostración
+          </Link>
         </div>
 
         <div className="flex flex-wrap justify-center gap-6 mb-6 text-muted-foreground text-sm">
