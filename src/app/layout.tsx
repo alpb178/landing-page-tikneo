@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Arvo, DM_Mono } from "next/font/google";
 import "./globals.css";
 import Container from "@/components/Container";
+import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const inter = Inter({
@@ -57,6 +58,7 @@ export default function RootLayout({
     <html lang="es" className={`${inter.variable} ${arvo.variable} ${dmMono.variable}`}>
       <body className={inter.className}>
         <Container>
+          <Header />
           {children}
           <Footer />
         </Container>
