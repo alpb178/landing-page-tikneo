@@ -36,10 +36,9 @@ function PhoneMockup({
   );
 }
 
-export default function ReinventSection() {
+export function ReinventContent() {
   return (
-    <section className="relative overflow-hidden">
-      <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+    <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 py-16 md:py-24">
         <h2 className="text-3xl md:text-4xl lg:text-[2.5rem] font-bold text-primary mb-6">
           Reinventa tu negocio con Tikneo
         </h2>
@@ -62,10 +61,19 @@ export default function ReinventSection() {
             </li>
           ))}
         </ul>
-      </div>
+    </div>
+  );
+}
 
-      {/* Banner CTA navy con mockups de teléfono */}
-      <div className="bg-navy overflow-hidden">
+export function ImproveProcessesBanner({
+  demoHref = "/demo",
+  pricesHref = "/price",
+}: {
+  demoHref?: string;
+  pricesHref?: string;
+}) {
+  return (
+    <div className="bg-navy overflow-hidden">
         <div className="max-w-[1440px] mx-auto relative h-[300px] md:h-[430px]">
           {/* Phone mockups - visible en lg+ */}
           <div className="hidden lg:block">
@@ -89,13 +97,13 @@ export default function ReinventSection() {
               </p>
               <div className="flex gap-4">
                 <Link
-                  href="/demo"
+                  href={demoHref}
                   className="flex-1 text-center border-2 border-white text-white rounded-[32px] h-12 leading-[44px] font-semibold hover:bg-white/10 transition-colors"
                 >
                   Solicitar demo
                 </Link>
                 <Link
-                  href="/price"
+                  href={pricesHref}
                   className="flex-1 text-center bg-white text-navy rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
                 >
                   Ver precios
@@ -104,7 +112,15 @@ export default function ReinventSection() {
             </div>
           </div>
         </div>
-      </div>
+    </div>
+  );
+}
+
+export default function ReinventSection() {
+  return (
+    <section className="relative overflow-hidden">
+      <ReinventContent />
+      <ImproveProcessesBanner />
     </section>
   );
 }
