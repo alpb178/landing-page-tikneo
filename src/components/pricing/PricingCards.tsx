@@ -9,6 +9,7 @@ import { plans, planOptions } from "./plans";
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   weight: ["600"],
+  preload: false,
 });
 
 export default function PricingCards() {

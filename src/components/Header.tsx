@@ -57,7 +57,12 @@ export default function Header() {
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-6 text-lg">
               {navLinks.map(({ href, label }) => (
-                <Link key={href} href={href} className={linkClass(href)}>
+                <Link
+                  key={href}
+                  href={href}
+                  prefetch={false}
+                  className={linkClass(href)}
+                >
                   {label}
                 </Link>
               ))}
@@ -104,6 +109,7 @@ export default function Header() {
                   <Link
                     key={href}
                     href={href}
+                    prefetch={false}
                     onClick={() => setIsMenuOpen(false)}
                     className={`block px-4 py-3.5 text-base font-medium rounded-xl min-h-[48px] flex items-center touch-manipulation ${
                       isActive(href)
