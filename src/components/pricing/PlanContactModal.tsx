@@ -21,6 +21,25 @@ export default function PlanContactModal({
   const selectedPlan =
     plans.find((plan) => plan.slug === selectedSlug) ?? plans[0];
   const [mounted, setMounted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "success">("idle");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const get = (key: string) => (data.get(key) as string) || "-";
+    const subject = encodeURIComponent(
+      `TikNEO - Interés en ${selectedPlan.name}`
+    );
+    const body = encodeURIComponent(
+      `Plan: ${selectedPlan.name} (${selectedPlan.price} ${selectedPlan.baseDescription})\n` +
+        `Nombre: ${get("nombre")}\n` +
+        `Email: ${get("email")}\n` +
+        `Empresa: ${get("empresa")}\n\n` +
+        `Mensaje: ${get("mensaje")}`
+    );
+    window.location.href = `mailto:info@tikneo.com?subject=${subject}&body=${body}`;
+    setStatus("success");
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -99,7 +118,7 @@ export default function PlanContactModal({
           })}
         </div>
 
-        <form className="space-y-4">
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <input type="hidden" name="plan" value={selectedPlan.slug} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -112,6 +131,7 @@ export default function PlanContactModal({
               </label>
               <input
                 id="plan-nombre"
+                name="nombre"
                 type="text"
                 required
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -127,6 +147,7 @@ export default function PlanContactModal({
               </label>
               <input
                 id="plan-email"
+                name="email"
                 type="email"
                 required
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -144,6 +165,7 @@ export default function PlanContactModal({
             </label>
             <input
               id="plan-empresa"
+              name="empresa"
               type="text"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
               placeholder="Nombre de empresa"
@@ -159,6 +181,7 @@ export default function PlanContactModal({
             </label>
             <textarea
               id="plan-mensaje"
+              name="mensaje"
               rows={3}
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y"
               placeholder="Cuéntanos sobre tu empresa o resuelve tus dudas"
@@ -166,6 +189,15 @@ export default function PlanContactModal({
           </div>
 
           <div className="pt-1">
+            {status === "success" && (
+              <p
+                role="status"
+                className="text-center text-sm text-green-600 font-medium mb-3"
+              >
+                Se abrirá tu cliente de correo con la solicitud preparada para
+                info@tikneo.com. Si no se abre, escríbenos directamente.
+              </p>
+            )}
             <button
               type="submit"
               className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"

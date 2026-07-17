@@ -55,7 +55,7 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-6 text-lg">
+            <nav className="hidden lg:flex items-center space-x-6 text-lg">
               {navLinks.map(({ href, label }) => (
                 <Link key={href} href={href} className={linkClass(href)}>
                   {label}
@@ -63,7 +63,7 @@ export default function Header() {
               ))}
             </nav>
 
-            <nav className="hidden md:flex items-center space-x-6">
+            <nav className="hidden lg:flex items-center space-x-6">
               <a
                 href="https://app.tikneo.com/auth/login"
                 className="text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium"
@@ -79,7 +79,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile menu button */}
-            <div className="md:hidden flex items-center">
+            <div className="lg:hidden flex items-center">
               <button
                 type="button"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -98,7 +98,7 @@ export default function Header() {
 
           {/* Mobile Navigation */}
           {isMenuOpen && (
-            <div className="md:hidden border-t border-gray-100 animate-fade-in-up">
+            <div className="lg:hidden border-t border-gray-100 animate-fade-in-up">
               <nav className="px-3 pt-3 pb-4 space-y-0.5 bg-white/95 backdrop-blur-sm">
                 {navLinks.map(({ href, label }) => (
                   <Link

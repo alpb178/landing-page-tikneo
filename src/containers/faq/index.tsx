@@ -62,7 +62,7 @@ const faqItems = [
     question: "Tengo más preguntas",
     answer:
       "Si tienes más preguntas, contacta con nosotros, estamos deseando ayudarte.",
-    linkLabel: "www.tikneo.com",
+    linkLabel: "Contacta con nosotros",
     linkHref: "/contact",
     isContact: true,
   },
