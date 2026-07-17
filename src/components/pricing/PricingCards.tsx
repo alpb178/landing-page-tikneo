@@ -9,6 +9,7 @@ import { plans, planOptions } from "./plans";
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   weight: ["600"],
+  preload: false,
 });
 
 export default function PricingCards() {
@@ -17,11 +18,11 @@ export default function PricingCards() {
   return (
     <section className="bg-bg-light py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2
+        <h1
           className={`${redHatDisplay.className} text-[40px] font-semibold text-navy text-center mb-16`}
         >
           Planes y precios
-        </h2>
+        </h1>
 
         <div className="flex flex-col md:flex-row gap-5 justify-center max-w-[858px] mx-auto">
           {plans.map((plan) => (

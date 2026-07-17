@@ -96,6 +96,7 @@ export default function ReinventSection() {
                 </Link>
                 <Link
                   href="/price"
+                  prefetch={false}
                   className="flex-1 text-center bg-white text-navy rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
                 >
                   Ver precios

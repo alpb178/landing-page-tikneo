@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -46,6 +47,29 @@ const NUMERO_EMPLEADOS_OPCIONES: { value: string; label: string }[] = [
 ];
 
 export default function Demo() {
+  const [status, setStatus] = useState<"idle" | "success">("idle");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const get = (key: string) => (data.get(key) as string) || "-";
+    const subject = encodeURIComponent(
+      "TikNEO - Solicitud de prueba gratuita / demo"
+    );
+    const body = encodeURIComponent(
+      `Nombre: ${get("nombre")} ${get("apellidos")}\n` +
+        `Email: ${get("email")}\n` +
+        `Teléfono: ${get("telefonoCodigo")} ${get("telefono")}\n` +
+        `Empresa: ${get("empresa")}\n` +
+        `Número de empleados: ${get("empleados")}\n` +
+        `Cargo: ${get("cargo")}\n` +
+        `Sector: ${get("sector")}`
+    );
+    window.location.href = `mailto:info@tikneo.com?subject=${subject}&body=${body}`;
+    setStatus("success");
+    setTimeout(() => setStatus("idle"), 6000);
+  };
+
   return (
     <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-3xl mx-auto">
@@ -60,7 +84,7 @@ export default function Demo() {
             Sin tarjeta y cancelas cuando quieras.
           </p>
 
-          <form className="space-y-5">
+          <form className="space-y-5" onSubmit={handleSubmit}>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
                 <label htmlFor="nombre" className="block text-sm font-medium text-gray-700 mb-1">
@@ -68,6 +92,7 @@ export default function Demo() {
                 </label>
                 <input
                   id="nombre"
+                  name="nombre"
                   type="text"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -80,6 +105,7 @@ export default function Demo() {
                 </label>
                 <input
                   id="apellidos"
+                  name="apellidos"
                   type="text"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -95,6 +121,7 @@ export default function Demo() {
                 </label>
                 <input
                   id="email"
+                  name="email"
                   type="email"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -120,6 +147,7 @@ export default function Demo() {
                   </select>
                   <input
                     id="telefono"
+                    aria-label="Número de teléfono"
                     name="telefono"
                     type="tel"
                     autoComplete="tel-national"
@@ -137,6 +165,7 @@ export default function Demo() {
                 </label>
                 <input
                   id="empresa"
+                  name="empresa"
                   type="text"
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Nombre de empresa"
@@ -148,6 +177,7 @@ export default function Demo() {
                 </label>
                 <select
                   id="empleados"
+                  name="empleados"
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
                 >
                   {NUMERO_EMPLEADOS_OPCIONES.map((opcion) => (
@@ -166,6 +196,7 @@ export default function Demo() {
                 </label>
                 <input
                   id="cargo"
+                  name="cargo"
                   type="text"
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
                   placeholder="Cargo en la empresa"
@@ -177,6 +208,7 @@ export default function Demo() {
                 </label>
                 <select
                   id="sector"
+                  name="sector"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none appearance-none bg-[url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%236b7280%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M6%209l6%206%206-6%22%2F%3E%3C%2Fsvg%3E')] bg-size-[1.25rem] bg-position-[right_0.5rem_center] bg-no-repeat pr-10"
                 >
@@ -211,6 +243,15 @@ export default function Demo() {
             </div>
 
             <div className="pt-2">
+              {status === "success" && (
+                <p
+                  role="status"
+                  className="text-center text-sm text-green-600 font-medium mb-3"
+                >
+                  Se abrirá tu cliente de correo con la solicitud preparada
+                  para info@tikneo.com. Si no se abre, escríbenos directamente.
+                </p>
+              )}
               <button
                 type="submit"
                 className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"

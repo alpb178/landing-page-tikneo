@@ -39,9 +39,9 @@ export default function HeroFeatureCards() {
               <card.icon className="h-14 w-14 shrink-0 shadow-2xl shadow-primary/10" />
 
               <div className="flex flex-col items-start justify-center">
-                <h3 className="text-lg font-bold text-primary mb-1">
+                <h2 className="text-lg font-bold text-primary mb-1">
                   {card.title}
-                </h3>
+                </h2>
 
                 {card.subtitle && (
                   <p className="text-sm text-muted-foreground">

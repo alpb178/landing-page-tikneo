@@ -9,6 +9,7 @@ import { planOptions } from "./plans";
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
   weight: ["600"],
+  preload: false,
 });
 
 interface ComparisonRow {
@@ -53,9 +54,9 @@ export default function PricingComparisonTable() {
           </p>
         </div>
 
-        <div className="rounded-[32px] shadow-[1px_16px_48px_0px_rgba(12,12,13,0.1),0px_4px_4px_0px_rgba(12,12,13,0.05)] overflow-hidden">
+        <div className="relative rounded-[32px] shadow-[1px_16px_48px_0px_rgba(12,12,13,0.1),0px_4px_4px_0px_rgba(12,12,13,0.05)] overflow-hidden">
           <div className="overflow-x-auto">
-            <table className="w-full">
+            <table className="w-full min-w-[760px]">
               <thead>
                 <tr>
                   <th className="bg-white px-8 py-4 text-left w-[255px] rounded-tl-[32px]">
@@ -118,6 +119,10 @@ export default function PricingComparisonTable() {
               </tbody>
             </table>
           </div>
+          <div
+            aria-hidden
+            className="pointer-events-none absolute inset-y-0 right-0 w-8 rounded-r-[32px] bg-gradient-to-l from-white to-transparent md:hidden"
+          />
         </div>
       </div>
 

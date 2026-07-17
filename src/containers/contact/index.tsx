@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { MapPin, Mail, Clock } from "lucide-react";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
@@ -38,6 +39,25 @@ const cards = [
 ];
 
 export default function Contact() {
+  const [status, setStatus] = useState<"idle" | "success">("idle");
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const data = new FormData(e.currentTarget);
+    const get = (key: string) => (data.get(key) as string) || "-";
+    const subject = encodeURIComponent(
+      `TikNEO - Contacto: ${get("asunto")}`
+    );
+    const body = encodeURIComponent(
+      `Nombre: ${get("nombre")}\n` +
+        `Email: ${get("email")}\n\n` +
+        `${get("mensaje")}`
+    );
+    window.location.href = `mailto:info@tikneo.com?subject=${subject}&body=${body}`;
+    setStatus("success");
+    setTimeout(() => setStatus("idle"), 6000);
+  };
+
   return (
     <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
@@ -75,7 +95,7 @@ export default function Contact() {
               Cuéntanos qué necesitas y te contactamos lo antes posible.
             </p>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <label
@@ -86,6 +106,7 @@ export default function Contact() {
                   </label>
                   <input
                     id="contacto-nombre"
+                    name="nombre"
                     type="text"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -101,6 +122,7 @@ export default function Contact() {
                   </label>
                   <input
                     id="contacto-email"
+                    name="email"
                     type="email"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -118,6 +140,7 @@ export default function Contact() {
                 </label>
                 <input
                   id="contacto-asunto"
+                  name="asunto"
                   type="text"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
@@ -134,6 +157,7 @@ export default function Contact() {
                 </label>
                 <textarea
                   id="contacto-mensaje"
+                  name="mensaje"
                   required
                   rows={5}
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y"
@@ -142,6 +166,16 @@ export default function Contact() {
               </div>
 
               <div className="pt-2">
+                {status === "success" && (
+                  <p
+                    role="status"
+                    className="text-center text-sm text-green-600 font-medium mb-3"
+                  >
+                    Se abrirá tu cliente de correo con el mensaje preparado
+                    para info@tikneo.com. Si no se abre, escríbenos
+                    directamente.
+                  </p>
+                )}
                 <button
                   type="submit"
                   className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
