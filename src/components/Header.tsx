@@ -65,7 +65,7 @@ export default function Header() {
 
             <nav className="hidden md:flex items-center space-x-6">
               <a
-                href="https://app.tikneo.com/login"
+                href="https://app.tikneo.com/auth/login"
                 className="text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium"
               >
                 Iniciar sesión
@@ -116,7 +116,7 @@ export default function Header() {
                 ))}
                 <div className="pt-2 px-4 space-y-1 border-t border-gray-100 mt-2">
                   <a
-                    href="https://app.tikneo.com/login"
+                    href="https://app.tikneo.com/auth/login"
                     className="block py-3.5 text-gray-700 hover:text-primary font-medium rounded-xl"
                     onClick={() => setIsMenuOpen(false)}
                   >
