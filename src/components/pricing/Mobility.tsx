@@ -3,7 +3,7 @@
 import { CircleCheckBig } from "lucide-react";
 import { useState } from "react";
 import PlanContactModal from "./PlanContactModal";
-import { planOptions } from "./plans";
+import { mobilityOption } from "./plans";
 
 const features = [
   "Gestión de vehículos",
@@ -13,7 +13,7 @@ const features = [
 ];
 
 export default function MobilityCard() {
-  const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <section className="bg-bg-light pb-20">
@@ -65,7 +65,7 @@ export default function MobilityCard() {
 
           <button
             type="button"
-            onClick={() => setSelectedSlug("movilidad")}
+            onClick={() => setIsModalOpen(true)}
             className="block w-full text-center bg-navy text-light-blue rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
           >
             Consultar precio
@@ -73,12 +73,10 @@ export default function MobilityCard() {
         </div>
       </div>
 
-      {selectedSlug && (
+      {isModalOpen && (
         <PlanContactModal
-          plans={planOptions}
-          selectedSlug={selectedSlug}
-          onSelectPlan={setSelectedSlug}
-          onClose={() => setSelectedSlug(null)}
+          plan={mobilityOption}
+          onClose={() => setIsModalOpen(false)}
         />
       )}
     </section>
