@@ -75,12 +75,12 @@ export default function Header() {
               >
                 Iniciar sesión
               </a>
-              <Link
-                href="/demo"
+              <a
+                href="https://app.tikneo.com/auth/register"
                 className="ml-2 bg-primary hover:opacity-90 text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full transition-opacity"
               >
                 Prueba Gratuita
-              </Link>
+              </a>
             </nav>
 
             {/* Mobile menu button */}
@@ -128,13 +128,13 @@ export default function Header() {
                   >
                     Iniciar sesión
                   </a>
-                  <Link
-                    href="/demo"
+                  <a
+                    href="https://app.tikneo.com/auth/register"
                     onClick={() => setIsMenuOpen(false)}
                     className="flex items-center justify-center py-3.5 bg-primary hover:opacity-90 text-primary-foreground font-semibold rounded-xl transition-opacity"
                   >
                     Prueba Gratuita
-                  </Link>
+                  </a>
                 </div>
               </nav>
             </div>
