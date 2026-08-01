@@ -17,6 +17,7 @@ const arvo = Arvo({
   weight: ["400", "700"],
   variable: "--font-arvo",
   display: "swap",
+  preload: false,
 });
 
 const dmMono = DM_Mono({
@@ -24,6 +25,7 @@ const dmMono = DM_Mono({
   weight: ["400", "500"],
   variable: "--font-dm-mono",
   display: "swap",
+  preload: false,
 });
 
 export const metadata: Metadata = {

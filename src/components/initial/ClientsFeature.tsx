@@ -1,6 +1,5 @@
 import { Users, Briefcase, Paperclip, MessageCircle } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const featurePills = [
   { icon: Briefcase, label: "Progresos" },
@@ -42,7 +41,7 @@ export default function ClientsFeature() {
               el cliente vea el progreso de sus proyectos, adjuntos, y chat
               interno por si quieren preguntar algo.
             </p>
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap gap-3">
               {featurePills.map((pill, index) => (
                 <span
                   key={index}
@@ -53,22 +52,15 @@ export default function ClientsFeature() {
                 </span>
               ))}
             </div>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/demo"
-                className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-3.5 rounded-full transition-opacity"
-              >
-                Ver demo
-              </Link>
-            </div>
           </div>
 
           {/* Mockup smartphone derecho */}
           <Image
             src="/images/chat.png"
-            alt="chats"
-            width={1024}
-            height={1024}
+            alt="Pantalla de chats de la app de TikNEO"
+            width={632}
+            height={1314}
+            className="w-full max-w-[380px] h-auto mx-auto drop-shadow-[0_18px_38px_rgba(0,0,0,0.16)]"
           />
         </div>
       </div>

@@ -62,7 +62,7 @@ const faqItems = [
     question: "Tengo más preguntas",
     answer:
       "Si tienes más preguntas, contacta con nosotros, estamos deseando ayudarte.",
-    linkLabel: "www.tikneo.com",
+    linkLabel: "Contacta con nosotros",
     linkHref: "/contact",
     isContact: true,
   },
@@ -124,7 +124,6 @@ export default function FAQ() {
                             className="text-primary hover:text-primary underline font-medium inline-flex items-center gap-1"
                           >
                             {item.linkLabel}
-                            <span className="sr-only">(enlace externo)</span>
                           </Link>
                           {typeof item.answer === "string" && !item.answer.trimEnd().endsWith(".") ? "." : ""}
                         </>
