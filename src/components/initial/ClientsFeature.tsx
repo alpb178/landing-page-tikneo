@@ -1,6 +1,5 @@
 import { Users, Briefcase, Paperclip, MessageCircle } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const featurePills = [
   { icon: Briefcase, label: "Progresos" },
@@ -42,7 +41,7 @@ export default function ClientsFeature() {
               el cliente vea el progreso de sus proyectos, adjuntos, y chat
               interno por si quieren preguntar algo.
             </p>
-            <div className="flex flex-wrap gap-3 mb-8">
+            <div className="flex flex-wrap gap-3">
               {featurePills.map((pill, index) => (
                 <span
                   key={index}
@@ -52,14 +51,6 @@ export default function ClientsFeature() {
                   {pill.label}
                 </span>
               ))}
-            </div>
-            <div className="flex flex-wrap gap-4">
-              <Link
-                href="/demo"
-                className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-3.5 rounded-full transition-opacity"
-              >
-                Ver demo
-              </Link>
             </div>
           </div>
 
