@@ -5,6 +5,12 @@ export default function PricingCTABanner() {
   return (
     <section className="bg-navy overflow-hidden">
       <div className="max-w-[1440px] mx-auto relative h-[430px]">
+        {/* Halo azul detrás de los mockups - visible on lg+ */}
+        <div
+          aria-hidden="true"
+          className="hidden lg:block absolute left-[133px] top-[-132px] size-[693px] rounded-full bg-blue-accent blur-[185.5px]"
+        />
+
         {/* Phone mockups - visible on lg+ */}
         <div className="hidden lg:block">
           <PhoneMockup
@@ -48,27 +54,12 @@ function PhoneMockup({
   className?: string;
 }) {
   return (
-    <div
+    <Image
+      src={screenshot}
+      alt={alt}
+      width={632}
+      height={1314}
       className={`absolute top-[60px] w-[316px] h-[657px] ${className ?? ""}`}
-    >
-      {/* Screen content */}
-      <div className="absolute left-[11px] top-[8px] w-[296px] h-[639px] rounded-[24px] overflow-hidden">
-        <Image
-          src={screenshot}
-          alt={alt}
-          fill
-          className="object-cover"
-        />
-      </div>
-      {/* Phone frame overlay */}
-      <Image
-        src="/images/pricing/phone-frame.svg"
-        alt=""
-        width={316}
-        height={654}
-        className="absolute inset-0 w-full h-full pointer-events-none [--fill-0:var(--color-navy)]"
-        aria-hidden="true"
-      />
-    </div>
+    />
   );
 }

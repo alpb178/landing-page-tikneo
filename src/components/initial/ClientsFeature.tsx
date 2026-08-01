@@ -66,9 +66,10 @@ export default function ClientsFeature() {
           {/* Mockup smartphone derecho */}
           <Image
             src="/images/chat.png"
-            alt="chats"
-            width={1024}
-            height={1024}
+            alt="Pantalla de chats de la app de TikNEO"
+            width={632}
+            height={1314}
+            className="w-full max-w-[380px] h-auto mx-auto drop-shadow-[0_18px_38px_rgba(0,0,0,0.16)]"
           />
         </div>
       </div>
