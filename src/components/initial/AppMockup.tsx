@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 
 import HeroFeatureCards from "./HeroFeatureCards";
 
@@ -17,9 +18,12 @@ export default function AppMockup() {
           <span className="w-3 h-3 rounded-full bg-green-400" />
         </div>
         <div className="relative min-h-[320px] bg-gray-50 overflow-hidden flex items-center justify-center">
-          <img
-            src="/images/expenses.png"
-            alt="TikNEO Gastos"
+          <Image
+            src="/images/app-mockup.png"
+            alt="Tablero de proyectos de TikNEO en escritorio y móvil"
+            width={1800}
+            height={1060}
+            priority
             className="w-full h-auto max-h-[420px] md:max-h-[480px] object-contain object-top"
           />
         </div>
