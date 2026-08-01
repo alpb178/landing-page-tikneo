@@ -1,10 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PricingCTABanner() {
+/**
+ * Banner CTA navy con los mockups de móvil.
+ * Diseño: Figma "WEB BANNER 45" (nodo 10315-41907).
+ */
+export default function CTABanner() {
   return (
     <section className="bg-navy overflow-hidden">
-      <div className="max-w-[1440px] mx-auto relative h-[430px]">
+      <div className="max-w-[1440px] mx-auto relative h-[300px] md:h-[430px]">
         {/* Halo azul detrás de los mockups - visible on lg+ */}
         <div
           aria-hidden="true"
