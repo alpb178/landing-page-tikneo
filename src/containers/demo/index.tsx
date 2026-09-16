@@ -231,11 +231,11 @@ export default function Demo() {
               />
               <label htmlFor="terms" className="text-sm text-gray-600">
                 Al continuar declaras que aceptas las{" "}
-                <Link href="/legal/condiciones" className="text-primary font-medium hover:underline">
+                <Link href="/terms" className="text-primary font-medium hover:underline">
                   Condiciones generales de contratación
                 </Link>{" "}
                 y la{" "}
-                <Link href="/legal/privacidad" className="text-primary font-medium hover:underline">
+                <Link href="/privacy" className="text-primary font-medium hover:underline">
                   Política de privacidad
                 </Link>
                 .
