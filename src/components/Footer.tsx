@@ -20,6 +20,13 @@ const contactInfo = [
   },
 ];
 
+const footerLinks = [
+  { href: "/support", label: "Soporte" },
+  { href: "/contact", label: "Contacto" },
+  { href: "/privacy", label: "Privacidad" },
+  { href: "/terms", label: "Condiciones" },
+];
+
 export default function Footer() {
   return (
     <footer className="bg-primary text-primary-foreground">
@@ -63,12 +70,17 @@ export default function Footer() {
           <span className="text-primary-foreground/60 text-sm sm:text-base">
             © 2026 Tikneo
           </span>
-          <Link
-            href="/contact"
-            className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
-          >
-            Contacto
-          </Link>
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            {footerLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
+              >
+                {label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>
