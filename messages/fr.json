@@ -1,0 +1,703 @@
+{
+  "meta": {
+    "title": "Tikneo",
+    "description": "La plateforme de gestion des tâches et des projets qui vous permet d’optimiser votre productivité et d’augmenter vos performances.",
+    "keywords": "gestion des tâches, gestion de projets, productivité, performance, travail d’équipe, collaboration",
+    "ogLocale": "fr_FR"
+  },
+  "nav": {
+    "home": "Accueil",
+    "whyTikneo": "Pourquoi Tikneo ?",
+    "price": "Tarifs",
+    "features": "Fonctionnalités",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "login": "Se connecter",
+    "freeTrial": "Essai gratuit",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Changer de langue"
+  },
+  "footer": {
+    "addressLabel": "Adresse",
+    "addressValue": "Plaza Ferrerias 19. Bureau 1, Donostia, Espagne CP 20011",
+    "emailLabel": "Email",
+    "scheduleLabel": "Horaires",
+    "scheduleValue": "Du lundi au vendredi : 09h00 - 14h00 · 16h00 - 19h00",
+    "copyright": "© 2026 Tikneo",
+    "links": {
+      "support": "Support",
+      "contact": "Contact",
+      "privacy": "Confidentialité",
+      "terms": "Conditions"
+    }
+  },
+  "ctaBanner": {
+    "text": "Simplifiez la gestion de votre entreprise et concentrez-vous sur sa croissance.",
+    "cta": "Demander une démo",
+    "dashboardAlt": "Tableau de bord TikNEO",
+    "chronoAlt": "Chrono TikNEO"
+  },
+  "home": {
+    "hero": {
+      "title": "Le contrôle du temps de travail qui grandit avec votre entreprise",
+      "subtitle": "Gérez les plannings, les absences et les <strong>pointages</strong> depuis n’importe où.",
+      "ctaTrial": "Essai gratuit de 15 jours",
+      "ctaDemo": "Voir la démonstration",
+      "badges": {
+        "noCard": "Sans carte bancaire",
+        "quickSetup": "Configuration rapide",
+        "support": "Support"
+      },
+      "newsTag": "Nouveauté",
+      "newsText": "Chat interne avec vos clients"
+    },
+    "mockup": {
+      "alt": "Tableau de projets TikNEO sur ordinateur et mobile"
+    },
+    "heroCards": {
+      "compliance": {
+        "title": "Conforme à la réglementation",
+        "subtitle": "Décret-loi royal 8/2019"
+      },
+      "shifts": {
+        "title": "Contrôle des plannings et des absences"
+      },
+      "reports": {
+        "title": "Rapports automatiques pour les entreprises"
+      }
+    },
+    "whatIs": {
+      "title": "Qu’est-ce que TIKNEO ?",
+      "description": "Tikneo centralise le contrôle du temps de travail et la gestion du personnel sur une plateforme efficace, évolutive et simple à utiliser, pour aider les entreprises qui souhaitent automatiser leurs processus RH et prendre les meilleures décisions pour leur activité.",
+      "toolsTitle": "Le meilleur outil pour piloter votre activité",
+      "quote": "« L’ordre est le premier pas vers la productivité »"
+    },
+    "clients": {
+      "tag": "Nouveauté",
+      "title": "Clients",
+      "subtitle": "Gérez vos clients",
+      "description": "Contactez-les depuis notre application et permettez à chaque client de suivre l’avancement de ses projets, les pièces jointes et le chat interne s’il souhaite poser une question.",
+      "pills": {
+        "progress": "Avancement",
+        "attachments": "Pièces jointes",
+        "chat": "Chat"
+      },
+      "imageAlt": "Écran de chat de l’application TikNEO"
+    },
+    "reinvent": {
+      "title": "Réinventez votre activité avec Tikneo",
+      "description": "Depuis le 12 mai 2019, toutes les entreprises espagnoles sont tenues par la loi de conserver un registre quotidien du temps de travail de leurs salariés, avec les heures d’entrée et de sortie.",
+      "reasonsTitle": "Pourquoi le pointage est-il important ?",
+      "reasons": [
+        "Respecte la réglementation du travail (décret-loi royal 8/2019)",
+        "Évite les sanctions financières pour l’entreprise",
+        "Protège vos droits en tant que salarié·e",
+        "Favorise la transparence sur les heures supplémentaires"
+      ]
+    }
+  },
+  "businessTools": {
+    "reports": {
+      "title": "Rapports RH",
+      "description": "Générez des rapports détaillés sur la présence, la ponctualité et les heures travaillées."
+    },
+    "shifts": {
+      "title": "Gestion des plannings, des absences et des congés",
+      "description": "Organisez et planifiez efficacement les horaires de vos employés."
+    },
+    "remote": {
+      "title": "Pointage à distance",
+      "description": "Permettez à vos employés de pointer depuis n’importe où, à distance ou sur site."
+    },
+    "multicompany": {
+      "title": "Multi-entreprises",
+      "description": "Gérez facilement plusieurs entreprises depuis un seul compte."
+    },
+    "security": {
+      "title": "Sécurité et confidentialité",
+      "description": "Protégez les informations sensibles avec des protocoles de sécurité avancés."
+    },
+    "projects": {
+      "title": "Projets et tâches",
+      "description": "Attribuez et suivez les projets et les tâches collaboratives de votre équipe."
+    },
+    "chat": {
+      "title": "Notifications et chat",
+      "description": "Communication instantanée et notifications directes pour garder votre équipe informée."
+    },
+    "clients": {
+      "title": "Clients",
+      "description": "Communication interne avec vos clients.",
+      "badge": "Nouveauté"
+    }
+  },
+  "whyTikneo": {
+    "title": "Pourquoi utiliser Tikneo ?",
+    "paragraphs": [
+      "Gérer une entreprise ne devrait pas revenir à éteindre des incendies. Avec TikNeo, vous avez tout au même endroit.",
+      "Projets, tâches, temps, dépenses, budgets, pointages, mobilité de la flotte et rapports automatiques avec IA — tout est connecté, tout est visible, tout est sous contrôle.",
+      "Pour que vous et votre équipe cessiez de chercher l’information et commenciez à prendre des décisions.",
+      "C’est ainsi que grandissent les entreprises modernes."
+    ],
+    "cta": "Voir les formules"
+  },
+  "features": {
+    "title": "Fonctionnalités",
+    "subtitle": "Découvrez toutes les fonctionnalités que Tikneo propose pour gérer efficacement votre entreprise.",
+    "tablistLabel": "Fonctionnalités",
+    "items": {
+      "report": {
+        "label": "Rapport RH",
+        "description": "Analyse détaillée de la présence, des heures travaillées, des absences et de la ponctualité, pour les employés comme pour les employeurs.",
+        "highlights": [
+          "Suivi des performances et gestion du temps",
+          "Gestion de la paie et conformité réglementaire",
+          "Transparence et planification des horaires"
+        ]
+      },
+      "multicompany": {
+        "label": "Gestion multi-entreprises",
+        "description": "Administrez plusieurs entreprises depuis un seul compte. Centralisez employés, plannings, rapports et autorisations.",
+        "highlights": [
+          "Un seul compte pour toutes vos entreprises",
+          "Idéal pour les groupes et les franchises",
+          "Sans changer de plateforme"
+        ]
+      },
+      "projects": {
+        "label": "Gestion de projets",
+        "description": "Organisez et supervisez vos projets en attribuant des responsables, des délais et un suivi en temps réel.",
+        "highlights": [
+          "Avancement visible pour toute l’équipe",
+          "Pièces jointes et chat interne par projet",
+          "Meilleure coordination et livraisons"
+        ]
+      },
+      "shifts": {
+        "label": "Plannings, absences et congés",
+        "description": "Planifiez et attribuez les horaires efficacement. Visualisez les calendriers et évitez les conflits d’horaires.",
+        "highlights": [
+          "Consultation des plannings depuis l’application",
+          "Demandes de changement avec validation",
+          "Remplacement automatique des absences"
+        ]
+      },
+      "chat": {
+        "label": "Notifications et chat",
+        "description": "Communication instantanée et notifications directes avec votre équipe, au même endroit.",
+        "highlights": [
+          "Envoi d’avis et réponses aux questions",
+          "Réduit les réunions inutiles",
+          "Communication centralisée"
+        ]
+      },
+      "security": {
+        "label": "Sécurité et confidentialité",
+        "description": "Protection des données avec des protocoles avancés et conformité à la réglementation en vigueur.",
+        "highlights": [
+          "Contrôle des accès et des autorisations",
+          "Sauvegardes automatiques",
+          "Transparence dans le traitement des données"
+        ]
+      },
+      "remote": {
+        "label": "Pointage à distance",
+        "description": "Enregistrement des entrées et des sorties depuis n’importe où, avec géolocalisation en option.",
+        "highlights": [
+          "Pointage depuis le mobile ou l’ordinateur",
+          "Géolocalisation en option",
+          "Conformité réglementaire garantie"
+        ]
+      },
+      "storage": {
+        "label": "Stockage illimité",
+        "description": "Documents, rapports et pièces jointes centralisés et accessibles sans limite d’espace.",
+        "highlights": [
+          "Historique complet de l’entreprise",
+          "Sauvegardes incluses",
+          "Recherche rapide de fichiers"
+        ]
+      },
+      "clients": {
+        "label": "Clients",
+        "description": "Gérez la relation avec vos clients en partageant l’avancement, les pièces jointes et le chat en temps réel.",
+        "highlights": [
+          "Transparence totale avec le client",
+          "Chat interne par projet",
+          "Améliore la satisfaction client"
+        ]
+      },
+      "calendar": {
+        "label": "Calendrier",
+        "description": "Calendrier intégré pour les absences, les congés, les réunions et les événements de l’équipe.",
+        "highlights": [
+          "Disponibilité de l’équipe en un coup d’œil",
+          "Évite les chevauchements d’horaires",
+          "Planification avec une vision globale"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Formules et tarifs",
+    "baseDescription": "/mois jusqu’à 10 employés",
+    "plans": {
+      "esencial": {
+        "name": "Formule Essentielle",
+        "label": "FORMULE ESSENTIELLE",
+        "extraEmployee": "+ 2,30 € /mois par employé supplémentaire",
+        "features": [
+          "Gestion des employés",
+          "Plannings",
+          "Gestion des absences",
+          "Chat",
+          "Accès avec Face ID",
+          "Notifications",
+          "Calendrier",
+          "Pointages"
+        ],
+        "contactSubject": "Informations sur la Formule Essentielle",
+        "contactMessage": "Bonjour, la Formule Essentielle de TikNEO (24,99 € /mois jusqu’à 10 employés) m’intéresse et je souhaiterais recevoir plus d’informations pour l’activer."
+      },
+      "avanzado": {
+        "name": "Formule Avancée",
+        "label": "FORMULE AVANCÉE",
+        "extraEmployee": "+ 3,50 € /mois par employé supplémentaire",
+        "features": [
+          "Formule essentielle +",
+          "Historique des pointages",
+          "Projets",
+          "Chrono (contrôle du temps)",
+          "Check-List",
+          "Clients",
+          "Budgets"
+        ],
+        "contactSubject": "Informations sur la Formule Avancée",
+        "contactMessage": "Bonjour, la Formule Avancée de TikNEO (38,99 € /mois jusqu’à 10 employés) m’intéresse et je souhaiterais recevoir plus d’informations pour l’activer."
+      },
+      "movilidad": {
+        "name": "Complément Mobilité",
+        "label": "MOBILITÉ",
+        "price": "Sur demande",
+        "baseDescription": "selon les véhicules",
+        "contactSubject": "Demande de tarif pour le complément Mobilité",
+        "contactMessage": "Bonjour, je souhaiterais connaître le tarif du complément Mobilité de TikNEO en fonction du nombre de véhicules que nous gérons."
+      }
+    },
+    "mobility": {
+      "optional": "COMPLÉMENT OPTIONNEL",
+      "title": "Mobilité",
+      "priceNote": "Demandez un tarif selon vos véhicules",
+      "features": [
+        "Gestion des véhicules",
+        "Attribution et contrôle",
+        "Historique et suivi",
+        "Pièces jointes (documentation)"
+      ],
+      "cta": "Demander un tarif"
+    },
+    "modal": {
+      "dialogLabel": "Demander le tarif de la {plan}",
+      "close": "Fermer",
+      "intro": "Laissez-nous vos coordonnées et nous vous recontactons avec un tarif sur mesure.",
+      "name": "Nom*",
+      "namePlaceholder": "Nom",
+      "email": "Email*",
+      "emailPlaceholder": "Email",
+      "company": "Nom de l’entreprise",
+      "companyPlaceholder": "Nom de l’entreprise",
+      "subject": "Objet*",
+      "subjectPlaceholder": "Objet",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre entreprise ou posez vos questions",
+      "success": "Votre client de messagerie s’ouvrira avec la demande prête pour info@tikneo.com. S’il ne s’ouvre pas, écrivez-nous directement.",
+      "submit": "Envoyer",
+      "note": "Sans engagement | Nous répondons vite",
+      "mailto": {
+        "plan": "Formule",
+        "name": "Nom",
+        "email": "Email",
+        "company": "Entreprise",
+        "message": "Message"
+      }
+    },
+    "comparison": {
+      "title": "Comparatif des formules",
+      "subtitle": "Vous ne savez pas laquelle choisir ? Trouvez la meilleure option pour vous.",
+      "nameHeader": "Nom",
+      "features": [
+        "Gestion des employés",
+        "Plannings",
+        "Gestion des absences",
+        "Chat",
+        "Accès avec Face ID",
+        "Notifications",
+        "Calendrier",
+        "Pointages",
+        "Historique des pointages",
+        "Projets",
+        "Chrono (contrôle du temps)",
+        "Check-List",
+        "Clients",
+        "Budgets"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "subtitle": "Nous répondons aux questions les plus courantes pour que vous puissiez démarrer avec TikNEO en toute tranquillité.",
+    "items": [
+      {
+        "question": "Comment fonctionne la période d’essai ?",
+        "answer": "Pour commencer votre période d’essai gratuite, il vous suffit de vous inscrire sur TikNEO et de confirmer votre adresse email. Une fois votre essai commencé, vous pourrez tester toutes les fonctionnalités, sans limite."
+      },
+      {
+        "question": "Quelles fonctionnalités sont incluses dans la période d’essai ?",
+        "answer": "Pendant la période d’essai, vous avez accès à toutes les fonctionnalités de TikNEO : gestion des pointages, plannings, rapports RH, multi-entreprises, projets, notifications et chat, et le reste des outils de la formule. Sans limite, pour que vous puissiez évaluer la plateforme avec votre équipe."
+      },
+      {
+        "question": "Que se passe-t-il si mon entreprise grandit et que je dois inviter plus d’employés ?",
+        "answer": "TikNEO s’adapte à la taille de votre entreprise. Vous pourrez inviter davantage d’employés quand vous en aurez besoin et faire évoluer votre formule à tout moment depuis les paramètres. Les tarifs s’ajustent de façon transparente selon le nombre d’utilisateurs."
+      },
+      {
+        "question": "Dois-je saisir ma carte bancaire pour commencer ma période d’essai ?",
+        "answer": "Non. Vous pouvez commencer votre période d’essai gratuite sans saisir de carte bancaire ni aucun autre moyen de paiement. Il vous suffit de vous inscrire et de confirmer votre adresse email."
+      },
+      {
+        "question": "Les tarifs sont-ils hors taxes ?",
+        "answer": "Les tarifs affichés peuvent ne pas inclure les taxes selon votre pays ou votre type de facturation. Au moment de souscrire une formule, vous verrez le détail final selon votre localisation et l’application éventuelle de la TVA ou d’autres taxes."
+      },
+      {
+        "question": "Que se passera-t-il à la fin de ma période d’essai ?",
+        "answer": "À la fin de votre période d’essai, vous pourrez choisir une formule payante pour continuer à utiliser TikNEO. Vos données, vos réglages et vos clés sont conservés en toute sécurité pour que vous puissiez continuer sans rien perdre."
+      },
+      {
+        "question": "Quels moyens de paiement puis-je utiliser ?",
+        "answer": "Nous acceptons la carte de crédit, la carte de débit et, selon disponibilité, le virement bancaire et d’autres moyens locaux. Vous pouvez gérer et modifier votre moyen de paiement à tout moment depuis les paramètres de votre compte."
+      },
+      {
+        "question": "Mes données seront-elles en sécurité ?",
+        "answer": "Chez TikNEO, la sécurité de nos utilisateurs est ce qui compte le plus. C’est pourquoi nous protégeons toutes vos informations grâce à un puissant système de chiffrement. Vous pouvez en savoir plus dans notre",
+        "linkLabel": "politique de confidentialité",
+        "linkHref": "/privacy"
+      },
+      {
+        "question": "Comment puis-je faire évoluer ma formule ?",
+        "answer": "Pour passer de votre compte d’essai gratuit à l’une de nos formules, rendez-vous dans la section facturation ou paramètres de votre compte. Vous pourrez changer ou faire évoluer votre formule à tout moment et le changement s’applique immédiatement."
+      },
+      {
+        "question": "Puis-je annuler mon abonnement à tout moment ?",
+        "answer": "Oui, et une fois annulé, votre abonnement ne sera pas renouvelé. Vous pourrez malgré tout continuer à utiliser TikNEO jusqu’à la prochaine date de renouvellement."
+      },
+      {
+        "question": "J’ai d’autres questions",
+        "answer": "Si vous avez d’autres questions, contactez-nous, nous serons ravis de vous aider.",
+        "linkLabel": "Contactez-nous",
+        "linkHref": "/contact",
+        "isContact": true
+      }
+    ],
+    "contactCta": "Contactez-nous",
+    "helpCta": "Besoin d’aide ? Contactez-nous"
+  },
+  "contact": {
+    "title": "Parlons-en",
+    "subtitle": "Vous voulez une démo ou des réponses ? Nous répondons vite.",
+    "cards": {
+      "address": {
+        "title": "ESPAGNE",
+        "lines": [
+          "Plaza Ferrerias 19. Bureau 1,",
+          "Donostia",
+          "Espagne CP 20011"
+        ]
+      },
+      "email": {
+        "title": "Email"
+      },
+      "schedule": {
+        "title": "Horaires",
+        "lines": [
+          "Du lundi au vendredi :",
+          "09h00 - 14h00",
+          "16h00 - 19h00"
+        ]
+      }
+    },
+    "formTitle": "Envoyez-nous un message",
+    "formSubtitle": "Dites-nous ce dont vous avez besoin et nous vous recontactons au plus vite.",
+    "name": "Nom*",
+    "namePlaceholder": "Nom",
+    "email": "Email*",
+    "emailPlaceholder": "Email",
+    "subject": "Objet*",
+    "subjectPlaceholder": "Objet",
+    "message": "Message*",
+    "messagePlaceholder": "Écrivez votre message",
+    "success": "Votre client de messagerie s’ouvrira avec le message prêt pour info@tikneo.com. S’il ne s’ouvre pas, écrivez-nous directement.",
+    "submit": "Envoyer",
+    "mailto": {
+      "subject": "TikNEO - Contact : {subject}",
+      "name": "Nom",
+      "email": "Email"
+    }
+  },
+  "demo": {
+    "title": "Commencez votre essai gratuit ou demandez une démo",
+    "subtitle": "Remplissez le formulaire et commencez à digitaliser votre entreprise avec TikNEO.",
+    "subtitle2": "Sans carte bancaire, et vous annulez quand vous voulez.",
+    "firstName": "Prénom*",
+    "firstNamePlaceholder": "Prénom",
+    "lastName": "Nom*",
+    "lastNamePlaceholder": "Nom",
+    "email": "Email*",
+    "emailPlaceholder": "Email",
+    "phone": "Téléphone",
+    "countryCode": "Indicatif du pays",
+    "phoneNumber": "Numéro de téléphone",
+    "company": "Nom de l’entreprise",
+    "companyPlaceholder": "Nom de l’entreprise",
+    "employees": "Nombre d’employés",
+    "role": "Poste dans l’entreprise",
+    "rolePlaceholder": "Poste dans l’entreprise",
+    "sector": "Secteur*",
+    "select": "Sélectionner",
+    "selectOption": "Sélectionner une option",
+    "employeeRanges": {
+      "1-15": "De 1 à 15 employés",
+      "16-50": "De 16 à 50 employés",
+      "51-150": "De 51 à 150 employés",
+      "151-500": "De 151 à 500 employés",
+      "500+": "Plus de 500 employés"
+    },
+    "sectors": {
+      "tecnologia": "Technologie",
+      "construccion": "Construction",
+      "comercio": "Commerce",
+      "servicios": "Services",
+      "otros": "Autres"
+    },
+    "countries": {
+      "es": "Espagne (+34)",
+      "mx": "Mexique (+52)",
+      "ar": "Argentine (+54)",
+      "co": "Colombie (+57)",
+      "cl": "Chili (+56)",
+      "pe": "Pérou (+51)",
+      "ve": "Venezuela (+58)",
+      "ec": "Équateur (+593)",
+      "gt": "Guatemala (+502)",
+      "cu": "Cuba (+53)",
+      "bo": "Bolivie (+591)",
+      "do": "Rép. dominicaine (+1 809)",
+      "hn": "Honduras (+504)",
+      "py": "Paraguay (+595)",
+      "sv": "Salvador (+503)",
+      "ni": "Nicaragua (+505)",
+      "cr": "Costa Rica (+506)",
+      "pa": "Panama (+507)",
+      "uy": "Uruguay (+598)",
+      "pr": "Porto Rico (+1 787)",
+      "us": "États-Unis (+1)",
+      "ca": "Canada (+1)",
+      "br": "Brésil (+55)",
+      "fr": "France (+33)",
+      "de": "Allemagne (+49)",
+      "it": "Italie (+39)",
+      "gb": "Royaume-Uni (+44)",
+      "pt": "Portugal (+351)",
+      "other": "Autre"
+    },
+    "terms": "En continuant, vous déclarez accepter les <terms>Conditions générales de vente</terms> et la <privacy>Politique de confidentialité</privacy>.",
+    "success": "Votre client de messagerie s’ouvrira avec la demande prête pour info@tikneo.com. S’il ne s’ouvre pas, écrivez-nous directement.",
+    "submit": "Envoyer",
+    "note": "Sans carte bancaire | Annulez quand vous voulez",
+    "mailto": {
+      "subject": "TikNEO - Demande d’essai gratuit / démo",
+      "name": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "company": "Entreprise",
+      "employees": "Nombre d’employés",
+      "role": "Poste",
+      "sector": "Secteur"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Politique de confidentialité | TikNEO",
+      "metaDescription": "Politique de confidentialité et de protection des données de TikNEO.",
+      "doc": {
+        "title": "Politique de confidentialité",
+        "sections": [
+          {
+            "title": "1. Responsable du traitement",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Tikneo, domiciliée Plaza Ferrerias 19, Bureau 1, Donostia, Espagne, CP 20011, est responsable du traitement des données personnelles collectées via ce site web et la plateforme TikNEO. Contact : info@tikneo.com."
+              }
+            ]
+          },
+          {
+            "title": "2. Données que nous traitons",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Nous traitons les données que vous nous fournissez via les formulaires du site (nom, prénom, email, téléphone, entreprise, poste et secteur), ainsi que les données nécessaires à la fourniture du service aux entreprises clientes (données des employés, pointages, plannings et absences)."
+              }
+            ]
+          },
+          {
+            "title": "3. Finalité et base légale",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Nous utilisons vos données pour répondre aux demandes d’information ou de démo (consentement), fournir le service souscrit (exécution du contrat) et respecter les obligations légales applicables, comme le registre du temps de travail prévu par le décret-loi royal espagnol 8/2019."
+              }
+            ]
+          },
+          {
+            "title": "4. Conservation",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Nous conservons les données tant qu’une relation contractuelle existe ou jusqu’à ce que vous en demandiez la suppression, puis pendant les délais exigés par la réglementation applicable."
+              }
+            ]
+          },
+          {
+            "title": "5. Destinataires",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Nous ne transmettons pas de données à des tiers, sauf obligation légale ou prestataires agissant comme sous-traitants (hébergement, communications), avec lesquels nous avons conclu les contrats exigés par le RGPD."
+              }
+            ]
+          },
+          {
+            "title": "6. Sécurité",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Nous appliquons des mesures techniques et organisationnelles appropriées, dont le chiffrement des informations, le contrôle des accès par rôles et des sauvegardes automatiques."
+              }
+            ]
+          },
+          {
+            "title": "7. Vos droits",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Vous pouvez exercer vos droits d’accès, de rectification, d’effacement, d’opposition, de limitation et de portabilité en écrivant à info@tikneo.com. Vous avez également le droit d’introduire une réclamation auprès de l’Agence espagnole de protection des données (www.aepd.es)."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "terms": {
+      "metaTitle": "Conditions générales de vente | TikNEO",
+      "metaDescription": "Conditions générales de vente du service TikNEO.",
+      "doc": {
+        "title": "Conditions générales de vente",
+        "sections": [
+          {
+            "title": "1. Identification du titulaire",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "TikNEO (ci-après « le Service ») est une plateforme de contrôle du temps de travail et de gestion du personnel exploitée par Tikneo, domiciliée Plaza Ferrerias 19, Bureau 1, Donostia, Espagne, CP 20011. Contact : info@tikneo.com."
+              }
+            ]
+          },
+          {
+            "title": "2. Objet",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Les présentes conditions régissent la souscription et l’utilisation du Service par les entreprises clientes. La souscription de l’une quelconque des formules implique l’acceptation intégrale de ces conditions."
+              }
+            ]
+          },
+          {
+            "title": "3. Formules, tarifs et facturation",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Les tarifs en vigueur de chaque formule sont ceux publiés sur la page des formules et tarifs. Sauf indication expresse, les tarifs n’incluent pas les taxes applicables. La facturation est mensuelle et le montant dépend de la formule souscrite et du nombre d’employés actifs."
+              }
+            ]
+          },
+          {
+            "title": "4. Période d’essai",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "TikNEO offre une période d’essai gratuite sans avoir à saisir de carte bancaire. À l’issue de la période d’essai, l’accès aux fonctionnalités est conditionné à la souscription d’une formule."
+              }
+            ]
+          },
+          {
+            "title": "5. Annulation",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Le client peut annuler son abonnement à tout moment depuis les paramètres de son compte. L’annulation empêche le renouvellement suivant, l’accès étant maintenu jusqu’à la fin de la période déjà facturée."
+              }
+            ]
+          },
+          {
+            "title": "6. Obligations du client",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Le client s’engage à faire un usage licite du Service, à conserver ses identifiants d’accès et à garantir qu’il dispose d’une base légale pour le traitement des données de ses employés au sein de la plateforme."
+              }
+            ]
+          },
+          {
+            "title": "7. Protection des données",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Le traitement des données personnelles est régi par notre",
+                "link": {
+                  "label": "Politique de confidentialité",
+                  "href": "/privacy",
+                  "suffix": "."
+                }
+              }
+            ]
+          },
+          {
+            "title": "8. Loi applicable",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Ces conditions sont régies par la loi espagnole. Pour tout litige, les parties se soumettent aux tribunaux de Donostia, sauf si la réglementation applicable prévoit une autre juridiction."
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "support": {
+    "metaTitle": "Support | TikNEO",
+    "metaDescription": "Support TikNEO — écrivez-nous vos questions, problèmes ou suggestions et nous vous répondrons au plus vite.",
+    "title": "Support",
+    "intro": "Vous avez une question, un problème avec l’application ou une suggestion ? Écrivez-nous et notre équipe vous répondra au plus vite. Remplissez le formulaire et votre application de messagerie s’ouvrira avec le message prêt à envoyer.",
+    "emailLabel": "Email du support :",
+    "subject": "Objet",
+    "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+    "message": "Message*",
+    "messagePlaceholder": "Décrivez-nous les détails de votre demande…",
+    "success": "Votre client de messagerie s’ouvrira avec le message prêt pour {email}. S’il ne s’ouvre pas, écrivez-nous directement.",
+    "submit": "Envoyer le message",
+    "fallbackBefore": "Si le formulaire n’ouvre pas votre application de messagerie, écrivez-nous directement à",
+    "mailtoSubject": "TikNEO - Support : {subject}",
+    "mailtoSubjectFallback": "TikNEO - Support"
+  }
+}

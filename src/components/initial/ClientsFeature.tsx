@@ -1,13 +1,16 @@
 import { Users, Briefcase, Paperclip, MessageCircle } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const featurePills = [
-  { icon: Briefcase, label: "Progresos" },
-  { icon: Paperclip, label: "Adjuntos" },
-  { icon: MessageCircle, label: "Chat" },
-];
+  { icon: Briefcase, key: "progress" },
+  { icon: Paperclip, key: "attachments" },
+  { icon: MessageCircle, key: "chat" },
+] as const;
 
 export default function ClientsFeature() {
+  const t = useTranslations("home.clients");
+
   return (
     <section className="relative overflow-hidden  px-4 sm:px-6 lg:px-8 py-16 md:py-24">
       {/* Patrón sutil de puntos */}
@@ -23,32 +26,30 @@ export default function ClientsFeature() {
           {/* Contenido izquierdo */}
           <div>
             <span className="inline-block bg-amber-400 text-amber-900 text-xs font-semibold px-3 py-1 rounded-full mb-4">
-              Novedad
+              {t("tag")}
             </span>
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-primary mb-4">
-              Clientes
+              {t("title")}
             </h2>
             <div className="flex items-center gap-3 mb-4">
               <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary shrink-0">
                 <Users className="h-6 w-6" />
               </div>
               <p className="text-lg md:text-xl font-semibold text-primary">
-                Gestiona tus clientes
+                {t("subtitle")}
               </p>
             </div>
             <p className="text-foreground/80 text-base md:text-lg leading-relaxed mb-6">
-              Ponte en contacto con ellos a través de nuestra app y permite que
-              el cliente vea el progreso de sus proyectos, adjuntos, y chat
-              interno por si quieren preguntar algo.
+              {t("description")}
             </p>
             <div className="flex flex-wrap gap-3">
-              {featurePills.map((pill, index) => (
+              {featurePills.map((pill) => (
                 <span
-                  key={index}
+                  key={pill.key}
                   className="inline-flex items-center gap-2 bg-primary/10 text-primary text-sm font-medium px-4 py-2 rounded-lg"
                 >
                   <pill.icon className="h-4 w-4" />
-                  {pill.label}
+                  {t(`pills.${pill.key}`)}
                 </span>
               ))}
             </div>
@@ -57,7 +58,7 @@ export default function ClientsFeature() {
           {/* Mockup smartphone derecho */}
           <Image
             src="/images/chat.png"
-            alt="Pantalla de chats de la app de TikNEO"
+            alt={t("imageAlt")}
             width={632}
             height={1314}
             className="w-full max-w-[380px] h-auto mx-auto drop-shadow-[0_18px_38px_rgba(0,0,0,0.16)]"

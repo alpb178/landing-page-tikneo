@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import {
   IconShieldCheck,
   IconClockHistory,
@@ -5,30 +6,20 @@ import {
 } from "@/components/icons/HeroFeatureIcons";
 
 const cards = [
-  {
-    icon: IconShieldCheck,
-    title: "Cumple normativa",
-    subtitle: "Real Decreto-ley 8/2019",
-  },
-  {
-    icon: IconClockHistory,
-    title: "Control de turnos y ausencias",
-    subtitle: null,
-  },
-  {
-    icon: IconBarChartReport,
-    title: "Informes automáticos para empresas",
-    subtitle: null,
-  },
-];
+  { key: "compliance", icon: IconShieldCheck, hasSubtitle: true },
+  { key: "shifts", icon: IconClockHistory, hasSubtitle: false },
+  { key: "reports", icon: IconBarChartReport, hasSubtitle: false },
+] as const;
 
 export default function HeroFeatureCards() {
+  const t = useTranslations("home.heroCards");
+
   return (
     <section className="absolute max-w-7xl mx-auto top-125 z-10 w-full  px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 items-end">
-        {cards.map((card, index) => (
+        {cards.map((card) => (
           <div
-            key={index}
+            key={card.key}
             className="relative overflow-hidden rounded-xl shadow-lg
                          bg-linear-to-br from-white via-secondary to-primary/5
                          p-6 gap-4 flex flex-row items-center
@@ -40,12 +31,12 @@ export default function HeroFeatureCards() {
 
               <div className="flex flex-col items-start justify-center">
                 <h2 className="text-lg font-bold text-primary mb-1">
-                  {card.title}
+                  {t(`${card.key}.title`)}
                 </h2>
 
-                {card.subtitle && (
+                {card.hasSubtitle && (
                   <p className="text-sm text-muted-foreground">
-                    {card.subtitle}
+                    {t(`${card.key}.subtitle`)}
                   </p>
                 )}
               </div>

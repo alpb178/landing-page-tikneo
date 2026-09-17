@@ -2,20 +2,22 @@
 
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/routing";
+import LanguageSelector from "./LanguageSelector";
 
 const navLinks = [
-  { href: "/", label: "Inicio" },
-  { href: "/why-tikneo", label: "¿Por qué Tikneo?" },
-  { href: "/price", label: "Precios" },
-  { href: "/features", label: "Características" },
-  { href: "/contact", label: "Contacto" },
-  { href: "/faq", label: "FAQ" },
-];
+  { href: "/", key: "home" },
+  { href: "/why-tikneo", key: "whyTikneo" },
+  { href: "/price", key: "price" },
+  { href: "/features", key: "features" },
+  { href: "/contact", key: "contact" },
+  { href: "/faq", key: "faq" },
+] as const;
 
 export default function Header() {
+  const t = useTranslations("nav");
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const pathname = usePathname();
 
@@ -32,7 +34,10 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm border-b border-border">
+      {/* `relative z-50`: backdrop-blur crea un contexto de apilamiento en el
+          header, así que sin z-index propio el desplegable de idioma queda por
+          debajo de las secciones animadas (que llevan transform). */}
+      <header className="relative z-50 bg-white/90 backdrop-blur-sm shadow-sm border-b border-border">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo TikNEO */}
@@ -56,14 +61,14 @@ export default function Header() {
 
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex items-center space-x-6 text-lg">
-              {navLinks.map(({ href, label }) => (
+              {navLinks.map(({ href, key }) => (
                 <Link
                   key={href}
                   href={href}
                   prefetch={false}
                   className={linkClass(href)}
                 >
-                  {label}
+                  {t(key)}
                 </Link>
               ))}
             </nav>
@@ -73,14 +78,15 @@ export default function Header() {
                 href="https://app.tikneo.com/auth/login"
                 className="text-gray-600 hover:text-primary px-3 py-2 text-lg font-medium"
               >
-                Iniciar sesión
+                {t("login")}
               </a>
               <a
                 href="https://app.tikneo.com/auth/register"
                 className="ml-2 bg-primary hover:opacity-90 text-primary-foreground text-sm font-medium px-5 py-2.5 rounded-full transition-opacity"
               >
-                Prueba Gratuita
+                {t("freeTrial")}
               </a>
+              <LanguageSelector />
             </nav>
 
             {/* Mobile menu button */}
@@ -89,7 +95,7 @@ export default function Header() {
                 type="button"
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="p-2.5 -mr-2.5 text-gray-700 hover:text-primary hover:bg-secondary rounded-lg transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center touch-manipulation"
-                aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
+                aria-label={isMenuOpen ? t("closeMenu") : t("openMenu")}
                 aria-expanded={isMenuOpen}
               >
                 {isMenuOpen ? (
@@ -105,7 +111,7 @@ export default function Header() {
           {isMenuOpen && (
             <div className="lg:hidden border-t border-gray-100 animate-fade-in-up">
               <nav className="px-3 pt-3 pb-4 space-y-0.5 bg-white/95 backdrop-blur-sm">
-                {navLinks.map(({ href, label }) => (
+                {navLinks.map(({ href, key }) => (
                   <Link
                     key={href}
                     href={href}
@@ -117,7 +123,7 @@ export default function Header() {
                         : "text-gray-700 hover:bg-secondary hover:text-primary active:bg-primary/10"
                     }`}
                   >
-                    {label}
+                    {t(key)}
                   </Link>
                 ))}
                 <div className="pt-2 px-4 space-y-1 border-t border-gray-100 mt-2">
@@ -126,15 +132,16 @@ export default function Header() {
                     className="block py-3.5 text-gray-700 hover:text-primary font-medium rounded-xl"
                     onClick={() => setIsMenuOpen(false)}
                   >
-                    Iniciar sesión
+                    {t("login")}
                   </a>
                   <a
                     href="https://app.tikneo.com/auth/register"
                     onClick={() => setIsMenuOpen(false)}
                     className="flex items-center justify-center py-3.5 bg-primary hover:opacity-90 text-primary-foreground font-semibold rounded-xl transition-opacity"
                   >
-                    Prueba Gratuita
+                    {t("freeTrial")}
                   </a>
+                  <LanguageSelector variant="mobile" />
                 </div>
               </nav>
             </div>

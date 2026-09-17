@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Mail } from "lucide-react";
+import { useTranslations } from "next-intl";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const SUPPORT_EMAIL = "info@tikneo.com";
@@ -11,6 +12,7 @@ const inputClasses =
   "w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors";
 
 export default function Support() {
+  const t = useTranslations("support");
   const [status, setStatus] = useState<"idle" | "success">("idle");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -18,7 +20,9 @@ export default function Support() {
     const data = new FormData(e.currentTarget);
     const asunto = ((data.get("asunto") as string) || "").trim();
     const subject = encodeURIComponent(
-      asunto ? `TikNEO - Soporte: ${asunto}` : "TikNEO - Soporte"
+      asunto
+        ? t("mailtoSubject", { subject: asunto })
+        : t("mailtoSubjectFallback")
     );
     const body = encodeURIComponent((data.get("mensaje") as string) || "");
     window.location.href = `mailto:${SUPPORT_EMAIL}?subject=${subject}&body=${body}`;
@@ -31,13 +35,10 @@ export default function Support() {
       <div className="max-w-3xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center mb-3">
-            Soporte
+            {t("title")}
           </h1>
           <p className="text-gray-600 text-center text-base sm:text-lg leading-relaxed">
-            ¿Tienes una duda, un problema con la aplicación o una sugerencia?
-            Escríbenos y nuestro equipo te responderá lo antes posible. Completa
-            el formulario y se abrirá tu aplicación de correo con el mensaje
-            listo para enviar.
+            {t("intro")}
           </p>
         </AnimateOnScroll>
 
@@ -45,7 +46,7 @@ export default function Support() {
           <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-2 rounded-2xl bg-secondary px-5 py-4 text-center">
             <span className="flex items-center gap-2 font-semibold text-primary">
               <Mail className="h-5 w-5 shrink-0" aria-hidden="true" />
-              Correo de soporte:
+              {t("emailLabel")}
             </span>
             <a
               href={`mailto:${SUPPORT_EMAIL}`}
@@ -64,14 +65,14 @@ export default function Support() {
                   htmlFor="soporte-asunto"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Asunto
+                  {t("subject")}
                 </label>
                 <input
                   id="soporte-asunto"
                   name="asunto"
                   type="text"
                   className={inputClasses}
-                  placeholder="¿En qué podemos ayudarte?"
+                  placeholder={t("subjectPlaceholder")}
                 />
               </div>
 
@@ -80,7 +81,7 @@ export default function Support() {
                   htmlFor="soporte-mensaje"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Mensaje*
+                  {t("message")}
                 </label>
                 <textarea
                   id="soporte-mensaje"
@@ -88,7 +89,7 @@ export default function Support() {
                   required
                   rows={6}
                   className={`${inputClasses} resize-y`}
-                  placeholder="Cuéntanos los detalles de tu consulta…"
+                  placeholder={t("messagePlaceholder")}
                 />
               </div>
 
@@ -98,15 +99,14 @@ export default function Support() {
                     role="status"
                     className="text-center text-sm text-green-600 font-medium mb-3"
                   >
-                    Se abrirá tu cliente de correo con el mensaje preparado para{" "}
-                    {SUPPORT_EMAIL}. Si no se abre, escríbenos directamente.
+                    {t("success", { email: SUPPORT_EMAIL })}
                   </p>
                 )}
                 <button
                   type="submit"
                   className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
                 >
-                  Enviar mensaje
+                  {t("submit")}
                 </button>
               </div>
             </form>
@@ -114,8 +114,7 @@ export default function Support() {
         </AnimateOnScroll>
 
         <p className="mt-6 text-center text-sm text-gray-500">
-          Si el formulario no abre tu aplicación de correo, escríbenos
-          directamente a{" "}
+          {t("fallbackBefore")}{" "}
           <a
             href={`mailto:${SUPPORT_EMAIL}`}
             className="text-primary underline underline-offset-2 hover:opacity-80 transition-opacity"

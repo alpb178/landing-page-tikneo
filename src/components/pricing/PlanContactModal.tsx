@@ -3,10 +3,11 @@
 import { X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { createPortal } from "react-dom";
-import type { PlanOption } from "./plans";
+import { useTranslations } from "next-intl";
+import { plans, type PlanSlug } from "./plans";
 
 type PlanContactModalProps = {
-  plan: PlanOption;
+  plan: PlanSlug;
   onClose: () => void;
 };
 
@@ -14,8 +15,18 @@ export default function PlanContactModal({
   plan,
   onClose,
 }: PlanContactModalProps) {
+  const t = useTranslations("pricing");
   const [mounted, setMounted] = useState(false);
   const [status, setStatus] = useState<"idle" | "success">("idle");
+
+  const planName = t(`plans.${plan}.name`);
+  // Los planes de pago comparten precio en `plans.ts` y descripción base;
+  // el complemento de movilidad lleva ambos en los mensajes.
+  const priced = plans.find((item) => item.slug === plan);
+  const price = priced?.price ?? t(`plans.${plan}.price`);
+  const baseDescription = priced
+    ? t("baseDescription")
+    : t(`plans.${plan}.baseDescription`);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -23,11 +34,11 @@ export default function PlanContactModal({
     const get = (key: string) => (data.get(key) as string) || "-";
     const subject = encodeURIComponent(`TikNEO - ${get("asunto")}`);
     const body = encodeURIComponent(
-      `Plan: ${plan.name} (${plan.price} ${plan.baseDescription})\n` +
-        `Nombre: ${get("nombre")}\n` +
-        `Email: ${get("email")}\n` +
-        `Empresa: ${get("empresa")}\n\n` +
-        `Mensaje: ${get("mensaje")}`
+      `${t("modal.mailto.plan")}: ${planName} (${price} ${baseDescription})\n` +
+        `${t("modal.mailto.name")}: ${get("nombre")}\n` +
+        `${t("modal.mailto.email")}: ${get("email")}\n` +
+        `${t("modal.mailto.company")}: ${get("empresa")}\n\n` +
+        `${t("modal.mailto.message")}: ${get("mensaje")}`
     );
     window.location.href = `mailto:info@tikneo.com?subject=${subject}&body=${body}`;
     setStatus("success");
@@ -56,13 +67,13 @@ export default function PlanContactModal({
       <div
         role="dialog"
         aria-modal="true"
-        aria-label={`Consultar precio del ${plan.name}`}
+        aria-label={t("modal.dialogLabel", { plan: planName })}
         className="relative bg-white rounded-[32px] shadow-xl w-full max-w-lg p-6 sm:p-8 my-8"
         onClick={(event) => event.stopPropagation()}
       >
         <button
           type="button"
-          aria-label="Cerrar"
+          aria-label={t("modal.close")}
           onClick={onClose}
           className="absolute top-4 right-4 p-2 rounded-full text-gray-500 hover:bg-gray-100 transition-colors"
         >
@@ -70,14 +81,14 @@ export default function PlanContactModal({
         </button>
 
         <h3 className="text-xl sm:text-2xl font-bold text-primary text-center mb-2">
-          {plan.name}
+          {planName}
         </h3>
         <p className="text-gray-600 text-center text-sm md:text-base mb-6">
-          Déjanos tus datos y te contactamos con el precio a tu medida.
+          {t("modal.intro")}
         </p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <input type="hidden" name="plan" value={plan.slug} />
+          <input type="hidden" name="plan" value={plan} />
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div>
@@ -85,7 +96,7 @@ export default function PlanContactModal({
                 htmlFor="plan-nombre"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Nombre*
+                {t("modal.name")}
               </label>
               <input
                 id="plan-nombre"
@@ -93,7 +104,7 @@ export default function PlanContactModal({
                 type="text"
                 required
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                placeholder="Nombre"
+                placeholder={t("modal.namePlaceholder")}
               />
             </div>
             <div>
@@ -101,7 +112,7 @@ export default function PlanContactModal({
                 htmlFor="plan-email"
                 className="block text-sm font-medium text-gray-700 mb-1"
               >
-                Email*
+                {t("modal.email")}
               </label>
               <input
                 id="plan-email"
@@ -109,7 +120,7 @@ export default function PlanContactModal({
                 type="email"
                 required
                 className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                placeholder="Email"
+                placeholder={t("modal.emailPlaceholder")}
               />
             </div>
           </div>
@@ -119,14 +130,14 @@ export default function PlanContactModal({
               htmlFor="plan-empresa"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Nombre de empresa
+              {t("modal.company")}
             </label>
             <input
               id="plan-empresa"
               name="empresa"
               type="text"
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-              placeholder="Nombre de empresa"
+              placeholder={t("modal.companyPlaceholder")}
             />
           </div>
 
@@ -135,16 +146,16 @@ export default function PlanContactModal({
               htmlFor="plan-asunto"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Asunto*
+              {t("modal.subject")}
             </label>
             <input
               id="plan-asunto"
               name="asunto"
               type="text"
               required
-              defaultValue={plan.contactSubject}
+              defaultValue={t(`plans.${plan}.contactSubject`)}
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-              placeholder="Asunto"
+              placeholder={t("modal.subjectPlaceholder")}
             />
           </div>
 
@@ -153,15 +164,15 @@ export default function PlanContactModal({
               htmlFor="plan-mensaje"
               className="block text-sm font-medium text-gray-700 mb-1"
             >
-              Mensaje
+              {t("modal.message")}
             </label>
             <textarea
               id="plan-mensaje"
               name="mensaje"
               rows={4}
-              defaultValue={plan.contactMessage}
+              defaultValue={t(`plans.${plan}.contactMessage`)}
               className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y"
-              placeholder="Cuéntanos sobre tu empresa o resuelve tus dudas"
+              placeholder={t("modal.messagePlaceholder")}
             />
           </div>
 
@@ -171,18 +182,17 @@ export default function PlanContactModal({
                 role="status"
                 className="text-center text-sm text-green-600 font-medium mb-3"
               >
-                Se abrirá tu cliente de correo con la solicitud preparada para
-                info@tikneo.com. Si no se abre, escríbenos directamente.
+                {t("modal.success")}
               </p>
             )}
             <button
               type="submit"
               className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
             >
-              Enviar
+              {t("modal.submit")}
             </button>
             <p className="text-center text-gray-500 text-sm mt-3">
-              Sin compromiso | Te respondemos rápido
+              {t("modal.note")}
             </p>
           </div>
         </form>
