@@ -44,7 +44,7 @@ export default function LanguageSelector({
             key={lang.code}
             type="button"
             onClick={() => handleChangeLanguage(lang.code)}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-sm font-medium cursor-pointer transition-colors ${
               locale === lang.code
                 ? "bg-primary text-primary-foreground"
                 : "bg-secondary text-primary"
@@ -66,7 +66,7 @@ export default function LanguageSelector({
         aria-expanded={isOpen}
         aria-label={t("language")}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 px-3 py-2 text-lg font-medium text-gray-600 hover:text-primary transition-colors"
+        className="flex items-center gap-1 px-3 py-2 text-lg font-medium text-gray-600 hover:text-primary transition-colors cursor-pointer"
       >
         <span className="text-base">{current.flag}</span>
         <span className="uppercase text-base">{locale}</span>
@@ -80,7 +80,7 @@ export default function LanguageSelector({
               <button
                 type="button"
                 onClick={() => handleChangeLanguage(lang.code)}
-                className={`w-full flex items-center gap-2 px-4 py-2.5 text-left text-sm transition-colors ${
+                className={`w-full flex items-center gap-2 px-4 py-2.5 text-left text-sm cursor-pointer transition-colors ${
                   locale === lang.code
                     ? "bg-secondary text-primary font-semibold"
                     : "text-gray-600 hover:bg-secondary hover:text-primary"
