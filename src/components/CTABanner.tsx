@@ -1,11 +1,14 @@
 import Image from "next/image";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
 /**
  * Banner CTA navy con los mockups de móvil.
  * Diseño: Figma "WEB BANNER 45" (nodo 10315-41907).
  */
 export default function CTABanner() {
+  const t = useTranslations("ctaBanner");
+
   return (
     <section className="bg-navy overflow-hidden">
       <div className="max-w-[1440px] mx-auto relative h-[300px] md:h-[430px]">
@@ -19,12 +22,12 @@ export default function CTABanner() {
         <div className="hidden lg:block">
           <PhoneMockup
             screenshot="/images/pricing/phone-dashboard.png"
-            alt="TikNEO Dashboard"
+            alt={t("dashboardAlt")}
             className="left-[164px]"
           />
           <PhoneMockup
             screenshot="/images/pricing/phone-chrono.png"
-            alt="TikNEO Chrono"
+            alt={t("chronoAlt")}
             className="left-[510px]"
           />
         </div>
@@ -33,13 +36,13 @@ export default function CTABanner() {
         <div className="absolute inset-0 flex items-center justify-center lg:justify-end px-8 lg:pr-[168px]">
           <div className="flex flex-col gap-4 max-w-[339px] text-center lg:text-left">
             <p className="text-2xl text-white font-normal tracking-[-0.408px]">
-              Simplifica la gestión de tu empresa y enfócate en crecer.
+              {t("text")}
             </p>
             <Link
               href="/demo"
               className="block w-full text-center bg-white text-navy rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
             >
-              Solicitar demo
+              {t("cta")}
             </Link>
           </div>
         </div>

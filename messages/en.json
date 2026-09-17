@@ -1,0 +1,591 @@
+{
+  "meta": {
+    "title": "Tikneo",
+    "description": "The task and project management platform that lets you optimise your productivity and boost your performance.",
+    "keywords": "task management, project management, productivity, performance, teamwork, collaboration",
+    "ogLocale": "en_GB"
+  },
+  "nav": {
+    "home": "Home",
+    "whyTikneo": "Why Tikneo?",
+    "price": "Pricing",
+    "features": "Features",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "login": "Log in",
+    "freeTrial": "Free Trial",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Change language"
+  },
+  "footer": {
+    "addressLabel": "Address",
+    "addressValue": "Plaza Ferrerias 19. Office 1, Donostia, Spain, postcode 20011",
+    "emailLabel": "Email",
+    "scheduleLabel": "Opening hours",
+    "scheduleValue": "Monday to Friday: 09:00 - 14:00 · 16:00 - 19:00",
+    "copyright": "© 2026 Tikneo",
+    "contact": "Contact"
+  },
+  "ctaBanner": {
+    "text": "Simplify how you run your company and focus on growing.",
+    "cta": "Request a demo",
+    "dashboardAlt": "TikNEO Dashboard",
+    "chronoAlt": "TikNEO Chrono"
+  },
+  "home": {
+    "hero": {
+      "title": "The time tracking that grows with your company",
+      "subtitle": "Manage shifts, absences and <strong>clock-ins</strong> from anywhere.",
+      "ctaTrial": "Free 15-day trial",
+      "ctaDemo": "Watch the demo",
+      "badges": {
+        "noCard": "No card required",
+        "quickSetup": "Quick setup",
+        "support": "Support"
+      },
+      "newsTag": "New",
+      "newsText": "Internal chat with your clients"
+    },
+    "mockup": {
+      "alt": "TikNEO project board on desktop and mobile"
+    },
+    "heroCards": {
+      "compliance": {
+        "title": "Regulation compliant",
+        "subtitle": "Royal Decree-Law 8/2019"
+      },
+      "shifts": {
+        "title": "Shift and absence control"
+      },
+      "reports": {
+        "title": "Automatic reports for companies"
+      }
+    },
+    "whatIs": {
+      "title": "What is TIKNEO?",
+      "description": "Tikneo centralises time tracking and staff management in an efficient, scalable and easy-to-use platform, helping companies that want to automate their HR processes and make the best decisions for their business.",
+      "toolsTitle": "The best tool to keep your business under control",
+      "quote": "“Order is the first step towards productivity”"
+    },
+    "clients": {
+      "tag": "New",
+      "title": "Clients",
+      "subtitle": "Manage your clients",
+      "description": "Get in touch with them through our app and let each client follow the progress of their projects, attachments and internal chat in case they want to ask something.",
+      "pills": {
+        "progress": "Progress",
+        "attachments": "Attachments",
+        "chat": "Chat"
+      },
+      "imageAlt": "Chat screen of the TikNEO app"
+    },
+    "reinvent": {
+      "title": "Reinvent your business with Tikneo",
+      "description": "Since 12 May 2019, every company in Spain is required by law to keep a daily record of its employees' working hours, including start and end times.",
+      "reasonsTitle": "Why is clocking in important?",
+      "reasons": [
+        "Complies with employment regulations (Royal Decree-Law 8/2019)",
+        "Avoids financial penalties for the company",
+        "Protects your rights as an employee",
+        "Encourages transparency in overtime tracking"
+      ]
+    }
+  },
+  "businessTools": {
+    "reports": {
+      "title": "Workforce Reports",
+      "description": "Generate detailed reports on attendance, punctuality and hours worked."
+    },
+    "shifts": {
+      "title": "Shift, Absence and Holiday Management",
+      "description": "Organise and plan your employees' shifts effectively."
+    },
+    "remote": {
+      "title": "Remote Clock-in",
+      "description": "Let your employees clock in from anywhere, remotely or on site."
+    },
+    "multicompany": {
+      "title": "Multi-company",
+      "description": "Easily manage several companies from a single account."
+    },
+    "security": {
+      "title": "Security and Privacy",
+      "description": "Protect sensitive information with advanced security protocols."
+    },
+    "projects": {
+      "title": "Projects and Tasks",
+      "description": "Assign and monitor collaborative projects and tasks across your team."
+    },
+    "chat": {
+      "title": "Notices and Chat",
+      "description": "Instant communication and direct notifications to keep your team informed."
+    },
+    "clients": {
+      "title": "Clients",
+      "description": "Internal communication with your clients.",
+      "badge": "New"
+    }
+  },
+  "whyTikneo": {
+    "title": "Why use Tikneo?",
+    "paragraphs": [
+      "Running a company shouldn't feel like putting out fires. With TikNeo you have everything in one place.",
+      "Projects, tasks, time, expenses, budgets, clock-ins, fleet mobility and automatic AI reports — all connected, all visible, all under control.",
+      "So that you and your team stop looking for information and start making decisions.",
+      "That is how modern companies grow."
+    ],
+    "cta": "See Plans"
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "Discover everything Tikneo offers to run your company efficiently.",
+    "tablistLabel": "Features",
+    "items": {
+      "report": {
+        "label": "Workforce Report",
+        "description": "Detailed analysis of attendance, hours worked, absences and punctuality for employees and employers.",
+        "highlights": [
+          "Performance monitoring and time management",
+          "Payroll management and regulatory compliance",
+          "Transparency and schedule planning"
+        ]
+      },
+      "multicompany": {
+        "label": "Multi-company Management",
+        "description": "Run several companies from a single account. Centralise employees, shifts, reports and permissions.",
+        "highlights": [
+          "One account for all your companies",
+          "Ideal for groups and franchises",
+          "No need to switch platforms"
+        ]
+      },
+      "projects": {
+        "label": "Project Management",
+        "description": "Organise and supervise projects by assigning owners, deadlines and real-time tracking.",
+        "highlights": [
+          "Progress visible to the whole team",
+          "Attachments and internal chat per project",
+          "Better coordination and deliveries"
+        ]
+      },
+      "shifts": {
+        "label": "Shifts, Absences and Holidays",
+        "description": "Plan and assign shifts effectively. View calendars and avoid scheduling conflicts.",
+        "highlights": [
+          "Check shifts from the app",
+          "Change requests with approval",
+          "Automatic absence cover"
+        ]
+      },
+      "chat": {
+        "label": "Notices and Chat",
+        "description": "Instant communication and direct notifications with your team in a single place.",
+        "highlights": [
+          "Send notices and answer questions",
+          "Cuts down unnecessary meetings",
+          "Centralised communication"
+        ]
+      },
+      "security": {
+        "label": "Security and Privacy",
+        "description": "Data protection with advanced protocols and compliance with current regulations.",
+        "highlights": [
+          "Access and permission control",
+          "Automatic backups",
+          "Transparency in data processing"
+        ]
+      },
+      "remote": {
+        "label": "Remote Clock-in",
+        "description": "Record entries and exits from anywhere, with optional geolocation.",
+        "highlights": [
+          "Clock in from mobile or computer",
+          "Optional geolocation",
+          "Guaranteed regulatory compliance"
+        ]
+      },
+      "storage": {
+        "label": "Unlimited Storage",
+        "description": "Documents, reports and attachments centralised and accessible with no space limits.",
+        "highlights": [
+          "Complete company history",
+          "Backups included",
+          "Fast file search"
+        ]
+      },
+      "clients": {
+        "label": "Clients",
+        "description": "Manage the relationship with your clients by sharing progress, attachments and chat in real time.",
+        "highlights": [
+          "Full transparency with the client",
+          "Internal chat per project",
+          "Improves client satisfaction"
+        ]
+      },
+      "calendar": {
+        "label": "Calendar",
+        "description": "Integrated calendar for absences, holidays, meetings and team events.",
+        "highlights": [
+          "Team availability at a glance",
+          "Avoids scheduling overlaps",
+          "Planning with the full picture"
+        ]
+      }
+    }
+  },
+  "pricing": {
+    "title": "Plans and pricing",
+    "baseDescription": "/month up to 10 employees",
+    "plans": {
+      "esencial": {
+        "name": "Essential Plan",
+        "label": "ESSENTIAL PLAN",
+        "extraEmployee": "+ €2.30 /month for each additional employee",
+        "features": [
+          "Employee management",
+          "Shifts",
+          "Absence management",
+          "Chat",
+          "Face ID access",
+          "Notifications",
+          "Calendar",
+          "Clock-ins"
+        ],
+        "contactSubject": "Information about the Essential Plan",
+        "contactMessage": "Hello, I'm interested in TikNEO's Essential Plan (€24.99 /month up to 10 employees) and I would like more information in order to activate it."
+      },
+      "avanzado": {
+        "name": "Advanced Plan",
+        "label": "ADVANCED PLAN",
+        "extraEmployee": "+ €3.50 /month for each additional employee",
+        "features": [
+          "Essential plan +",
+          "Clock-in history",
+          "Projects",
+          "Chrono (time tracking)",
+          "Check-List",
+          "Clients",
+          "Budgets"
+        ],
+        "contactSubject": "Information about the Advanced Plan",
+        "contactMessage": "Hello, I'm interested in TikNEO's Advanced Plan (€38.99 /month up to 10 employees) and I would like more information in order to activate it."
+      },
+      "movilidad": {
+        "name": "Mobility Add-on",
+        "label": "MOBILITY",
+        "price": "On request",
+        "baseDescription": "depending on vehicles",
+        "contactSubject": "Price enquiry for the Mobility add-on",
+        "contactMessage": "Hello, I would like to know the price of TikNEO's Mobility add-on based on the number of vehicles we manage."
+      }
+    },
+    "mobility": {
+      "optional": "OPTIONAL ADD-ON",
+      "title": "Mobility",
+      "priceNote": "Ask for pricing based on your vehicles",
+      "features": [
+        "Vehicle management",
+        "Assignment and control",
+        "History and tracking",
+        "Attachments (documentation)"
+      ],
+      "cta": "Ask for a price"
+    },
+    "modal": {
+      "dialogLabel": "Ask for the price of the {plan}",
+      "close": "Close",
+      "intro": "Leave us your details and we'll get back to you with a price tailored to you.",
+      "name": "Name*",
+      "namePlaceholder": "Name",
+      "email": "Email*",
+      "emailPlaceholder": "Email",
+      "company": "Company name",
+      "companyPlaceholder": "Company name",
+      "subject": "Subject*",
+      "subjectPlaceholder": "Subject",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your company or ask your questions",
+      "success": "Your email client will open with the request ready for info@tikneo.com. If it doesn't open, write to us directly.",
+      "submit": "Send",
+      "note": "No commitment | We reply fast",
+      "mailto": {
+        "plan": "Plan",
+        "name": "Name",
+        "email": "Email",
+        "company": "Company",
+        "message": "Message"
+      }
+    },
+    "comparison": {
+      "title": "Plan comparison",
+      "subtitle": "Not sure which one to choose? Find the best option for you.",
+      "nameHeader": "Name",
+      "features": [
+        "Employee management",
+        "Shifts",
+        "Absence management",
+        "Chat",
+        "Face ID access",
+        "Notifications",
+        "Calendar",
+        "Clock-ins",
+        "Clock-in history",
+        "Projects",
+        "Chrono (time tracking)",
+        "Check-List",
+        "Clients",
+        "Budgets"
+      ]
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "We answer the most common questions so you can get started with TikNEO with complete peace of mind.",
+    "items": [
+      {
+        "question": "How does the trial period work?",
+        "answer": "To start your free trial, all you have to do is sign up for TikNEO and confirm your email address. Once your trial begins, you can try every feature, with no limits."
+      },
+      {
+        "question": "Which features are included in the trial period?",
+        "answer": "During the trial you have access to all TikNEO features: clock-in management, shifts, workforce reports, multi-company, projects, notices and chat, and the rest of the tools in the plan. No limits, so you can evaluate the platform with your team."
+      },
+      {
+        "question": "What happens if my company grows and I need to invite more employees?",
+        "answer": "TikNEO adapts to the size of your company. You can invite more employees whenever you need and upgrade your plan at any time from the settings. Prices adjust transparently according to the number of users."
+      },
+      {
+        "question": "Do I have to enter my credit card to start my trial period?",
+        "answer": "No. You can start your free trial without entering a credit card or any other payment method. You only need to sign up and confirm your email address."
+      },
+      {
+        "question": "Are the prices tax free?",
+        "answer": "The prices shown may not include taxes depending on your country or type of invoicing. When you sign up for a plan, you will see the final breakdown based on your location and whether VAT or other taxes apply."
+      },
+      {
+        "question": "What happens when my trial period ends?",
+        "answer": "When your trial period ends, you can choose a paid plan to keep using TikNEO. Your data, settings and keys are stored securely so you can carry on without losing anything."
+      },
+      {
+        "question": "Which payment methods can I use?",
+        "answer": "We accept credit and debit cards and, subject to availability, bank transfer and other local methods. You can manage and change your payment method at any time from your account settings."
+      },
+      {
+        "question": "Will my data be safe?",
+        "answer": "At TikNEO, the security of our users is what matters most. That is why we protect all your information with a powerful encryption system. You can read more in our",
+        "linkLabel": "privacy policy",
+        "linkHref": "/legal/privacidad"
+      },
+      {
+        "question": "How can I upgrade my plan?",
+        "answer": "To move from your free trial account to one of our plans, go to the billing or settings section of your account. You can change or upgrade your plan at any time and the change applies immediately."
+      },
+      {
+        "question": "Can I cancel my subscription at any time?",
+        "answer": "Yes, and once cancelled, your subscription will not renew again. Even so, you can keep using TikNEO until the next renewal date."
+      },
+      {
+        "question": "I have more questions",
+        "answer": "If you have more questions, get in touch with us — we're looking forward to helping you.",
+        "linkLabel": "Contact us",
+        "linkHref": "/contact",
+        "isContact": true
+      }
+    ],
+    "contactCta": "Contact us",
+    "helpCta": "Need help? Contact us"
+  },
+  "contact": {
+    "title": "Let's talk",
+    "subtitle": "Want a demo or have questions? We reply fast.",
+    "cards": {
+      "address": {
+        "title": "SPAIN",
+        "lines": ["Plaza Ferrerias 19. Office 1,", "Donostia", "Spain, postcode 20011"]
+      },
+      "email": {
+        "title": "Email"
+      },
+      "schedule": {
+        "title": "Opening hours",
+        "lines": ["Monday to Friday:", "09:00 - 14:00", "16:00 - 19:00"]
+      }
+    },
+    "formTitle": "Send us a message",
+    "formSubtitle": "Tell us what you need and we'll get back to you as soon as possible.",
+    "name": "Name*",
+    "namePlaceholder": "Name",
+    "email": "Email*",
+    "emailPlaceholder": "Email",
+    "subject": "Subject*",
+    "subjectPlaceholder": "Subject",
+    "message": "Message*",
+    "messagePlaceholder": "Write your message",
+    "success": "Your email client will open with the message ready for info@tikneo.com. If it doesn't open, write to us directly.",
+    "submit": "Send",
+    "mailto": {
+      "subject": "TikNEO - Contact: {subject}",
+      "name": "Name",
+      "email": "Email"
+    }
+  },
+  "demo": {
+    "title": "Start your free trial or request a demo",
+    "subtitle": "Fill in the form and start digitalising your company with TikNEO.",
+    "subtitle2": "No card required and you can cancel whenever you want.",
+    "firstName": "First name*",
+    "firstNamePlaceholder": "First name",
+    "lastName": "Surname*",
+    "lastNamePlaceholder": "Surname",
+    "email": "Email*",
+    "emailPlaceholder": "Email",
+    "phone": "Phone",
+    "countryCode": "Country code",
+    "phoneNumber": "Phone number",
+    "company": "Company name",
+    "companyPlaceholder": "Company name",
+    "employees": "Number of employees",
+    "role": "Role in the company",
+    "rolePlaceholder": "Role in the company",
+    "sector": "Sector*",
+    "select": "Select",
+    "selectOption": "Select an option",
+    "employeeRanges": {
+      "1-15": "From 1 to 15 employees",
+      "16-50": "From 16 to 50 employees",
+      "51-150": "From 51 to 150 employees",
+      "151-500": "From 151 to 500 employees",
+      "500+": "More than 500 employees"
+    },
+    "sectors": {
+      "tecnologia": "Technology",
+      "construccion": "Construction",
+      "comercio": "Retail",
+      "servicios": "Services",
+      "otros": "Other"
+    },
+    "countries": {
+      "es": "Spain (+34)",
+      "mx": "Mexico (+52)",
+      "ar": "Argentina (+54)",
+      "co": "Colombia (+57)",
+      "cl": "Chile (+56)",
+      "pe": "Peru (+51)",
+      "ve": "Venezuela (+58)",
+      "ec": "Ecuador (+593)",
+      "gt": "Guatemala (+502)",
+      "cu": "Cuba (+53)",
+      "bo": "Bolivia (+591)",
+      "do": "Dominican Rep. (+1 809)",
+      "hn": "Honduras (+504)",
+      "py": "Paraguay (+595)",
+      "sv": "El Salvador (+503)",
+      "ni": "Nicaragua (+505)",
+      "cr": "Costa Rica (+506)",
+      "pa": "Panama (+507)",
+      "uy": "Uruguay (+598)",
+      "pr": "Puerto Rico (+1 787)",
+      "us": "United States (+1)",
+      "ca": "Canada (+1)",
+      "br": "Brazil (+55)",
+      "fr": "France (+33)",
+      "de": "Germany (+49)",
+      "it": "Italy (+39)",
+      "gb": "United Kingdom (+44)",
+      "pt": "Portugal (+351)",
+      "other": "Other"
+    },
+    "terms": "By continuing you declare that you accept the <terms>General terms and conditions</terms> and the <privacy>Privacy policy</privacy>.",
+    "success": "Your email client will open with the request ready for info@tikneo.com. If it doesn't open, write to us directly.",
+    "submit": "Send",
+    "note": "No card | Cancel whenever you want",
+    "mailto": {
+      "subject": "TikNEO - Free trial / demo request",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "employees": "Number of employees",
+      "role": "Role",
+      "sector": "Sector"
+    }
+  },
+  "legal": {
+    "privacy": {
+      "metaTitle": "Privacy policy | TikNEO",
+      "metaDescription": "TikNEO privacy and data protection policy.",
+      "title": "Privacy policy",
+      "sections": [
+        {
+          "title": "1. Data controller",
+          "body": "Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011, is the controller of the personal data collected through this website and the TikNEO platform. Contact: info@tikneo.com."
+        },
+        {
+          "title": "2. Data we process",
+          "body": "We process the data you provide through the forms on the site (first name, surname, email, phone, company, role and sector), as well as the data needed to provide the service to client companies (employee data, clock-ins, shifts and absences)."
+        },
+        {
+          "title": "3. Purpose and legal basis",
+          "body": "We use your data to handle requests for information or a demo (consent), to provide the contracted service (performance of a contract) and to comply with applicable legal obligations, such as the working-time record set out in Spanish Royal Decree-Law 8/2019."
+        },
+        {
+          "title": "4. Retention",
+          "body": "We keep the data for as long as a contractual relationship exists or until you request its deletion, and afterwards for the periods required by applicable regulations."
+        },
+        {
+          "title": "5. Recipients",
+          "body": "We do not share data with third parties except where legally required or with providers acting as data processors (hosting, communications), with whom we have the contracts required by the GDPR."
+        },
+        {
+          "title": "6. Security",
+          "body": "We apply appropriate technical and organisational measures, including encryption of information, role-based access control and automatic backups."
+        },
+        {
+          "title": "7. Your rights",
+          "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@tikneo.com. You also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+        }
+      ]
+    },
+    "terms": {
+      "metaTitle": "General terms and conditions | TikNEO",
+      "metaDescription": "General terms and conditions of the TikNEO service.",
+      "title": "General terms and conditions",
+      "privacyLink": "Privacy policy",
+      "sections": [
+        {
+          "title": "1. Identification of the provider",
+          "body": "TikNEO (hereinafter, “the Service”) is a time tracking and staff management platform operated by Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011. Contact: info@tikneo.com."
+        },
+        {
+          "title": "2. Purpose",
+          "body": "These terms govern the contracting and use of the Service by client companies. Signing up for any of the plans implies full acceptance of these terms."
+        },
+        {
+          "title": "3. Plans, prices and billing",
+          "body": "The prices in force for each plan are those published on the plans and pricing page. Unless expressly stated, prices do not include applicable taxes. Billing is monthly and the amount depends on the plan contracted and the number of active employees."
+        },
+        {
+          "title": "4. Trial period",
+          "body": "TikNEO offers a free trial period with no need to enter a card. Once the trial period ends, access to the features is subject to signing up for a plan."
+        },
+        {
+          "title": "5. Cancellation",
+          "body": "The client may cancel their subscription at any time from their account settings. Cancellation prevents the next renewal, and access is kept until the end of the period already invoiced."
+        },
+        {
+          "title": "6. Client obligations",
+          "body": "The client undertakes to make lawful use of the Service, to safeguard their access credentials and to ensure that they have a legal basis for processing their employees' data within the platform."
+        }
+      ],
+      "law": {
+        "title": "8. Applicable law",
+        "body": "These terms are governed by Spanish law. For any dispute, the parties submit to the courts and tribunals of Donostia, unless the applicable regulations provide for another jurisdiction."
+      },
+      "dataProtection": {
+        "title": "7. Data protection",
+        "body": "The processing of personal data is governed by our <privacy>Privacy policy</privacy>."
+      }
+    }
+  }
+}

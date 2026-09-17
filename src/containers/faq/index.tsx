@@ -2,73 +2,21 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
-const faqItems = [
-  {
-    question: "¿Cómo funciona el periodo de prueba?",
-    answer:
-      "Para comenzar tu periodo de prueba gratuito, tan solo tienes que registrarte en TikNEO y confirmar tu correo electrónico. Una vez comience tu periodo de prueba, podrás probar todas las funcionalidades, sin límite.",
-  },
-  {
-    question: "¿Qué funcionalidades se incluyen en el periodo de prueba?",
-    answer:
-      "Durante el periodo de prueba tienes acceso a todas las funcionalidades de TikNEO: gestión de fichajes, turnos, informes laborales, multiempresa, proyectos, avisos y chat, y el resto de herramientas del plan. Sin límites para que puedas evaluar la plataforma con tu equipo.",
-  },
-  {
-    question: "¿Qué ocurre si mi compañía crece y necesito invitar a más empleados?",
-    answer:
-      "TikNEO se adapta al tamaño de tu empresa. Podrás invitar a más empleados cuando lo necesites y actualizar tu plan en cualquier momento desde la configuración. Los precios se ajustan de forma transparente según el número de usuarios.",
-  },
-  {
-    question: "¿Tengo que introducir mi tarjeta de crédito para comenzar mi periodo de prueba?",
-    answer:
-      "No. Puedes comenzar tu periodo de prueba gratuito sin introducir tarjeta de crédito ni ningún otro método de pago. Solo necesitas registrarte y confirmar tu correo electrónico.",
-  },
-  {
-    question: "¿Los precios están libres de impuestos?",
-    answer:
-      "Los precios mostrados pueden no incluir impuestos según tu país o tipo de facturación. Al contratar un plan, verás el desglose final según tu ubicación y si aplicas IVA u otros tributos.",
-  },
-  {
-    question: "¿Qué pasará cuando acabe mi periodo de prueba?",
-    answer:
-      "Cuando finalice tu periodo de prueba, podrás elegir un plan de pago para seguir utilizando TikNEO. Tus datos, configuraciones y claves se conservan de forma segura para que puedas continuar sin perder nada.",
-  },
-  {
-    question: "¿Qué métodos de pago puedo utilizar?",
-    answer:
-      "Aceptamos tarjeta de crédito, débito y, según disponibilidad, transferencia bancaria y otros métodos locales. Puedes gestionar y cambiar tu método de pago en cualquier momento desde la configuración de la cuenta.",
-  },
-  {
-    question: "¿Estarán seguros mis datos?",
-    answer:
-      "En TikNEO, la seguridad de nuestros usuarios es lo más importante. Por eso, a través de un potente sistema de encriptación, protegemos toda tu información. Puedes leer más en nuestra",
-    linkLabel: "política de privacidad",
-    linkHref: "/legal/privacidad",
-  },
-  {
-    question: "¿Cómo puedo mejorar mi plan?",
-    answer:
-      "Para pasar de tu cuenta de prueba gratuita a uno de nuestros planes, entra en la sección de facturación o configuración de tu cuenta. Podrás cambiar o mejorar tu plan en cualquier momento y el cambio se aplica de forma inmediata.",
-  },
-  {
-    question: "¿Puedo cancelar mi suscripción en cualquier momento?",
-    answer:
-      "Sí, y una vez cancelada, tu suscripción no se renovará de nuevo. Aun así, podrás seguir utilizando TikNEO hasta la siguiente fecha de renovación.",
-  },
-  {
-    question: "Tengo más preguntas",
-    answer:
-      "Si tienes más preguntas, contacta con nosotros, estamos deseando ayudarte.",
-    linkLabel: "Contacta con nosotros",
-    linkHref: "/contact",
-    isContact: true,
-  },
-];
+type FaqItem = {
+  question: string;
+  answer: string;
+  linkLabel?: string;
+  linkHref?: string;
+  isContact?: boolean;
+};
 
 export default function FAQ() {
+  const t = useTranslations("faq");
+  const faqItems = t.raw("items") as FaqItem[];
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
@@ -83,21 +31,19 @@ export default function FAQ() {
       <div className="relative max-w-3xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center mb-4">
-            Preguntas Frecuentes
+            {t("title")}
           </h1>
           <p className="text-gray-600 text-center text-base md:text-lg mb-8 sm:mb-12">
-            Resolvemos las dudas más comunes para que puedas empezar con TikNEO
-            con total tranquilidad.
+            {t("subtitle")}
           </p>
         </AnimateOnScroll>
 
         <div className="space-y-3 sm:space-y-4">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;
-            const isContactItem = "isContact" in item && item.isContact;
             return (
               <div
-                key={index}
+                key={item.question}
                 className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden"
               >
                 <button
@@ -116,7 +62,7 @@ export default function FAQ() {
                   <div className="px-6 pb-5 pt-0">
                     <p className="text-gray-600 text-sm md:text-base leading-relaxed pl-0">
                       {item.answer}
-                      {"linkLabel" in item && item.linkLabel && "linkHref" in item && item.linkHref && (
+                      {item.linkLabel && item.linkHref && (
                         <>
                           {" "}
                           <Link
@@ -125,17 +71,17 @@ export default function FAQ() {
                           >
                             {item.linkLabel}
                           </Link>
-                          {typeof item.answer === "string" && !item.answer.trimEnd().endsWith(".") ? "." : ""}
+                          {item.answer.trimEnd().endsWith(".") ? "" : "."}
                         </>
                       )}
                     </p>
-                    {isContactItem && (
+                    {item.isContact && (
                       <div className="mt-4 flex justify-end">
                         <Link
                           href="/contact"
                           className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
                         >
-                          Contáctanos
+                          {t("contactCta")}
                         </Link>
                       </div>
                     )}
@@ -151,7 +97,7 @@ export default function FAQ() {
             href="/contact"
             className="inline-flex items-center justify-center bg-primary hover:opacity-90 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
           >
-            ¿Necesitas ayuda? Contáctanos
+            {t("helpCta")}
           </Link>
         </div>
       </div>

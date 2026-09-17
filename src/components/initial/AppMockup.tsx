@@ -1,11 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 import HeroFeatureCards from "./HeroFeatureCards";
 
 
 export default function AppMockup() {
+  const t = useTranslations("home.mockup");
+
   return (
     <section className=" hidden md:flex relative px-4 sm:px-6 lg:px-8 pb-28 md:pb-32 pt-4 justify-center items-center">
 
@@ -20,7 +23,7 @@ export default function AppMockup() {
         <div className="relative min-h-[320px] bg-gray-50 overflow-hidden flex items-center justify-center">
           <Image
             src="/images/app-mockup.png"
-            alt="Tablero de proyectos de TikNEO en escritorio y móvil"
+            alt={t("alt")}
             width={1800}
             height={1060}
             priority

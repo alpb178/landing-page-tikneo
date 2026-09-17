@@ -1,8 +1,6 @@
+import { redirect } from "next/navigation";
+import { routing } from "@/i18n/routing";
 
-import Initial from "@/containers/initial";
-
-export default function Home() {
-  return (
-    <Initial />
-  );
+export default function RootPage() {
+  redirect(`/${routing.defaultLocale}`);
 }

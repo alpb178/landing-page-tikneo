@@ -1,44 +1,18 @@
 "use client";
 
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { MapPin, Mail, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
 const cards = [
-  {
-    icon: MapPin,
-    title: "ESPAÑA",
-    content: (
-      <>
-        Plaza Ferrerias 19. Oficina 1,
-        <br />
-        Donostia
-        <br />
-        España CP 20011
-      </>
-    ),
-  },
-  {
-    icon: Mail,
-    title: "Email",
-    content: "info@tikneo.com",
-  },
-  {
-    icon: Clock,
-    title: "Horario",
-    content: (
-      <>
-        Lunes a viernes:
-        <br />
-        09:00 - 14:00
-        <br />
-        16:00 - 19:00
-      </>
-    ),
-  },
-];
+  { icon: MapPin, key: "address" },
+  { icon: Mail, key: "email" },
+  { icon: Clock, key: "schedule" },
+] as const;
 
 export default function Contact() {
+  const t = useTranslations("contact");
   const [status, setStatus] = useState<"idle" | "success">("idle");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -46,11 +20,11 @@ export default function Contact() {
     const data = new FormData(e.currentTarget);
     const get = (key: string) => (data.get(key) as string) || "-";
     const subject = encodeURIComponent(
-      `TikNEO - Contacto: ${get("asunto")}`
+      t("mailto.subject", { subject: get("asunto") })
     );
     const body = encodeURIComponent(
-      `Nombre: ${get("nombre")}\n` +
-        `Email: ${get("email")}\n\n` +
+      `${t("mailto.name")}: ${get("nombre")}\n` +
+        `${t("mailto.email")}: ${get("email")}\n\n` +
         `${get("mensaje")}`
     );
     window.location.href = `mailto:info@tikneo.com?subject=${subject}&body=${body}`;
@@ -58,28 +32,36 @@ export default function Contact() {
     setTimeout(() => setStatus("idle"), 6000);
   };
 
+  const cardLines = (key: string): string[] =>
+    key === "email" ? ["info@tikneo.com"] : (t.raw(`cards.${key}.lines`) as string[]);
+
   return (
     <section className="min-h-screen py-12 sm:py-16 md:py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-5xl mx-auto">
         <AnimateOnScroll variant="fadeUp">
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center mb-3">
-            Hablemos
+            {t("title")}
           </h1>
           <p className="text-gray-600 text-center text-base sm:text-lg mb-10 sm:mb-12">
-            ¿Quieres una demo o resolver dudas? Te respondemos rápido.
+            {t("subtitle")}
           </p>
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {cards.map((card, index) => (
-            <AnimateOnScroll key={index} variant="scaleIn" delay={index * 80}>
+            <AnimateOnScroll key={card.key} variant="scaleIn" delay={index * 80}>
               <div className="h-full bg-white flex flex-col justify-center items-center rounded-2xl shadow-md border border-gray-100 p-5 sm:p-6 md:p-8 text-center md:text-left hover:shadow-lg transition-shadow min-h-[200px] sm:min-h-[220px]">
                 <card.icon className="h-14 w-14 sm:h-20 sm:w-20 md:h-24 md:w-24 text-primary shrink-0 mb-3" />
                 <h2 className="text-base sm:text-lg font-bold text-primary mb-2 sm:mb-3">
-                  {card.title}
+                  {t(`cards.${card.key}.title`)}
                 </h2>
                 <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                  {card.content}
+                  {cardLines(card.key).map((line, lineIndex) => (
+                    <Fragment key={line}>
+                      {lineIndex > 0 && <br />}
+                      {line}
+                    </Fragment>
+                  ))}
                 </p>
               </div>
             </AnimateOnScroll>
@@ -89,10 +71,10 @@ export default function Contact() {
         <AnimateOnScroll variant="fadeUp" delay={120}>
           <div className="mt-10 sm:mt-12 bg-white rounded-2xl sm:rounded-3xl shadow-lg border border-gray-100 p-5 sm:p-6 md:p-10 max-w-3xl mx-auto">
             <h2 className="text-xl sm:text-2xl font-bold text-primary text-center mb-3">
-              Envíanos un mensaje
+              {t("formTitle")}
             </h2>
             <p className="text-gray-600 text-center text-sm md:text-base mb-8">
-              Cuéntanos qué necesitas y te contactamos lo antes posible.
+              {t("formSubtitle")}
             </p>
 
             <form className="space-y-5" onSubmit={handleSubmit}>
@@ -102,7 +84,7 @@ export default function Contact() {
                     htmlFor="contacto-nombre"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    Nombre*
+                    {t("name")}
                   </label>
                   <input
                     id="contacto-nombre"
@@ -110,7 +92,7 @@ export default function Contact() {
                     type="text"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                    placeholder="Nombre"
+                    placeholder={t("namePlaceholder")}
                   />
                 </div>
                 <div>
@@ -118,7 +100,7 @@ export default function Contact() {
                     htmlFor="contacto-email"
                     className="block text-sm font-medium text-gray-700 mb-1"
                   >
-                    Email*
+                    {t("email")}
                   </label>
                   <input
                     id="contacto-email"
@@ -126,7 +108,7 @@ export default function Contact() {
                     type="email"
                     required
                     className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                    placeholder="Email"
+                    placeholder={t("emailPlaceholder")}
                   />
                 </div>
               </div>
@@ -136,7 +118,7 @@ export default function Contact() {
                   htmlFor="contacto-asunto"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Asunto*
+                  {t("subject")}
                 </label>
                 <input
                   id="contacto-asunto"
@@ -144,7 +126,7 @@ export default function Contact() {
                   type="text"
                   required
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors"
-                  placeholder="Asunto"
+                  placeholder={t("subjectPlaceholder")}
                 />
               </div>
 
@@ -153,7 +135,7 @@ export default function Contact() {
                   htmlFor="contacto-mensaje"
                   className="block text-sm font-medium text-gray-700 mb-1"
                 >
-                  Mensaje*
+                  {t("message")}
                 </label>
                 <textarea
                   id="contacto-mensaje"
@@ -161,7 +143,7 @@ export default function Contact() {
                   required
                   rows={5}
                   className="w-full px-4 py-2.5 rounded-lg border border-gray-300 bg-gray-50/50 focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-colors resize-y"
-                  placeholder="Escribe tu mensaje"
+                  placeholder={t("messagePlaceholder")}
                 />
               </div>
 
@@ -171,16 +153,14 @@ export default function Contact() {
                     role="status"
                     className="text-center text-sm text-green-600 font-medium mb-3"
                   >
-                    Se abrirá tu cliente de correo con el mensaje preparado
-                    para info@tikneo.com. Si no se abre, escríbenos
-                    directamente.
+                    {t("success")}
                   </p>
                 )}
                 <button
                   type="submit"
                   className="w-full py-3.5 rounded-xl font-bold text-white bg-primary hover:opacity-90 transition-all shadow-md"
                 >
-                  Enviar
+                  {t("submit")}
                 </button>
               </div>
             </form>
