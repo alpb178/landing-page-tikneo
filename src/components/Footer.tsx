@@ -2,6 +2,8 @@ import { MapPin, Mail, Clock } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 
+const footerLinks = ["support", "contact", "privacy", "terms"] as const;
+
 export default function Footer() {
   const t = useTranslations("footer");
 
@@ -66,12 +68,17 @@ export default function Footer() {
           <span className="text-primary-foreground/60 text-sm sm:text-base">
             {t("copyright")}
           </span>
-          <Link
-            href="/contact"
-            className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
-          >
-            {t("contact")}
-          </Link>
+          <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            {footerLinks.map((key) => (
+              <Link
+                key={key}
+                href={`/${key}`}
+                className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
+              >
+                {t(`links.${key}`)}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>

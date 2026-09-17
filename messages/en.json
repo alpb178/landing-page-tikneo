@@ -25,7 +25,12 @@
     "scheduleLabel": "Opening hours",
     "scheduleValue": "Monday to Friday: 09:00 - 14:00 · 16:00 - 19:00",
     "copyright": "© 2026 Tikneo",
-    "contact": "Contact"
+    "links": {
+      "support": "Support",
+      "contact": "Contact",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    }
   },
   "ctaBanner": {
     "text": "Simplify how you run your company and focus on growing.",
@@ -375,7 +380,7 @@
         "question": "Will my data be safe?",
         "answer": "At TikNEO, the security of our users is what matters most. That is why we protect all your information with a powerful encryption system. You can read more in our",
         "linkLabel": "privacy policy",
-        "linkHref": "/legal/privacidad"
+        "linkHref": "/privacy"
       },
       {
         "question": "How can I upgrade my plan?",
@@ -402,14 +407,22 @@
     "cards": {
       "address": {
         "title": "SPAIN",
-        "lines": ["Plaza Ferrerias 19. Office 1,", "Donostia", "Spain, postcode 20011"]
+        "lines": [
+          "Plaza Ferrerias 19. Office 1,",
+          "Donostia",
+          "Spain, postcode 20011"
+        ]
       },
       "email": {
         "title": "Email"
       },
       "schedule": {
         "title": "Opening hours",
-        "lines": ["Monday to Friday:", "09:00 - 14:00", "16:00 - 19:00"]
+        "lines": [
+          "Monday to Friday:",
+          "09:00 - 14:00",
+          "16:00 - 19:00"
+        ]
       }
     },
     "formTitle": "Send us a message",
@@ -515,77 +528,176 @@
     "privacy": {
       "metaTitle": "Privacy policy | TikNEO",
       "metaDescription": "TikNEO privacy and data protection policy.",
-      "title": "Privacy policy",
-      "sections": [
-        {
-          "title": "1. Data controller",
-          "body": "Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011, is the controller of the personal data collected through this website and the TikNEO platform. Contact: info@tikneo.com."
-        },
-        {
-          "title": "2. Data we process",
-          "body": "We process the data you provide through the forms on the site (first name, surname, email, phone, company, role and sector), as well as the data needed to provide the service to client companies (employee data, clock-ins, shifts and absences)."
-        },
-        {
-          "title": "3. Purpose and legal basis",
-          "body": "We use your data to handle requests for information or a demo (consent), to provide the contracted service (performance of a contract) and to comply with applicable legal obligations, such as the working-time record set out in Spanish Royal Decree-Law 8/2019."
-        },
-        {
-          "title": "4. Retention",
-          "body": "We keep the data for as long as a contractual relationship exists or until you request its deletion, and afterwards for the periods required by applicable regulations."
-        },
-        {
-          "title": "5. Recipients",
-          "body": "We do not share data with third parties except where legally required or with providers acting as data processors (hosting, communications), with whom we have the contracts required by the GDPR."
-        },
-        {
-          "title": "6. Security",
-          "body": "We apply appropriate technical and organisational measures, including encryption of information, role-based access control and automatic backups."
-        },
-        {
-          "title": "7. Your rights",
-          "body": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@tikneo.com. You also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
-        }
-      ]
+      "doc": {
+        "title": "Privacy policy",
+        "sections": [
+          {
+            "title": "1. Data controller",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011, is the controller of the personal data collected through this website and the TikNEO platform. Contact: info@tikneo.com."
+              }
+            ]
+          },
+          {
+            "title": "2. Data we process",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "We process the data you provide through the forms on the site (first name, surname, email, phone, company, role and sector), as well as the data needed to provide the service to client companies (employee data, clock-ins, shifts and absences)."
+              }
+            ]
+          },
+          {
+            "title": "3. Purpose and legal basis",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "We use your data to handle requests for information or a demo (consent), to provide the contracted service (performance of a contract) and to comply with applicable legal obligations, such as the working-time record set out in Spanish Royal Decree-Law 8/2019."
+              }
+            ]
+          },
+          {
+            "title": "4. Retention",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "We keep the data for as long as a contractual relationship exists or until you request its deletion, and afterwards for the periods required by applicable regulations."
+              }
+            ]
+          },
+          {
+            "title": "5. Recipients",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "We do not share data with third parties except where legally required or with providers acting as data processors (hosting, communications), with whom we have the contracts required by the GDPR."
+              }
+            ]
+          },
+          {
+            "title": "6. Security",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "We apply appropriate technical and organisational measures, including encryption of information, role-based access control and automatic backups."
+              }
+            ]
+          },
+          {
+            "title": "7. Your rights",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "You can exercise your rights of access, rectification, erasure, objection, restriction and portability by writing to info@tikneo.com. You also have the right to lodge a complaint with the Spanish Data Protection Agency (www.aepd.es)."
+              }
+            ]
+          }
+        ]
+      }
     },
     "terms": {
       "metaTitle": "General terms and conditions | TikNEO",
       "metaDescription": "General terms and conditions of the TikNEO service.",
-      "title": "General terms and conditions",
-      "privacyLink": "Privacy policy",
-      "sections": [
-        {
-          "title": "1. Identification of the provider",
-          "body": "TikNEO (hereinafter, “the Service”) is a time tracking and staff management platform operated by Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011. Contact: info@tikneo.com."
-        },
-        {
-          "title": "2. Purpose",
-          "body": "These terms govern the contracting and use of the Service by client companies. Signing up for any of the plans implies full acceptance of these terms."
-        },
-        {
-          "title": "3. Plans, prices and billing",
-          "body": "The prices in force for each plan are those published on the plans and pricing page. Unless expressly stated, prices do not include applicable taxes. Billing is monthly and the amount depends on the plan contracted and the number of active employees."
-        },
-        {
-          "title": "4. Trial period",
-          "body": "TikNEO offers a free trial period with no need to enter a card. Once the trial period ends, access to the features is subject to signing up for a plan."
-        },
-        {
-          "title": "5. Cancellation",
-          "body": "The client may cancel their subscription at any time from their account settings. Cancellation prevents the next renewal, and access is kept until the end of the period already invoiced."
-        },
-        {
-          "title": "6. Client obligations",
-          "body": "The client undertakes to make lawful use of the Service, to safeguard their access credentials and to ensure that they have a legal basis for processing their employees' data within the platform."
-        }
-      ],
-      "law": {
-        "title": "8. Applicable law",
-        "body": "These terms are governed by Spanish law. For any dispute, the parties submit to the courts and tribunals of Donostia, unless the applicable regulations provide for another jurisdiction."
-      },
-      "dataProtection": {
-        "title": "7. Data protection",
-        "body": "The processing of personal data is governed by our <privacy>Privacy policy</privacy>."
+      "doc": {
+        "title": "General terms and conditions",
+        "sections": [
+          {
+            "title": "1. Identification of the provider",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "TikNEO (hereinafter, “the Service”) is a time tracking and staff management platform operated by Tikneo, with registered address at Plaza Ferrerias 19, Office 1, Donostia, Spain, postcode 20011. Contact: info@tikneo.com."
+              }
+            ]
+          },
+          {
+            "title": "2. Purpose",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "These terms govern the contracting and use of the Service by client companies. Signing up for any of the plans implies full acceptance of these terms."
+              }
+            ]
+          },
+          {
+            "title": "3. Plans, prices and billing",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "The prices in force for each plan are those published on the plans and pricing page. Unless expressly stated, prices do not include applicable taxes. Billing is monthly and the amount depends on the plan contracted and the number of active employees."
+              }
+            ]
+          },
+          {
+            "title": "4. Trial period",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "TikNEO offers a free trial period with no need to enter a card. Once the trial period ends, access to the features is subject to signing up for a plan."
+              }
+            ]
+          },
+          {
+            "title": "5. Cancellation",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "The client may cancel their subscription at any time from their account settings. Cancellation prevents the next renewal, and access is kept until the end of the period already invoiced."
+              }
+            ]
+          },
+          {
+            "title": "6. Client obligations",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "The client undertakes to make lawful use of the Service, to safeguard their access credentials and to ensure that they have a legal basis for processing their employees' data within the platform."
+              }
+            ]
+          },
+          {
+            "title": "7. Data protection",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "The processing of personal data is governed by our",
+                "link": {
+                  "label": "Privacy policy",
+                  "href": "/privacy",
+                  "suffix": "."
+                }
+              }
+            ]
+          },
+          {
+            "title": "8. Applicable law",
+            "blocks": [
+              {
+                "kind": "paragraph",
+                "text": "These terms are governed by Spanish law. For any dispute, the parties submit to the courts and tribunals of Donostia, unless the applicable regulations provide for another jurisdiction."
+              }
+            ]
+          }
+        ]
       }
     }
+  },
+  "support": {
+    "metaTitle": "Support | TikNEO",
+    "metaDescription": "TikNEO support — write to us with your questions, problems or suggestions and we will reply as soon as possible.",
+    "title": "Support",
+    "intro": "Do you have a question, a problem with the app or a suggestion? Write to us and our team will reply as soon as possible. Fill in the form and your email app will open with the message ready to send.",
+    "emailLabel": "Support email:",
+    "subject": "Subject",
+    "subjectPlaceholder": "How can we help you?",
+    "message": "Message*",
+    "messagePlaceholder": "Tell us the details of your enquiry…",
+    "success": "Your email client will open with the message ready for {email}. If it doesn't open, write to us directly.",
+    "submit": "Send message",
+    "fallbackBefore": "If the form does not open your email app, write to us directly at",
+    "mailtoSubject": "TikNEO - Support: {subject}",
+    "mailtoSubjectFallback": "TikNEO - Support"
   }
 }

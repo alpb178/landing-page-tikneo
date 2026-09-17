@@ -212,7 +212,7 @@ export default function Demo() {
                 {t.rich("terms", {
                   terms: (chunks) => (
                     <Link
-                      href="/legal/condiciones"
+                      href="/terms"
                       className="text-primary font-medium hover:underline"
                     >
                       {chunks}
@@ -220,7 +220,7 @@ export default function Demo() {
                   ),
                   privacy: (chunks) => (
                     <Link
-                      href="/legal/privacidad"
+                      href="/privacy"
                       className="text-primary font-medium hover:underline"
                     >
                       {chunks}
