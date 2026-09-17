@@ -34,7 +34,10 @@ export default function Header() {
   return (
     <>
       {/* Main Header */}
-      <header className="bg-white/90 backdrop-blur-sm shadow-sm border-b border-border">
+      {/* `relative z-50`: backdrop-blur crea un contexto de apilamiento en el
+          header, así que sin z-index propio el desplegable de idioma queda por
+          debajo de las secciones animadas (que llevan transform). */}
+      <header className="relative z-50 bg-white/90 backdrop-blur-sm shadow-sm border-b border-border">
         <div className=" mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             {/* Logo TikNEO */}
