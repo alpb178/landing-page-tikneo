@@ -1,5 +1,6 @@
 import { Check, X } from "lucide-react";
 import { Red_Hat_Display } from "next/font/google";
+import { useTranslations } from "next-intl";
 
 const redHatDisplay = Red_Hat_Display({
   subsets: ["latin"],
@@ -7,30 +8,14 @@ const redHatDisplay = Red_Hat_Display({
   preload: false,
 });
 
-interface ComparisonRow {
-  feature: string;
-  esencial: boolean;
-  avanzado: boolean;
-}
-
-const comparisonFeatures: ComparisonRow[] = [
-  { feature: "Gestión de empleados", esencial: true, avanzado: true },
-  { feature: "Turnos", esencial: true, avanzado: true },
-  { feature: "Gestión de ausencias", esencial: true, avanzado: true },
-  { feature: "Chat", esencial: true, avanzado: true },
-  { feature: "Acceso con Face ID", esencial: true, avanzado: true },
-  { feature: "Notificaciones", esencial: true, avanzado: true },
-  { feature: "Calendario", esencial: true, avanzado: true },
-  { feature: "Fichajes", esencial: true, avanzado: true },
-  { feature: "Historial de fichajes", esencial: false, avanzado: true },
-  { feature: "Proyectos", esencial: false, avanzado: true },
-  { feature: "Chrono (control horario)", esencial: false, avanzado: true },
-  { feature: "Check-List", esencial: false, avanzado: true },
-  { feature: "Clientes", esencial: false, avanzado: true },
-  { feature: "Presupuestos", esencial: false, avanzado: true },
-];
+// Índice de la primera característica exclusiva del Plan Avanzado dentro de
+// `pricing.comparison.features`: las anteriores están en los dos planes.
+const FIRST_ADVANCED_ONLY = 8;
 
 export default function PricingComparisonTable() {
+  const t = useTranslations("pricing");
+  const features = t.raw("comparison.features") as string[];
+
   return (
     <section className="py-20 bg-white">
       <div className="max-w-[858px] mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,12 +23,12 @@ export default function PricingComparisonTable() {
           <h2
             className={`${redHatDisplay.className} text-[40px] font-semibold text-navy text-center`}
           >
-            Comparativa de planes
+            {t("comparison.title")}
           </h2>
           <p
             className={`${redHatDisplay.className} text-2xl font-semibold text-navy text-center max-w-[718px]`}
           >
-            ¿No estás seguro de cuál elegir? Encuentra la mejor opción para ti.
+            {t("comparison.subtitle")}
           </p>
         </div>
 
@@ -54,43 +39,43 @@ export default function PricingComparisonTable() {
                 <tr>
                   <th className="bg-white px-8 py-4 text-left w-[255px] rounded-tl-[32px]">
                     <span className="text-base font-bold text-transparent">
-                      Nombre
+                      {t("comparison.nameHeader")}
                     </span>
                   </th>
                   <th className="bg-white px-2 py-4 text-center w-[301px]">
                     <span className="text-xl font-bold text-navy">
-                      Plan Esencial
+                      {t("plans.esencial.name")}
                     </span>
                   </th>
                   <th className="bg-white px-2 py-4 text-center w-[301px] rounded-tr-[32px]">
                     <span className="text-xl font-bold text-navy">
-                      Plan Avanzado
+                      {t("plans.avanzado.name")}
                     </span>
                   </th>
                 </tr>
               </thead>
               <tbody>
-                {comparisonFeatures.map((row) => (
-                  <tr key={row.feature}>
-                    <td className="border-b border-bg-light px-8 py-3 text-sm font-semibold text-navy">
-                      {row.feature}
-                    </td>
-                    <td className="border-b border-bg-light px-2 py-3 text-center">
-                      {row.esencial ? (
+                {features.map((feature, index) => {
+                  const inEssential = index < FIRST_ADVANCED_ONLY;
+
+                  return (
+                    <tr key={feature}>
+                      <td className="border-b border-bg-light px-8 py-3 text-sm font-semibold text-navy">
+                        {feature}
+                      </td>
+                      <td className="border-b border-bg-light px-2 py-3 text-center">
+                        {inEssential ? (
+                          <Check className="h-6 w-6 text-navy mx-auto" />
+                        ) : (
+                          <X className="h-6 w-6 text-gray-300 mx-auto" />
+                        )}
+                      </td>
+                      <td className="border-b border-bg-light px-2 py-3 text-center">
                         <Check className="h-6 w-6 text-navy mx-auto" />
-                      ) : (
-                        <X className="h-6 w-6 text-gray-300 mx-auto" />
-                      )}
-                    </td>
-                    <td className="border-b border-bg-light px-2 py-3 text-center">
-                      {row.avanzado ? (
-                        <Check className="h-6 w-6 text-navy mx-auto" />
-                      ) : (
-                        <X className="h-6 w-6 text-gray-300 mx-auto" />
-                      )}
-                    </td>
-                  </tr>
-                ))}
+                      </td>
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

@@ -1,33 +1,31 @@
-import Link from "next/link";
 import { MapPin, Mail, Clock } from "lucide-react";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/routing";
 
-const contactInfo = [
-  {
-    icon: MapPin,
-    label: "Dirección",
-    value: "Plaza Ferrerias 19. Oficina 1, Donostia, España CP 20011",
-  },
-  {
-    icon: Mail,
-    label: "Email",
-    value: "info@tikneo.com",
-    href: "mailto:info@tikneo.com",
-  },
-  {
-    icon: Clock,
-    label: "Horario",
-    value: "Lunes a viernes: 09:00 - 14:00 · 16:00 - 19:00",
-  },
-];
-
-const footerLinks = [
-  { href: "/support", label: "Soporte" },
-  { href: "/contact", label: "Contacto" },
-  { href: "/privacy", label: "Privacidad" },
-  { href: "/terms", label: "Condiciones" },
-];
+const footerLinks = ["support", "contact", "privacy", "terms"] as const;
 
 export default function Footer() {
+  const t = useTranslations("footer");
+
+  const contactInfo = [
+    {
+      icon: MapPin,
+      label: t("addressLabel"),
+      value: t("addressValue"),
+    },
+    {
+      icon: Mail,
+      label: t("emailLabel"),
+      value: "info@tikneo.com",
+      href: "mailto:info@tikneo.com",
+    },
+    {
+      icon: Clock,
+      label: t("scheduleLabel"),
+      value: t("scheduleValue"),
+    },
+  ];
+
   return (
     <footer className="bg-primary text-primary-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
@@ -52,12 +50,12 @@ export default function Footer() {
             return (
               <div key={item.label} className={wrapperClass}>
                 {item.href ? (
-                  <Link
+                  <a
                     href={item.href}
                     className={`${wrapperClass} text-primary-foreground/70 hover:text-primary-foreground transition-colors`}
                   >
                     {block}
-                  </Link>
+                  </a>
                 ) : (
                   block
                 )}
@@ -68,16 +66,16 @@ export default function Footer() {
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-primary-foreground/20">
           <span className="text-primary-foreground/60 text-sm sm:text-base">
-            © 2026 Tikneo
+            {t("copyright")}
           </span>
           <nav className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {footerLinks.map(({ href, label }) => (
+            {footerLinks.map((key) => (
               <Link
-                key={href}
-                href={href}
+                key={key}
+                href={`/${key}`}
                 className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium transition-colors"
               >
-                {label}
+                {t(`links.${key}`)}
               </Link>
             ))}
           </nav>

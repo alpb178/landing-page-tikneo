@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
 import type { LegalBlock, LegalDoc, LegalItem } from "@/data/legal";
 
 function ItemText({ item }: { item: LegalItem }) {

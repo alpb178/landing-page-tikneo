@@ -2,25 +2,21 @@
 
 import { CircleCheckBig } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import PlanContactModal from "./PlanContactModal";
 import { mobilityOption } from "./plans";
 
-const features = [
-  "Gestión de vehículos",
-  "Asignación y control",
-  "Historial y seguimiento",
-  "Adjuntos (documentación)",
-];
-
 export default function MobilityCard() {
+  const t = useTranslations("pricing.mobility");
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const features = t.raw("features") as string[];
 
   return (
     <section className="bg-bg-light pb-20">
       <div className="max-w-[858px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white rounded-[32px] shadow-[0px_4px_4px_0px_rgba(12,12,13,0.05)] px-8 py-6 flex flex-col gap-6">
           <p className="text-muted-foreground text-base font-semibold">
-            COMPLEMENTO OPCIONAL
+            {t("optional")}
           </p>
 
           <div className="flex flex-col gap-4">
@@ -43,13 +39,11 @@ export default function MobilityCard() {
                 </svg>
               </div>
               <h3 className="text-2xl font-semibold leading-[1.2] text-black">
-                Movilidad
+                {t("title")}
               </h3>
             </div>
 
-            <p className="text-blue-accent text-base">
-              Consulta precios según vehículos
-            </p>
+            <p className="text-blue-accent text-base">{t("priceNote")}</p>
           </div>
 
           <div className="border-t border-gray-200" />
@@ -68,7 +62,7 @@ export default function MobilityCard() {
             onClick={() => setIsModalOpen(true)}
             className="block w-full text-center bg-navy text-light-blue rounded-[32px] h-12 leading-[48px] font-semibold hover:opacity-90 transition-opacity"
           >
-            Consultar precio
+            {t("cta")}
           </button>
         </div>
       </div>
